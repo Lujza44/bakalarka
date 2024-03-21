@@ -66,5 +66,5 @@ for key, value in ref_seq_dict.items():
         "after": after
     }
 
-with open('data/transformed_data.json', 'w') as f:
-    json.dump(data, f, indent=4)
+with open('data/transformed_data.json', 'w') as json_file:
+    json.dump(data, json_file, indent=4)
