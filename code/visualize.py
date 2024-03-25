@@ -1,3 +1,4 @@
+import pandas as pd
 import json
 
 def to_bracket_notation(sequence, str_length):
@@ -26,8 +27,36 @@ def to_bracket_notation(sequence, str_length):
     
     return ' '.join(result)
 
+json_file_path = 'data/transformed_data.json'
+with open(json_file_path, 'r') as file:
+    data = json.load(file)
 
-with open('data/transformed_data.json', 'r') as json_file:
-    data = json.load(json_file)
+rows = []
 
+for marker, marker_info in data['markers'].items(): # iterovanie cez vsetky markery v jsne
+    str_length = marker_info['referenceAllele'].get('STRsize', None)
+    if not str_length:  # This checks for None or 0
+        continue  # Skip this iteration and move to the next marker
     
+    for allele_var in marker_info['alleleVariants']: # iterovanie cez vsetky varianty alel
+        allele = allele_var['allele']
+        for seq_var in allele_var['sequenceVariants']:
+            sequence = seq_var['sequence']
+            count = seq_var['count']
+            frequency = seq_var['frequency']
+
+            if allele.is_integer():
+                sequence = to_bracket_notation(seq_var['sequence'], str_length)
+            
+            if seq_var['flankingRegionsVariants']: # ak existuju flanking region varianty, kazdy bude mat vlastny riadok
+                for flank_var in seq_var['flankingRegionsVariants']:
+                    before = flank_var['before']
+                    after = flank_var['after']
+                    rows.append([marker, allele, sequence, "", count, frequency, before, after])
+            else: # ak neexistuju, bunky ostanu prazdne
+                rows.append([marker, allele, sequence, "", count, frequency, "", ""])
+
+df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', 'Flanking Region Variants from GRCh38', 'Counts', 'Frequencies', '5\'-Flanking Region', '3\'-Flanking Region'])
+
+csv_file_path = 'data/output_data.csv'
+df.to_csv(csv_file_path, index=False)
