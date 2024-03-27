@@ -42,6 +42,7 @@ for index, row in df.iterrows():
                     if increment_str_size:
                         str_size += 1
         
+        # TODO tu spravit check, ci rep. reg. neni dlhsi nez ma byt, ak je, treba odseknut jeho zaver a prielepit ho na zaciatok "after"
         ref_after = ref_seq[str_size*number_of_repetitions:] 
         ref_seq = ref_seq[:str_size*number_of_repetitions] 
         

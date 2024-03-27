@@ -6,7 +6,7 @@ def to_bracket_notation(sequence, str_length):
     current_str = sequence[:str_length]
     count = 1
     
-    for i in range(str_length, len(sequence), str_length): # prechadzam sekvenciou po jednotlivych nt
+    for i in range(str_length, len(sequence), str_length): # prechadzam sekvenciou po jednotlivych n-ticiach nukleotidov
         next_str = sequence[i:i+str_length]
         
         if next_str == current_str: # ak najblizsia repeticia je rovnaka ako aktualna
@@ -35,15 +35,15 @@ rows = []
 
 for marker, marker_info in data['markers'].items(): # iterovanie cez vsetky markery v jsne
     str_length = marker_info['referenceAllele'].get('STRsize', None)
-    if not str_length:  # This checks for None or 0
-        continue  # Skip this iteration and move to the next marker
+    if not str_length:  
+        continue  
     
     for allele_var in marker_info['alleleVariants']: # iterovanie cez vsetky varianty alel
         allele = allele_var['allele']
         for seq_var in allele_var['sequenceVariants']:
             sequence = seq_var['sequence']
-            count = seq_var['count']
-            frequency = seq_var['frequency']
+            #count = seq_var['count']
+            #frequency = seq_var['frequency']
 
             if allele.is_integer():
                 sequence = to_bracket_notation(seq_var['sequence'], str_length)
@@ -52,6 +52,8 @@ for marker, marker_info in data['markers'].items(): # iterovanie cez vsetky mark
                 for flank_var in seq_var['flankingRegionsVariants']:
                     before = flank_var['before']
                     after = flank_var['after']
+                    count = flank_var['count']
+                    frequency = flank_var['frequency']
                     rows.append([marker, allele, sequence, "", count, frequency, before, after])
             else: # ak neexistuju, bunky ostanu prazdne
                 rows.append([marker, allele, sequence, "", count, frequency, "", ""])
