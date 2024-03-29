@@ -45,7 +45,7 @@ for marker, marker_info in data['markers'].items(): # iterovanie cez vsetky mark
             #count = seq_var['count']
             #frequency = seq_var['frequency']
 
-            if allele.is_integer():
+            if allele.is_integer(): # TODO aj pre necele cisla
                 sequence = to_bracket_notation(seq_var['sequence'], str_length)
             
             if seq_var['flankingRegionsVariants']: # ak existuju flanking region varianty, kazdy bude mat vlastny riadok
