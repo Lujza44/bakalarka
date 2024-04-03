@@ -72,7 +72,14 @@ for allele_variant in marker['alleleVariants']:
 
 
 # repair wrong both flanking regions (D19S433 only)
-                        
+marker = data["markers"].get(wrong_both)
+for allele_variant in marker['alleleVariants']:
+    if allele_variant['allele'] > 0.0:
+        for seq_variant in allele_variant['sequenceVariants']:
+            last_18_letters = seq_variant['sequence'][-18:]
+            seq_variant['sequence'] = seq_variant['sequence'][:-18]    
+            for flank_var in seq_variant['flankingRegionsVariants']:
+                flank_var['after'] = last_18_letters + flank_var['after']
 
 with open(json_file_path, 'w') as file:
     json.dump(data, file, indent=4)
