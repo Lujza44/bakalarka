@@ -2171,13 +2171,13 @@
                     "allele": 11.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 5,
                             "frequency": 0.007,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 4,
                                     "frequency": 0.0095
                                 }
@@ -2189,13 +2189,13 @@
                     "allele": 12.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 60,
                             "frequency": 0.0843,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 37,
                                     "frequency": 0.0881
                                 }
@@ -2207,13 +2207,13 @@
                     "allele": 12.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 1,
                             "frequency": 0.0014,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -2225,13 +2225,13 @@
                     "allele": 13.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 187,
                             "frequency": 0.2626,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 105,
                                     "frequency": 0.25
                                 }
@@ -2243,20 +2243,20 @@
                     "allele": 13.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 17,
                             "frequency": 0.0239,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 11,
                                     "frequency": 0.0262
                                 }
                             ]
                         },
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGGAAGAAAGAGAG",
                             "count": 1,
                             "frequency": 0.0014,
                             "flankingRegionsVariants": []
@@ -2267,19 +2267,19 @@
                     "allele": 14.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 223,
                             "frequency": 0.3132,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCCATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 2,
                                     "frequency": 0.0048
                                 },
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 135,
                                     "frequency": 0.3214
                                 }
@@ -2291,13 +2291,13 @@
                     "allele": 14.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 19,
                             "frequency": 0.0267,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 13,
                                     "frequency": 0.031
                                 }
@@ -2309,13 +2309,13 @@
                     "allele": 15.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 124,
                             "frequency": 0.1742,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 70,
                                     "frequency": 0.1667
                                 }
@@ -2327,13 +2327,13 @@
                     "allele": 15.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 17,
                             "frequency": 0.0239,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 13,
                                     "frequency": 0.031
                                 }
@@ -2345,13 +2345,13 @@
                     "allele": 16.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 31,
                             "frequency": 0.0435,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 18,
                                     "frequency": 0.0429
                                 }
@@ -2363,13 +2363,13 @@
                     "allele": 16.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 13,
                             "frequency": 0.0183,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 4,
                                     "frequency": 0.0095
                                 }
@@ -2381,13 +2381,13 @@
                     "allele": 17.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 1,
                             "frequency": 0.0014,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -2399,13 +2399,13 @@
                     "allele": 17.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
+                            "sequence": "AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAGAGAGGAAGAAAGAGAG",
                             "count": 7,
                             "frequency": 0.0098,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTG",
-                                    "after": "AAGGAAGGAGAGAGGAAGAAAGAGAGAAGATTTTTATT",
+                                    "after": "AAGATTTTTATT",
                                     "count": 4,
                                     "frequency": 0.0095
                                 }
@@ -6783,24 +6783,24 @@
                     "allele": 10.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 94,
                             "frequency": 0.132,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATATCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCACAA",
                                     "count": 2,
                                     "frequency": 0.0048
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 63,
                                     "frequency": 0.15
@@ -6813,24 +6813,24 @@
                     "allele": 11.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 145,
                             "frequency": 0.2037,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATATCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 2,
                                     "frequency": 0.0048
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 52,
                                     "frequency": 0.1238
@@ -6843,24 +6843,24 @@
                     "allele": 12.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 112,
                             "frequency": 0.1573,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 4,
                                     "frequency": 0.0095
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 38,
                                     "frequency": 0.0905
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAGACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
@@ -6873,18 +6873,18 @@
                     "allele": 13.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 98,
                             "frequency": 0.1376,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 36,
                                     "frequency": 0.0857
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAGACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
@@ -6897,12 +6897,12 @@
                     "allele": 14.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 27,
                             "frequency": 0.0379,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 13,
                                     "frequency": 0.031
@@ -6915,12 +6915,12 @@
                     "allele": 15.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 9,
                             "frequency": 0.0126,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 12,
                                     "frequency": 0.0286
@@ -6933,7 +6933,7 @@
                     "allele": 16.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 2,
                             "frequency": 0.0028,
                             "flankingRegionsVariants": []
@@ -6944,12 +6944,12 @@
                     "allele": 7.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 4,
                             "frequency": 0.0056,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 12,
                                     "frequency": 0.0286
@@ -6962,12 +6962,12 @@
                     "allele": 8.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 7,
                             "frequency": 0.0098,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 8,
                                     "frequency": 0.019
@@ -6980,18 +6980,18 @@
                     "allele": 9.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "AAAAGAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
+                            "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                             "count": 166,
                             "frequency": 0.2331,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAA",
+                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 99,
                                     "frequency": 0.2357
