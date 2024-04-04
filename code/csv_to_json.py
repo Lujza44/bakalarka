@@ -1,8 +1,7 @@
 import pandas as pd
 import json
 
-# funkcia, ktora transformuje data z .csv formatu do .json formatu
-def transform_to_json(data):
+def transform_csv_to_json(data):
     json_structure = {"markers": {}}
     
     for _, row in data.iterrows(): # iteracia vsetkymi riadkami .csv suboru
@@ -60,13 +59,11 @@ def transform_to_json(data):
     
     return json_structure
 
-
-
 csv_file_path = 'data/sql_fin_data.csv'
-data = pd.read_csv(csv_file_path) # data z .csv
+data = pd.read_csv(csv_file_path)
 
-json_data = transform_to_json(data) # .csv -> .json
+json_data = transform_csv_to_json(data)
 
 json_file_path = 'data/transformed_data.json'
 with open(json_file_path, 'w') as f:
-    json.dump(json_data, f, indent=4) # ulozenie dat do .json suboru
+    json.dump(json_data, f, indent=4)
