@@ -6,8 +6,8 @@
                 "STRsize": 4,
                 "allele": 13,
                 "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
-                "before": "CAACCTGAGTCTGCCAAGGACTAGCAGGTTGCTAACCACCCTGTGTCTCAGTTTTCCTACCTGTAAAATGAAGATATTAACAGTAACTGCCTTCATAGATAGAAGATAGATAGATT",
-                "after": "AGGAAGTACTTAGAACAGGGTCTGACACAGGAAATGCTGTCCAAGTGTGCACCAGGAGATAGTATCTGAGAAGGCTCAGTCTGGCACCATGTGGGTTGGG"
+                "before": "AAGATAGATAGATT",
+                "after": "AGGAAG"
             },
             "alleleVariants": [
                 {
@@ -198,8 +198,8 @@
                 "STRsize": 4,
                 "allele": 13,
                 "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
-                "before": "ATTACCAAAGCATGAACAATCAGTAAAAAGCAAACCTGAGCATTAGCCCCAGGACCAATCTGGTCACAAACATATTAATGAATTGAACAAATGAGTGAGT",
-                "after": "ATGAAGACAATACAACCAGAGTTGTTCCTTTAATAACAAGACAAGGGAAAAAGAGAACTGTCAGAATAAGTGTTAATTATAATATCCAGGGGTGGGATAC"
+                "before": "TTGAACAAATGAGTGAGT",
+                "after": "ATGAAGACAATACAACCAGAGTT"
             },
             "alleleVariants": [
                 {
@@ -407,8 +407,8 @@
                 "STRsize": 4,
                 "allele": 19,
                 "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT",
-                "before": "GGAAGAAAAGAGAATGATATCAGGGAAGATGAAAAAAGAGACTGTATTAGTAAGGCTTCTCCAGAGAGAAAGAATCAACAGGATCAATGGATGCATAGGT",
-                "after": "GAGAGGGGATTTATTAGAGGAATTAGCTCAAGTGATATGGAGGCTGAAAAATCTCATGACAGTCCATCTGCAAGCTGGAGACCCAGGGACACTAGGAGCA"
+                "before": "CAGAGAGAAAGAATCAACAGGATCAATGGATGCATAGGT",
+                "after": "GAGAGGGGATTTATTAGAGGAATTAGCTCAAGTGATATGGAGGCTGAAAAATCTCATGACAGTCCATCTGCAAGCTGGAGACCCAGGGACACTA"
             },
             "alleleVariants": [
                 {
@@ -1173,8 +1173,8 @@
                 "STRsize": 4,
                 "allele": 11,
                 "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
-                "before": "CAGAAGTCTGGGATGTGGAGGAGAGTTCATTTCTTTAGTGGGCATCCGTGACTCTCTGGACTCTGACCCATCTAACGCCTATCTGTATTTACAAATACAT",
-                "after": "AATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGGCTGCCTATGGCTCAACCCAAGTTGAAGGAGGAGATTTGACCAACAATTCAAGCTCTCTGAATATGTTTTGAAAATAATGTA"
+                "before": "TCTGACCCATCTAACGCCTATCTGTATTTACAAATACAT",
+                "after": "AATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG"
             },
             "alleleVariants": [
                 {
@@ -1479,8 +1479,8 @@
                 "STRsize": 4,
                 "allele": 11,
                 "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
-                "before": "CGTTGTGCACAAATCTAAATGCAGAAAAGCACTGAAAGAAGAATCCAGAAAACCACAGTTCCCATTTTTATATGGGAGCAAACAAAGGCAGATCCCAAGCTCTTCCTCTTCCCTAGATCAATACAGACAGACAGACAGGTG",
-                "after": "TCATTGAAAGACAAAACAGAGATGGATGATAGATACATGCTTACAGATGCACACACAAACGCTAAATGGTATAAAAATGGAATCACTCTGTAGGCTGTTT"
+                "before": "TCCTCTTCCCTAGATCAATACAGACAGACAGACAGGTG",
+                "after": "TCATTGAAAGACAAAACAGAGATGGATGATAGATAC"
             },
             "alleleVariants": [
                 {
@@ -1684,7 +1684,10 @@
             ]
         },
         "D17S1301": {
-            "referenceAllele": {},
+            "referenceAllele": {
+                "before": "",
+                "after": ""
+            },
             "alleleVariants": [
                 {
                     "allele": 0.0,
@@ -1875,8 +1878,8 @@
                 "STRsize": 4,
                 "allele": 18,
                 "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
-                "before": "TGAGGCAGGAGGAGTTCTTGAGCCCAGAAGGTTAAGGCTGCAGTGAGCCATGTTCATGCCACTGCACTTCACTCTGAGTGACAAATTGAGACCTTGTCTC",
-                "after": "AAAGAGAGAGGAAAGAAAGAGAAAAAGAAAAGAAATAGTAGCAACTGTTATTGTAAGACATCTCCACACACCAGAGAAGTTAATTTTAATTTTAACATGTTAAGAACAGAGAGAAGCCAA"
+                "before": "GTCTC",
+                "after": "AAAGAGAGAGGAAAGAAAGAGAAAAAGAAAAGAAATAGTAGCAACTGTTATTGTAAGA"
             },
             "alleleVariants": [
                 {
@@ -2152,8 +2155,8 @@
                 "STRsize": 4,
                 "allele": 14,
                 "sequence": "AAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG",
-                "before": "CTGGGGCAGGAAGATCACTTGAGCCCAGGAGGTTGAGGCTGCAAAAAGCTATAATTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTGAAGGAAAG",
-                "after": "AGAGAGGAAGAAAGAGAGAAGATTTTTATTCGGGTAATGGGTGCACCAAAATATCAGAAATCACTGCTAAAGAACTTATTCATGTAACCAACACCACCTG"
+                "before": "TTGTACCACTGCACTCCAGCCTGGGCAACAGAATAAGATTCTGTTGAAGGAAAG",
+                "after": "AGAGAGGAAGAAAGAGAGAAGATTTTTATT"
             },
             "alleleVariants": [
                 {
@@ -2428,8 +2431,8 @@
                 "STRsize": 4,
                 "allele": 17,
                 "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGG",
-                "before": "AGGAGGAGGAGTTGGTCTTGCTGTCTCAGGGGTGGTAGAGATGGAAGAAAATCCCCATATAAGTTCAAGCCTGTGTTGCTCAAGGGTCAACTGTGTGATG",
-                "after": "TGTGTGTGTGTTTAATTGTATGTATATATATTTGGTTCCCTAGTGATTCTATTTCTCTGAAGAATCCTGACTAACACAGGACTGAAGGAGAATTGGGAAA"
+                "before": "",
+                "after": "TGTGTGTGTGTTTAATTGTATGTATATATATTTGGTTCCCTAGTGATTCTATTTCTCTGAA"
             },
             "alleleVariants": [
                 {
@@ -2812,7 +2815,10 @@
             ]
         },
         "D20S482": {
-            "referenceAllele": {},
+            "referenceAllele": {
+                "before": "",
+                "after": ""
+            },
             "alleleVariants": [
                 {
                     "allele": 0.0,
@@ -3007,8 +3013,8 @@
                 "STRsize": 4,
                 "allele": 29,
                 "sequence": "TCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTAT",
-                "before": "CACTGCCAGCTTCCCTGATTCTTCAGCTTGTAGATGGTCTGTTATGGGACTTTTCTCAGTCTCCATAAATATGTGAGTCAATTCCCCAAGTGAATTGCCT",
-                "after": "CTATCTATCTATCGTCTATCTATCCAGTCTATCTACCTCCTATTAGTCTGTCTCTGGAGAACATTGACTAATACAAC"
+                "before": "AAATATGTGAGTCAATTCCCCAAGTGAATTGCCT",
+                "after": "CTATCTATCTATCGTCTATCTAT"
             },
             "alleleVariants": [
                 {
@@ -3630,7 +3636,7 @@
                 "allele": 17,
                 "sequence": "ATTATTATTATTATTATTATTATTATTATTATTATTATTATTACTATTATT",
                 "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
-                "after": "GTTATAAAAATATTGCCAATCATACATTCGCGTGATCACTCACACTGTGCCGGGCACTCTTGAGAGCACTTTACATATATTGTCTCATTTAATTCTCTCA"
+                "after": "GTTATAAAAATATTGCCAAT"
             },
             "alleleVariants": [
                 {
@@ -3827,8 +3833,8 @@
                 "STRsize": 4,
                 "allele": 23,
                 "sequence": "TGCCTGCCTGCCTGCCTGCCTGCCTGCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCGTCCTTCCTTCC",
-                "before": "CTACAGTGACAGCAAAACCCTGAAAATGGCAATTCCTACTGGCCCATAATCCAGCTGTGGGAGGGAGCCAGTGGATTTGGAAACAGAAATGGCTTGGCCT",
-                "after": "CTCCTGCAATCCTTTAACTTACTGAATAACTCATGATTATGGGCCACCTGCAGGTACCATGCTAGGTACTAGGGATGTAGGCATGAACACTGACAAGGGC"
+                "before": "AAATGGCTTGGCCT",
+                "after": "CTC"
             },
             "alleleVariants": [
                 {
@@ -4313,8 +4319,8 @@
                 "STRsize": 4,
                 "allele": 12,
                 "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
-                "before": "TTCTGTTCCTGAGCCCTAATGCACCCAACATTCTAACAAAAGGCTGTAACAAGGGCTACAGGAATCATGAGCCAGGAACTGTGGCTCATCTATGAAAACT",
-                "after": "TATCATAACACCACAGCCACTTAGCTCCAATTTAAAAGATTAATCATAAACATTTGGGAAGGAGAGTGAAGATTTTTGTGATGTTAAATAAGAATGATTA"
+                "before": "CCAGGAACTGTGGCTCATCTATGAAAACT",
+                "after": "TATCATAACACCACAGCCACTTA"
             },
             "alleleVariants": [
                 {
@@ -4584,8 +4590,8 @@
                 "STRsize": 4,
                 "allele": 16,
                 "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
-                "before": "TGCCCACTTCTGCCCAGGGATCTATTTTTCTGTGGTGTGTATTCCCTGTGCCTTTGGGGGCATCTCTTATACTCATGAAATCAACAGAGGCTTGCATGTA",
-                "after": "TGAGACAGGGTCTTGCTCTGTCACCCAGATTGGACTGCAGTGGGGGAATCATAGCTCACTACAGCCTCAAACTCCTGGGCTCAAGCAGTCCTCCTGCCTC"
+                "before": "TTTGGGGGCATCTCTTATACTCATGAAATCAACAGAGGCTTGCATGTA",
+                "after": "TGAGACAGGGTCTTGCTC"
             },
             "alleleVariants": [
                 {
@@ -4889,7 +4895,10 @@
             ]
         },
         "D4S2408": {
-            "referenceAllele": {},
+            "referenceAllele": {
+                "before": "",
+                "after": ""
+            },
             "alleleVariants": [
                 {
                     "allele": 0.0,
@@ -5031,8 +5040,8 @@
                 "STRsize": 4,
                 "allele": 11,
                 "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
-                "before": "AGTGGTGTCCCAGATAATCTGTACTAATAAAAGTATATTTTAATAGCAAGTATGTGACAAGGGTGATTTTCCTCTTTGGTATCCTTATGTAATATTTTGA",
-                "after": "AGAGGTATAAATAAGGATACAGATAAAGATACAAATGTTGTAAACTGTGGCTATGATTGGAATCACTTGGCTAAAAAGCACTAAAGCATTCCTCTGAGAG"
+                "before": "ATTTTGA",
+                "after": "AGAGGTATAAATA"
             },
             "alleleVariants": [
                 {
@@ -5288,7 +5297,10 @@
             ]
         },
         "D6S1043": {
-            "referenceAllele": {},
+            "referenceAllele": {
+                "before": "",
+                "after": ""
+            },
             "alleleVariants": [
                 {
                     "allele": 0.0,
@@ -5577,8 +5589,8 @@
                 "STRsize": 4,
                 "allele": 13,
                 "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
-                "before": "GGGTTTCACCATGTTGGTCAGGCTGACTATGGAGTTATTTTAAGGTTAATATATATAAAGGGTATGATAGAACACTTGTCATAGTTTAGAACGAACTAAC",
-                "after": "GACAGATTGATAGTTTTTTTTAATCTCACTAAATAGTCTATAGTAAACATTTAATTACCAATATTTGGTGCAATTCTGTCAATGAGGATAAATGTGGAAT"
+                "before": "ATAGTTTAGAACGAACTAAC",
+                "after": "GACAGATTGATAGTTTTTTTTAATCTCACTAAATA"
             },
             "alleleVariants": [
                 {
@@ -5824,8 +5836,8 @@
                 "STRsize": 4,
                 "allele": 13,
                 "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
-                "before": "TGGCGCCTTTGCCTGAGTTTTGCTCAGGCCCACTGGGCTCTTTCTGCCCACACGGCCTGGCAACTTATATGTATTTTTGTATTTCATGTGTACATTCGTA",
-                "after": "TTCCCCACAGTGAAAATAATCTACAGGATAGGTAAATAAATTAAGGCATATTCACGCAATGGGATACGATACAGTGATGAAAATGAACTAATTATAGCTACGTGAAACTATA"
+                "before": "",
+                "after": "TTCCC"
             },
             "alleleVariants": [
                 {
@@ -6163,7 +6175,10 @@
             ]
         },
         "D9S1122": {
-            "referenceAllele": {},
+            "referenceAllele": {
+                "before": "",
+                "after": ""
+            },
             "alleleVariants": [
                 {
                     "allele": 0.0,
@@ -6400,8 +6415,8 @@
                 "STRsize": 4,
                 "allele": 22,
                 "sequence": "TTTCTTTCTTTCTTTTTTCTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTCCTTCCTTCC",
-                "before": "CTGCAGGGCATAACATTATCCAAAAGTCAAATGCCCCATAGGTTTTGAACTCACAGATTAAACTGTAACCAAAATAAAATTAGGCATATTTACAAGCTAG",
-                "after": "TTTCTTCCTTTCTTTTTTGCTGGCAATTACAGACAAATCACTCAGCAGCTACTTCAATAACCATATTTTCGATTTCAGACCGTGATAATACCTACAACCG"
+                "before": "GCATATTTACAAGCTAG",
+                "after": "TTTCTTCCTTTCTTTTTTGCTGG"
             },
             "alleleVariants": [
                 {
@@ -6776,7 +6791,7 @@
                 "allele": 13,
                 "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                 "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
-                "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAAAAAAATCGTTATGACCATAGGTTAGGCAAATATTTCTTAGATATCAC"
+                "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA"
             },
             "alleleVariants": [
                 {
@@ -7026,8 +7041,8 @@
                 "STRsize": 5,
                 "allele": 5,
                 "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGA",
-                "before": "AGCTACTCTGGAGGCTGAAACAGGAGAATCACTTGAACCCAGGAGGTGGAGATTGAAGTGAGCCGAGATCACGCCATTGCACTCCAGCCTGGGCGACTGAGCAAGACTCAGTCTC",
-                "after": "AAATTGTAAGGAGTTTTCTCAATTAATAACCCAAATAAGAGAATTCTTTCCATGTATCAATCATGATACTAAGCACTTTACACACATGTATGTTATGTAATCATTATATC"
+                "before": "",
+                "after": "AAATTGTAAGGAGTTTTCT"
             },
             "alleleVariants": [
                 {
@@ -7379,8 +7394,8 @@
                 "STRsize": 4,
                 "allele": 7,
                 "sequence": "AATGAATGAATGAATGAATGAATGAATG",
-                "before": "CTGTGGGCTGAAAAGCTCCCGATTATCCAGCCTGGCCCACACAGTCCCCTGTACACAGGGCTTCCGAGTGCAGGTCACAGGGAACACAGACTCCATGGTG",
-                "after": "AGGGAAATAAGGGAGGAACAGGCCAATGGGAATCACCCCAGAGCCCAGATACCCTTTGAATTTTGCCCCCTATTTGCCCAGGACCCCCCACCATGAGCTGCTGCTAGAGCCTGGGAAGGGCCTTGGGGCTGCCTCCCCAAGCAGGCAGGCTGGTTGGGGTGCTGAC"
+                "before": "TGCAGGTCACAGGGAACACAGACTCCATGGTG",
+                "after": "AGGGAAATAAGG"
             },
             "alleleVariants": [
                 {
@@ -7510,8 +7525,8 @@
                 "STRsize": 4,
                 "allele": 8,
                 "sequence": "AATGAATGAATGAATGAATGAATGAATGAATG",
-                "before": "TTCCCACTGGCCTGTGGGTCCCCCCATAGATCGTAAGCCCAGGAGGAAGGGCTGTGTTTCAGGGCTGTGATCACTAGCACCCAGAACCGTCGACTGGCACAGAACAGGCACTTAGGGAACCCTCACTG",
-                "after": "TTTGGGCAAATAAACGCTGACAAGGACAGAAGGGCCTAGCGGGAAGGGAACAGGAGTAAGACCAGCGCACAGCCCGACTTGTGTTCAGAAGACCTGGGAT"
+                "before": "",
+                "after": "TTTGG"
             },
             "alleleVariants": [
                 {
@@ -7666,8 +7681,8 @@
                 "STRsize": 4,
                 "allele": 17,
                 "sequence": "TCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
-                "before": "CACCTTCCAGAAGAAGAAACAGGTCTAGAGGATCCAAGTTGACTTGGCTGAGATGTGAAAGCCCTAGTGGATGATAAGAATAATCAGTATGTGACTTGGATTGA",
-                "after": "TCCATCTATCCATCCATCCTATGTATTTATCATCTGTCCTATCTCTATCTAACCTATGTATCTATTTATCATCTATCCTGTCTCTATCTATCCTATGTAT"
+                "before": "ATTGA",
+                "after": "TCCATCTATCCATCCATCCTATGTATT"
             },
             "alleleVariants": [
                 {

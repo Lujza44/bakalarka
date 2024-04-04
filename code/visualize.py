@@ -2,7 +2,8 @@ import pandas as pd
 import json
 import re
 
-def to_bracket_notation(sequence, str_length):
+
+def to_bracket_notation(sequence, str_length, allele):
     result = []
     current_str = sequence[:str_length]
     count = 1
@@ -36,40 +37,44 @@ def chromosome_key(chromosome_str):
         return int(match.group())
     return 0  # Default value for strings without numbers
 
-def create_rows():
-    rows = []
-
-    for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromosome_key(x[1]['referenceAllele'].get('chromosome', '0'))): # iterovanie cez vsetky markery v jsne
-        str_length = marker_info['referenceAllele'].get('STRsize', None)
-        if not str_length:  
-            continue  
-        
-        for allele_var in marker_info['alleleVariants']: # iterovanie cez vsetky varianty alel
-            allele = allele_var['allele']
-            for seq_var in allele_var['sequenceVariants']:
-                sequence = seq_var['sequence']
-
-                if allele.is_integer(): # TODO aj pre necele cisla
-                    sequence = to_bracket_notation(seq_var['sequence'], str_length)
-                
-                if seq_var['flankingRegionsVariants']: # ak existuju flanking region varianty, kazdy bude mat vlastny riadok
-                    for flank_var in seq_var['flankingRegionsVariants']:
-                        before = flank_var['before']
-                        after = flank_var['after']
-                        count = flank_var['count']
-                        frequency = flank_var['frequency']
-                        rows.append([marker, allele, sequence, "", count, frequency, before, after])
-                else: # ak neexistuju, bunky ostanu prazdne
-                    rows.append([marker, allele, sequence, "", count, frequency, "", ""])
-        rows.append([])
-        return rows
-
 json_file_path = 'data/transformed_data.json'
-
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 
-df = pd.DataFrame(create_rows(), columns=['Locus', 'Allele', 'Bracketed Repeat Region', 'Flanking Region Variants from GRCh38', 'Counts', 'Frequencies', '5\'-Flanking Region', '3\'-Flanking Region'])
+rows = [[]]
+
+for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromosome_key(x[1]['referenceAllele'].get('chromosome', '0'))): # iterovanie cez vsetky markery v jsne
+    sum_count = 0
+    sum_freq = 0
+
+    str_length = marker_info['referenceAllele'].get('STRsize', None)
+
+    if not str_length:
+        continue
+
+    for allele_var in marker_info['alleleVariants']: # iterovanie cez vsetky varianty alel
+        allele = allele_var['allele']
+        for seq_var in allele_var['sequenceVariants']:
+            sequence = seq_var['sequence']
+
+            if allele.is_integer(): # TODO aj pre necele cisla
+                sequence = to_bracket_notation(seq_var['sequence'], str_length, allele)
+            
+            if seq_var['flankingRegionsVariants']: # ak existuju flanking region varianty, kazdy bude mat vlastny riadok
+                for flank_var in seq_var['flankingRegionsVariants']:
+                    before = flank_var['before']
+                    after = flank_var['after']
+                    count = flank_var['count']
+                    frequency = flank_var['frequency']
+                    sum_count += count
+                    sum_freq += frequency
+                    rows.append([marker, allele, sequence, "", count, frequency, before, after])
+            else: # ak neexistuju, bunky ostanu prazdne
+                rows.append([marker, allele, sequence, "", "", "", "", ""])
+    rows.append(["", "", "", "", sum_count, sum_freq, "", ""])
+    rows.append([])
+
+df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', 'Flanking Region Variants from GRCh38', 'Counts', 'Frequencies', '5\'-Flanking Region', '3\'-Flanking Region'])
 
 csv_file_path = 'data/output_data.csv'
 df.to_csv(csv_file_path, index=False)

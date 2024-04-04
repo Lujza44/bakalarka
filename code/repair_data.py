@@ -93,6 +93,23 @@ def repair_ref_allele():
     ref_allele['chromosome'] = "Chr15"
     ref_allele['STRsize'] = 5
 
+def strip_ref_flanks():
+    for marker, details in data['markers'].items():
+        reference_allele = details.get('referenceAllele', {})
+        ref_before = reference_allele.get('before', '')
+        ref_after = reference_allele.get('after', '')
+
+        allele_variants = details.get('alleleVariants', [])
+        for variant in allele_variants:
+            for sequence_variant in variant.get('sequenceVariants', []):
+                flanking_variants = sequence_variant.get('flankingRegionsVariants', [])
+                if flanking_variants:
+                    flanking_variant = flanking_variants[0]
+                    bef_size = len(flanking_variant.get('before', ''))
+                    aft_size = len(flanking_variant.get('after', ''))
+                    reference_allele['before'] = ref_before[-bef_size:] if bef_size > 0 else ""
+                    reference_allele['after'] = ref_after[:aft_size] if aft_size > 0 else ""
+                    break
 
 json_file_path = 'data/transformed_data.json'
 
@@ -104,6 +121,7 @@ repair_after_flanks()
 repair_before_flanks() # PentaD only
 repair_both_flanks() # D19S433 only # TODO
 repair_ref_allele() # PentaE only
+strip_ref_flanks()
 
 with open(json_file_path, 'w') as file:
     json.dump(data, file, indent=4)
