@@ -31,7 +31,7 @@ def repair_after_flanks():
     for marker_name in wrong_after_flank:
         marker = data["markers"].get(marker_name)
 
-        STRsize = marker["referenceAllele"]["STRsize"]
+        STRsize = marker["STRsize"]
             
         for variant in marker["alleleVariants"]:
             allele_str = str(variant["allele"])
@@ -93,9 +93,25 @@ def repair_ref_allele():
     ref_allele['chromosome'] = "Chr15"
     ref_allele['STRsize'] = 5
 
-def strip_ref_flanks():
+def find_repeats(sequence, repeat_length):
+    if repeat_length == 0: return []
+    repeats = set()
+    for i in range(0, len(sequence), repeat_length):
+        substring = sequence[i:i+repeat_length]
+        if substring not in repeats:
+            repeats.add(substring)
+    return list(repeats)
+
+
+def adjust_ref_allele():
     for marker, details in data['markers'].items():
         reference_allele = details.get('referenceAllele', {})
+        str_size = details.get('STRsize', 4)  # Default to 4 if not specified
+        ref_seq = reference_allele.get('sequence', '')
+
+        repeats = find_repeats(ref_seq, str_size)
+        details['repeats'] = repeats
+
         ref_before = reference_allele.get('before', '')
         ref_after = reference_allele.get('after', '')
 
@@ -121,7 +137,7 @@ repair_after_flanks()
 repair_before_flanks() # PentaD only
 repair_both_flanks() # D19S433 only # TODO
 repair_ref_allele() # PentaE only
-strip_ref_flanks()
+adjust_ref_allele()
 
 with open(json_file_path, 'w') as file:
     json.dump(data, file, indent=4)

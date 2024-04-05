@@ -15,12 +15,12 @@ def transform_csv_to_json(data):
         flank_count = row['flank_count_seq']
         flank_frequency = row['flank_frequency']
 
-
-        
+        # URCENIE STRUKTURY MARKERU V JSNE
         if marker not in json_structure['markers']: # inicializujem marker ak este v strukture nie je
-            #json_structure['markers'][marker] = []
-            #json_structure['markers'][marker] = {"ref_seq": "", "alleles": []}
             json_structure['markers'][marker] = {
+                "chromosome": "",
+                "STRsize": 0,
+                "repeats": [],
                 "referenceAllele": {}, 
                 "alleleVariants": []}
         

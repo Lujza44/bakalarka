@@ -51,22 +51,15 @@ for index, row in df.iterrows():
         
         ref_seq_dict[row.iloc[0].replace(" ", "")] = (chromosome, str_size, number_of_repetitions, ref_seq, ref_before, ref_after)
 
-
-
 # ulozenie dat z ref. databazy do jsnu
-
 with open('data/transformed_data.json', 'r') as json_file:
     data = json.load(json_file)
 
 for key, value in ref_seq_dict.items():
-    chromosome, str_size, allele, sequence, before, after = value # rozbalenie n-tice
-    
-    if key not in data["markers"]: # najdenie alebo inicializacia markru
-        data["markers"][key] = {"referenceAllele": {}, "alleles": []}
-    
+    chromosome, str_size, allele, sequence, before, after = value # rozbalenie n-tice    
+    data["markers"][key]["chromosome"] = chromosome
+    data["markers"][key]["STRsize"] = str_size
     data["markers"][key]["referenceAllele"] = {
-        "chromosome": chromosome,
-        "STRsize": str_size,
         "allele": allele,
         "sequence": sequence,
         "before": before,
