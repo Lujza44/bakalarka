@@ -4,8 +4,7 @@ other_strand = ['D1S1656', 'D2S1338', 'FGA', 'D5S818', 'CSF1PO', 'D7S820', 'vWA'
 wrong_after_flank = ['D13S317', 'D18S51', 'D19S433', 'D21S11']
 wrong_before_flank = ['D1S1656', 'D5S818', 'D7S820', 'PentaD', 'vWA']
 wrong_both = 'D19S433'
-wrong_ref = 'PentaE'
-
+wrong_ref = 'PentaE'  
 
 def complement_dna(s):
     trans_table = str.maketrans('ATCG', 'TAGC')
@@ -101,17 +100,17 @@ def repair_both_flanks():
 def repair_ref_allele():
     marker = data["markers"].get(wrong_ref)
     ref_allele = marker.get('referenceAllele', {})
-    after_sequence = ref_allele.get('after', '')
+    whole_seq = ref_allele.get('before', '')
 
     marker['chromosome'] = "Chr15"
     marker['STRsize'] = 5
 
     sequence_to_find = "TCTTT" * 5
 
-    index = after_sequence.find(sequence_to_find)
+    index = whole_seq.find(sequence_to_find)
 
-    before_part = after_sequence[:index]  # Everything before the sequence
-    after_part = after_sequence[index + len(sequence_to_find):]  # Everything after the sequence
+    before_part = whole_seq[:index]  # Everything before the sequence
+    after_part = whole_seq[index + len(sequence_to_find):]  # Everything after the sequence
 
     ref_allele['sequence'] = sequence_to_find
     ref_allele['before'] = before_part
@@ -165,10 +164,10 @@ repair_after_flanks()
 repair_before_flanks() 
 
 # oprava vadneho lokusu D19
-#repair_both_flanks() # TODO
+repair_both_flanks() # TODO
 
 # oprava vadnej ref. alely lokusu Penta E
-#repair_ref_allele() # TODO
+repair_ref_allele()
 
 # osekanie flanking oblasti vsetkych ref. alel, ponechanie iba casti, ktore boli citane aj v CZ databaze
 adjust_ref_allele()
