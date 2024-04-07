@@ -102,7 +102,6 @@ def find_repeats(sequence, repeat_length):
             repeats.add(substring)
     return list(repeats)
 
-
 def adjust_ref_allele():
     for marker, details in data['markers'].items():
         reference_allele = details.get('referenceAllele', {})
@@ -138,6 +137,9 @@ repair_before_flanks() # PentaD only
 repair_both_flanks() # D19S433 only # TODO
 repair_ref_allele() # PentaE only
 adjust_ref_allele()
+
+d21 = data['markers'].get("D21S11")
+d21['repeats'] = ["TCTA", "TCTG"]
 
 with open(json_file_path, 'w') as file:
     json.dump(data, file, indent=4)

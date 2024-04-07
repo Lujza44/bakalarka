@@ -411,8 +411,8 @@
             "chromosome": "Chr12",
             "STRsize": 4,
             "repeats": [
-                "AGAT",
-                "AGAC"
+                "AGAC",
+                "AGAT"
             ],
             "referenceAllele": {
                 "allele": 19,
@@ -2175,8 +2175,8 @@
             "chromosome": "Chr19",
             "STRsize": 4,
             "repeats": [
-                "TAGG",
-                "AAGG"
+                "AAGG",
+                "TAGG"
             ],
             "referenceAllele": {
                 "allele": 14,
@@ -2455,8 +2455,8 @@
             "chromosome": "Chr1",
             "STRsize": 4,
             "repeats": [
-                "TAGG",
-                "TAGA"
+                "TAGA",
+                "TAGG"
             ],
             "referenceAllele": {
                 "allele": 17,
@@ -3044,13 +3044,8 @@
             "chromosome": "Chr21",
             "STRsize": 4,
             "repeats": [
-                "ATAT",
-                "TATC",
-                "ATCT",
                 "TCTA",
-                "TCTG",
-                "ATCC",
-                "CTAT"
+                "TCTG"
             ],
             "referenceAllele": {
                 "allele": 29,
@@ -3675,8 +3670,8 @@
             "chromosome": "Chr22",
             "STRsize": 3,
             "repeats": [
-                "ATT",
-                "ACT"
+                "ACT",
+                "ATT"
             ],
             "referenceAllele": {
                 "allele": 17,
@@ -3877,9 +3872,9 @@
             "chromosome": "Chr2",
             "STRsize": 4,
             "repeats": [
-                "TGCC",
+                "TTCC",
                 "GTCC",
-                "TTCC"
+                "TGCC"
             ],
             "referenceAllele": {
                 "allele": 23,
@@ -6490,12 +6485,12 @@
             "chromosome": "Chr4",
             "STRsize": 4,
             "repeats": [
-                "TTCT",
+                "TTTT",
                 "CTCC",
                 "CTTT",
                 "TTTC",
                 "TTCC",
-                "TTTT"
+                "TTCT"
             ],
             "referenceAllele": {
                 "allele": 22,
