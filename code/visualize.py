@@ -42,8 +42,8 @@ def chromosome_key(chromosome_str):
         return int(match.group())
     return 0  # Default value for strings without numbers
 
-#json_file_path = 'data/transformed_data.json'
-json_file_path = 'data/repaired.json'
+json_file_path = 'data/transformed_data.json'
+#json_file_path = 'data/repaired.json'
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 

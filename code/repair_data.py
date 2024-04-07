@@ -1,13 +1,11 @@
 import json
 
 other_strand = ['D1S1656', 'D2S1338', 'FGA', 'D5S818', 'CSF1PO', 'D7S820', 'vWA', 'PentaE', 'D19S433']
-#wrong_after_flank = ['D1S1656', 'D5S818', 'D7S820', 'vWA', 'D13S317', 'D18S51', 'D21S11']
 wrong_after_flank = ['D13S317', 'D18S51', 'D19S433', 'D21S11']
-#wrong_before_flank = 'PentaD'
 wrong_before_flank = ['D1S1656', 'D5S818', 'D7S820', 'PentaD', 'vWA']
-
 wrong_both = 'D19S433'
 wrong_ref = 'PentaE'
+
 
 def complement_dna(s):
     trans_table = str.maketrans('ATCG', 'TAGC')
@@ -15,21 +13,7 @@ def complement_dna(s):
 
 def reverse_string(s):
     return s[::-1]
-'''
-def unify_strand():
-    for marker_name in other_strand:
-        marker = data["markers"].get(marker_name)
 
-        ref_allele = marker['referenceAllele']
-    
-        seq = ref_allele['sequence']
-        bef = ref_allele['before']
-        aft = ref_allele['after']
-
-        ref_allele['sequence'] = reverse_string(complement_dna(seq))
-        ref_allele['before'] = reverse_string(complement_dna(aft))
-        ref_allele['after'] = reverse_string(complement_dna(bef))
-'''
 def unify_strand():
     for marker_name in other_strand:
         marker = data["markers"].get(marker_name)
@@ -74,17 +58,6 @@ def repair_after_flanks():
                             
                         for flankingVariant in sequenceVariant["flankingRegionsVariants"]:
                             flankingVariant["after"] = remaining_sequence + flankingVariant["after"]
-'''
-def repair_before_flanks():
-    marker = data["markers"].get(wrong_before_flank)
-    for allele_variant in marker['alleleVariants']:
-        if allele_variant['allele'] > 0.0:
-            for seq_variant in allele_variant['sequenceVariants']:
-                first_5_letters = seq_variant['sequence'][:5]
-                seq_variant['sequence'] = seq_variant['sequence'][5:]
-                for flank_var in seq_variant['flankingRegionsVariants']:
-                    flank_var['before'] += first_5_letters
-'''
 
 def repair_before_flanks():
     for marker_name in wrong_before_flank:
@@ -114,7 +87,6 @@ def repair_before_flanks():
                             
                         for flankingVariant in sequenceVariant["flankingRegionsVariants"]:
                             flankingVariant["before"] += to_move_sequence
-
 
 def repair_both_flanks():
     marker = data["markers"].get(wrong_both)
@@ -183,22 +155,27 @@ json_file_path = 'data/transformed_data.json'
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 
+# zjednotenie strandov vsetkych alel. variant, ktore su z opacneho
 unify_strand()
+
+# oprava 3' flanking oblasti, ktore boli nespravne zaradene k rep. oblasti
 repair_after_flanks()
+
+# oprava 5' flanking oblasti, ktore boli nespravne zaradene k rep. oblasti
 repair_before_flanks() 
-#repair_both_flanks() # D19S433 only # TODO
-#repair_ref_allele() # PentaE only
+
+# oprava vadneho lokusu D19
+#repair_both_flanks() # TODO
+
+# oprava vadnej ref. alely lokusu Penta E
+#repair_ref_allele() # TODO
+
+# osekanie flanking oblasti vsetkych ref. alel, ponechanie iba casti, ktore boli citane aj v CZ databaze
 adjust_ref_allele()
 
-#d21 = data['markers'].get("D21S11")
-#d21['repeats'] = ["TCTA", "TCTG"]
+# oprava nadbytocnych referencnych repeats lokusu D21
+d21 = data['markers'].get("D21S11")
+d21['repeats'] = ["TCTA", "TCTG"]
 
-
-## TOTO JE TEMP
-with open('data/repaired.json', 'w') as file:
+with open(json_file_path, 'w') as file:
     json.dump(data, file, indent=4)
-
-
-## TOTO POTOM ODKOMENTOVAT
-#with open(json_file_path, 'w') as file:
-#    json.dump(data, file, indent=4)
