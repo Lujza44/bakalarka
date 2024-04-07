@@ -2175,8 +2175,8 @@
             "chromosome": "Chr19",
             "STRsize": 4,
             "repeats": [
-                "AAGG",
-                "TAGG"
+                "TAGG",
+                "AAGG"
             ],
             "referenceAllele": {
                 "allele": 14,
@@ -3670,8 +3670,8 @@
             "chromosome": "Chr22",
             "STRsize": 3,
             "repeats": [
-                "ACT",
-                "ATT"
+                "ATT",
+                "ACT"
             ],
             "referenceAllele": {
                 "allele": 17,
@@ -3872,9 +3872,9 @@
             "chromosome": "Chr2",
             "STRsize": 4,
             "repeats": [
-                "TTCC",
+                "TGCC",
                 "GTCC",
-                "TGCC"
+                "TTCC"
             ],
             "referenceAllele": {
                 "allele": 23,
@@ -6485,12 +6485,12 @@
             "chromosome": "Chr4",
             "STRsize": 4,
             "repeats": [
+                "CTTT",
+                "TTCT",
+                "TTTC",
                 "TTTT",
                 "CTCC",
-                "CTTT",
-                "TTTC",
-                "TTCC",
-                "TTCT"
+                "TTCC"
             ],
             "referenceAllele": {
                 "allele": 22,
@@ -7119,16 +7119,16 @@
             ]
         },
         "PentaE": {
-            "chromosome": "",
-            "STRsize": 0,
-            "repeats": [],
+            "chromosome": "Chr15",
+            "STRsize": 5,
+            "repeats": [
+                "AAAGA"
+            ],
             "referenceAllele": {
                 "allele": 5,
                 "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGA",
                 "before": "",
-                "after": "AAATTGTAAGGAGTTTTCT",
-                "chromosome": "Chr15",
-                "STRsize": 5
+                "after": "AAATTGTAAGGAGTTTTCT"
             },
             "alleleVariants": [
                 {

@@ -37,8 +37,6 @@ def to_bracket_notation(dna_sequence, substring_size, repeats):
     return result.strip()
 
 def chromosome_key(chromosome_str):
-    """Extracts numerical part from chromosome string for sorting."""
-    # This regular expression matches the first sequence of digits in the string
     match = re.search(r'\d+', chromosome_str)
     if match:
         return int(match.group())
@@ -50,7 +48,7 @@ with open(json_file_path, 'r') as file:
 
 rows = [[]]
 
-for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromosome_key(x[1]['referenceAllele'].get('chromosome', '0'))): # iterovanie cez vsetky markery v jsne
+for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromosome_key(x[1].get('chromosome', '0'))):
     sum_count = 0
     sum_freq = 0
 
@@ -60,7 +58,7 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromos
     if not str_length or not repeats:
         continue
 
-    for allele_var in marker_info['alleleVariants']: # iterovanie cez vsetky varianty alel
+    for allele_var in sorted(marker_info['alleleVariants'], key=lambda x: x['allele']): # iterovanie cez vsetky varianty alel
         allele = allele_var['allele']
         for seq_var in allele_var['sequenceVariants']:
             sequence = seq_var['sequence']

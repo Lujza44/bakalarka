@@ -80,6 +80,9 @@ def repair_ref_allele():
     ref_allele = marker.get('referenceAllele', {})
     after_sequence = ref_allele.get('after', '')
 
+    marker['chromosome'] = "Chr15"
+    marker['STRsize'] = 5
+    
     sequence_to_find = "AAAGA" * 5  # This represents AAAGA repeated 5 times
 
     index = after_sequence.find(sequence_to_find)
@@ -90,8 +93,7 @@ def repair_ref_allele():
     ref_allele['sequence'] = sequence_to_find
     ref_allele['before'] = before_part
     ref_allele['after'] = after_part
-    ref_allele['chromosome'] = "Chr15"
-    ref_allele['STRsize'] = 5
+
 
 def find_repeats(sequence, repeat_length):
     if repeat_length == 0: return []
