@@ -42,12 +42,14 @@ def chromosome_key(chromosome_str):
         return int(match.group())
     return 0  # Default value for strings without numbers
 
-json_file_path = 'data/transformed_data.json'
+#json_file_path = 'data/transformed_data.json'
+json_file_path = 'data/repaired.json'
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 
 rows = [[]]
 
+# iterovanie cez vsetky markery ZORADENE podla 'chromosome'
 for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromosome_key(x[1].get('chromosome', '0'))):
     sum_count = 0
     sum_freq = 0
@@ -58,7 +60,8 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromos
     if not str_length or not repeats:
         continue
 
-    for allele_var in sorted(marker_info['alleleVariants'], key=lambda x: x['allele']): # iterovanie cez vsetky varianty alel
+    # iterovanie cez vsetky varianty alel ZORADENE podla 'allele'
+    for allele_var in sorted(marker_info['alleleVariants'], key=lambda x: x['allele']): 
         allele = allele_var['allele']
         for seq_var in allele_var['sequenceVariants']:
             sequence = seq_var['sequence']

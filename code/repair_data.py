@@ -1,8 +1,11 @@
 import json
 
-wrong_strand = ['D1S1656', 'D2S1338', 'FGA', 'D5S818', 'CSF1PO', 'D7S820', 'vWA', 'PentaE', 'D19S433']
-wrong_after_flank = ['D1S1656', 'D5S818', 'D7S820', 'vWA', 'D13S317', 'D18S51', 'D21S11']
-wrong_before_flank = 'PentaD'
+other_strand = ['D1S1656', 'D2S1338', 'FGA', 'D5S818', 'CSF1PO', 'D7S820', 'vWA', 'PentaE', 'D19S433']
+#wrong_after_flank = ['D1S1656', 'D5S818', 'D7S820', 'vWA', 'D13S317', 'D18S51', 'D21S11']
+wrong_after_flank = ['D13S317', 'D18S51', 'D19S433', 'D21S11']
+#wrong_before_flank = 'PentaD'
+wrong_before_flank = ['D1S1656', 'D5S818', 'D7S820', 'PentaD', 'vWA']
+
 wrong_both = 'D19S433'
 wrong_ref = 'PentaE'
 
@@ -12,9 +15,9 @@ def complement_dna(s):
 
 def reverse_string(s):
     return s[::-1]
-
+'''
 def unify_strand():
-    for marker_name in wrong_strand:
+    for marker_name in other_strand:
         marker = data["markers"].get(marker_name)
 
         ref_allele = marker['referenceAllele']
@@ -26,6 +29,23 @@ def unify_strand():
         ref_allele['sequence'] = reverse_string(complement_dna(seq))
         ref_allele['before'] = reverse_string(complement_dna(aft))
         ref_allele['after'] = reverse_string(complement_dna(bef))
+'''
+def unify_strand():
+    for marker_name in other_strand:
+        marker = data["markers"].get(marker_name)
+        for allele_var in marker['alleleVariants']:
+            for seq_var in allele_var['sequenceVariants']:
+                # reverse sequence
+                seq = seq_var['sequence']
+                seq_var['sequence'] = reverse_string(complement_dna(seq))
+                if seq_var['flankingRegionsVariants']:
+                    for flank_var in seq_var['flankingRegionsVariants']:
+                        # reverse before
+                        # reverse after
+                        bef = flank_var['before']
+                        aft = flank_var['after']
+                        flank_var['before'] = reverse_string(complement_dna(aft))
+                        flank_var['after'] = reverse_string(complement_dna(bef))
 
 def repair_after_flanks():
     for marker_name in wrong_after_flank:
@@ -38,7 +58,7 @@ def repair_after_flanks():
             if '.' in allele_str:
                 integer_part, decimal_part = allele_str.split('.')
                 integer_part = int(integer_part)
-                decimal_part = int(decimal_part[0])  # Assuming only one digit after decimal
+                decimal_part = int(decimal_part[0])
             else:
                 integer_part = int(allele_str)
                 decimal_part = 0
@@ -49,12 +69,12 @@ def repair_after_flanks():
                 for sequenceVariant in variant["sequenceVariants"]:
                     sequence = sequenceVariant["sequence"]
                     if len(sequence) > theSize:
-                        remaining_sequence = sequence[theSize:]
-                        sequenceVariant["sequence"] = sequence[:int(theSize)]
+                        remaining_sequence = sequence[theSize:] # skipnem theSize pismen
+                        sequenceVariant["sequence"] = sequence[:int(theSize)] # v sequence nechavam prvych theSize pismen
                             
                         for flankingVariant in sequenceVariant["flankingRegionsVariants"]:
                             flankingVariant["after"] = remaining_sequence + flankingVariant["after"]
-
+'''
 def repair_before_flanks():
     marker = data["markers"].get(wrong_before_flank)
     for allele_variant in marker['alleleVariants']:
@@ -64,6 +84,37 @@ def repair_before_flanks():
                 seq_variant['sequence'] = seq_variant['sequence'][5:]
                 for flank_var in seq_variant['flankingRegionsVariants']:
                     flank_var['before'] += first_5_letters
+'''
+
+def repair_before_flanks():
+    for marker_name in wrong_before_flank:
+        marker = data["markers"].get(marker_name)
+
+        STRsize = marker["STRsize"]
+            
+        for variant in marker["alleleVariants"]:
+            allele_str = str(variant["allele"])
+            if '.' in allele_str:
+                integer_part, decimal_part = allele_str.split('.')
+                integer_part = int(integer_part)
+                decimal_part = int(decimal_part[0])
+            else:
+                integer_part = int(allele_str)
+                decimal_part = 0
+
+            if integer_part > 0:
+                seq_size = (integer_part * STRsize) + decimal_part
+                
+                for sequenceVariant in variant["sequenceVariants"]:
+                    sequence = sequenceVariant["sequence"]
+                    if len(sequence) > seq_size:
+                        to_move = len(sequence) - seq_size
+                        to_move_sequence = sequence[:to_move] # vezmem prvych theSize pismen, chcem ich presunut
+                        sequenceVariant["sequence"] = sequence[to_move:]
+                            
+                        for flankingVariant in sequenceVariant["flankingRegionsVariants"]:
+                            flankingVariant["before"] += to_move_sequence
+
 
 def repair_both_flanks():
     marker = data["markers"].get(wrong_both)
@@ -82,8 +133,8 @@ def repair_ref_allele():
 
     marker['chromosome'] = "Chr15"
     marker['STRsize'] = 5
-    
-    sequence_to_find = "AAAGA" * 5  # This represents AAAGA repeated 5 times
+
+    sequence_to_find = "TCTTT" * 5
 
     index = after_sequence.find(sequence_to_find)
 
@@ -93,7 +144,6 @@ def repair_ref_allele():
     ref_allele['sequence'] = sequence_to_find
     ref_allele['before'] = before_part
     ref_allele['after'] = after_part
-
 
 def find_repeats(sequence, repeat_length):
     if repeat_length == 0: return []
@@ -135,13 +185,20 @@ with open(json_file_path, 'r') as file:
 
 unify_strand()
 repair_after_flanks()
-repair_before_flanks() # PentaD only
-repair_both_flanks() # D19S433 only # TODO
-repair_ref_allele() # PentaE only
+repair_before_flanks() 
+#repair_both_flanks() # D19S433 only # TODO
+#repair_ref_allele() # PentaE only
 adjust_ref_allele()
 
-d21 = data['markers'].get("D21S11")
-d21['repeats'] = ["TCTA", "TCTG"]
+#d21 = data['markers'].get("D21S11")
+#d21['repeats'] = ["TCTA", "TCTG"]
 
-with open(json_file_path, 'w') as file:
+
+## TOTO JE TEMP
+with open('data/repaired.json', 'w') as file:
     json.dump(data, file, indent=4)
+
+
+## TOTO POTOM ODKOMENTOVAT
+#with open(json_file_path, 'w') as file:
+#    json.dump(data, file, indent=4)
