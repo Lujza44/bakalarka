@@ -3,6 +3,7 @@
         "CSF1PO": {
             "chromosome": "Chr5",
             "STRsize": 4,
+            "startCoordinate": 150076324,
             "repeats": [
                 "ATCT"
             ],
@@ -198,6 +199,7 @@
         "D10S1248": {
             "chromosome": "Chr10",
             "STRsize": 4,
+            "startCoordinate": 129294244,
             "repeats": [
                 "GGAA"
             ],
@@ -410,9 +412,10 @@
         "D12S391": {
             "chromosome": "Chr12",
             "STRsize": 4,
+            "startCoordinate": 12297020,
             "repeats": [
-                "AGAC",
-                "AGAT"
+                "AGAT",
+                "AGAC"
             ],
             "referenceAllele": {
                 "allele": 19,
@@ -1180,6 +1183,7 @@
         "D13S317": {
             "chromosome": "Chr13",
             "STRsize": 4,
+            "startCoordinate": 82148025,
             "repeats": [
                 "TATC"
             ],
@@ -1489,6 +1493,7 @@
         "D16S539": {
             "chromosome": "Chr16",
             "STRsize": 4,
+            "startCoordinate": 86352702,
             "repeats": [
                 "GATA"
             ],
@@ -1702,6 +1707,7 @@
         "D17S1301": {
             "chromosome": "",
             "STRsize": 0,
+            "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
@@ -1894,6 +1900,7 @@
         "D18S51": {
             "chromosome": "Chr18",
             "STRsize": 4,
+            "startCoordinate": 63281667,
             "repeats": [
                 "AGAA"
             ],
@@ -2174,9 +2181,10 @@
         "D19S433": {
             "chromosome": "Chr19",
             "STRsize": 4,
+            "startCoordinate": 29926235,
             "repeats": [
-                "CCTT",
-                "CCTA"
+                "CCTA",
+                "CCTT"
             ],
             "referenceAllele": {
                 "allele": 14,
@@ -2454,9 +2462,10 @@
         "D1S1656": {
             "chromosome": "Chr1",
             "STRsize": 4,
+            "startCoordinate": 230769616,
             "repeats": [
-                "CCTA",
-                "TCTA"
+                "TCTA",
+                "CCTA"
             ],
             "referenceAllele": {
                 "allele": 17,
@@ -2847,6 +2856,7 @@
         "D20S482": {
             "chromosome": "",
             "STRsize": 0,
+            "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
@@ -3043,6 +3053,7 @@
         "D21S11": {
             "chromosome": "Chr21",
             "STRsize": 4,
+            "startCoordinate": 19181973,
             "repeats": [
                 "TCTA",
                 "TCTG"
@@ -3669,6 +3680,7 @@
         "D22S1045": {
             "chromosome": "Chr22",
             "STRsize": 3,
+            "startCoordinate": 37140287,
             "repeats": [
                 "ATT",
                 "ACT"
@@ -3707,7 +3719,7 @@
                             "frequency": 0.0084,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 2,
                                     "frequency": 0.0048
@@ -3725,7 +3737,7 @@
                             "frequency": 0.2163,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 106,
                                     "frequency": 0.2524
@@ -3743,13 +3755,13 @@
                             "frequency": 0.0112,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CATTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 1,
                                     "frequency": 0.0024
                                 },
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 5,
                                     "frequency": 0.0119
@@ -3767,7 +3779,7 @@
                             "frequency": 0.0056,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 1,
                                     "frequency": 0.0024
@@ -3785,7 +3797,7 @@
                             "frequency": 0.0295,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 8,
                                     "frequency": 0.019
@@ -3803,7 +3815,7 @@
                             "frequency": 0.3511,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 135,
                                     "frequency": 0.3214
@@ -3821,7 +3833,7 @@
                             "frequency": 0.2949,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 133,
                                     "frequency": 0.3167
@@ -3839,7 +3851,7 @@
                             "frequency": 0.0632,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 24,
                                     "frequency": 0.0571
@@ -3857,7 +3869,7 @@
                             "frequency": 0.0056,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "CGTTGGAATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
+                                    "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                                     "after": "GTTATAAAAATATTGCCAAT",
                                     "count": 3,
                                     "frequency": 0.0071
@@ -3871,9 +3883,10 @@
         "D2S1338": {
             "chromosome": "Chr2",
             "STRsize": 4,
+            "startCoordinate": 218014859,
             "repeats": [
-                "GGCA",
                 "GGAA",
+                "GGCA",
                 "GGAC"
             ],
             "referenceAllele": {
@@ -4362,6 +4375,7 @@
         "D2S441": {
             "chromosome": "Chr2",
             "STRsize": 4,
+            "startCoordinate": 68011947,
             "repeats": [
                 "TCTA"
             ],
@@ -4636,6 +4650,7 @@
         "D3S1358": {
             "chromosome": "Chr3",
             "STRsize": 4,
+            "startCoordinate": 45540739,
             "repeats": [
                 "TCTG",
                 "TCTA"
@@ -4950,6 +4965,7 @@
         "D4S2408": {
             "chromosome": "",
             "STRsize": 0,
+            "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
@@ -5093,6 +5109,7 @@
         "D5S818": {
             "chromosome": "Chr5",
             "STRsize": 4,
+            "startCoordinate": 123775556,
             "repeats": [
                 "ATCT"
             ],
@@ -5358,6 +5375,7 @@
         "D6S1043": {
             "chromosome": "",
             "STRsize": 0,
+            "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
@@ -5648,6 +5666,7 @@
         "D7S820": {
             "chromosome": "Chr7",
             "STRsize": 4,
+            "startCoordinate": 84160226,
             "repeats": [
                 "TATC"
             ],
@@ -5898,6 +5917,7 @@
         "D8S1179": {
             "chromosome": "Chr8",
             "STRsize": 4,
+            "startCoordinate": 124894865,
             "repeats": [
                 "TCTG",
                 "TCTA"
@@ -6246,6 +6266,7 @@
         "D9S1122": {
             "chromosome": "",
             "STRsize": 0,
+            "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
@@ -6484,13 +6505,14 @@
         "FGA": {
             "chromosome": "Chr4",
             "STRsize": 4,
+            "startCoordinate": 154587736,
             "repeats": [
-                "AGAA",
-                "GGAA",
-                "GGAG",
-                "GAAA",
                 "AAAG",
-                "AAAA"
+                "GGAA",
+                "AGAA",
+                "GAAA",
+                "AAAA",
+                "GGAG"
             ],
             "referenceAllele": {
                 "allele": 22,
@@ -6867,6 +6889,7 @@
         "PentaD": {
             "chromosome": "Chr21",
             "STRsize": 5,
+            "startCoordinate": 43636205,
             "repeats": [
                 "AAAGA"
             ],
@@ -6904,19 +6927,19 @@
                             "frequency": 0.132,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATATCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCACAA",
                                     "count": 2,
                                     "frequency": 0.0048
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 63,
                                     "frequency": 0.15
@@ -6934,19 +6957,19 @@
                             "frequency": 0.2037,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATATCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 2,
                                     "frequency": 0.0048
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 52,
                                     "frequency": 0.1238
@@ -6964,19 +6987,19 @@
                             "frequency": 0.1573,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 4,
                                     "frequency": 0.0095
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 38,
                                     "frequency": 0.0905
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAGACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
@@ -6994,13 +7017,13 @@
                             "frequency": 0.1376,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 36,
                                     "frequency": 0.0857
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAGACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
@@ -7018,7 +7041,7 @@
                             "frequency": 0.0379,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 13,
                                     "frequency": 0.031
@@ -7036,7 +7059,7 @@
                             "frequency": 0.0126,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 12,
                                     "frequency": 0.0286
@@ -7065,7 +7088,7 @@
                             "frequency": 0.0056,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 12,
                                     "frequency": 0.0286
@@ -7083,7 +7106,7 @@
                             "frequency": 0.0098,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 8,
                                     "frequency": 0.019
@@ -7101,13 +7124,13 @@
                             "frequency": 0.2331,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 1,
                                     "frequency": 0.0024
                                 },
                                 {
-                                    "before": "GATCACTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
+                                    "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 99,
                                     "frequency": 0.2357
@@ -7121,6 +7144,7 @@
         "PentaE": {
             "chromosome": "Chr15",
             "STRsize": 5,
+            "startCoordinate": 0,
             "repeats": [
                 "TCTTT"
             ],
@@ -7477,6 +7501,7 @@
         "TH01": {
             "chromosome": "Chr11",
             "STRsize": 4,
+            "startCoordinate": 2171088,
             "repeats": [
                 "AATG"
             ],
@@ -7611,6 +7636,7 @@
         "TPOX": {
             "chromosome": "Chr2",
             "STRsize": 4,
+            "startCoordinate": 1489653,
             "repeats": [
                 "AATG"
             ],
@@ -7770,9 +7796,10 @@
         "vWA": {
             "chromosome": "Chr12",
             "STRsize": 4,
+            "startCoordinate": 5983977,
             "repeats": [
-                "TAGA",
-                "CAGA"
+                "CAGA",
+                "TAGA"
             ],
             "referenceAllele": {
                 "allele": 17,

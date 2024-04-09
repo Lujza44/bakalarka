@@ -15,7 +15,7 @@ for index, row in df.iterrows():
         ref_after = ""  # toto bude ref. 3' flanking region
         str_size = 0    # dlzka jedneho STR
         chromosome = ""
-        rep_start_coordinate = 0 # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
+        start_coordinate = 0 # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
 
         if index + 3 < len(df) and index - 1 >= 0: 
             coordinates = df.iloc[index + 3] # budem sa pozerat do riadka o 3 nizsie, tam su koordinaty jednotlivych nt z ref. genomu
@@ -30,7 +30,7 @@ for index, row in df.iterrows():
                 if pd.notnull(pd.to_numeric(str_indexes.iloc[i], errors='coerce')) and str(str_indexes.iloc[i]).strip() == '1':
                     is_storing_ref_seq = True # ak sme narazili na zaciatok repetitivnej oblasti, ukladame nt do ref_seq
                     increment_str_size = True # a pocitame vzdialenost do dalsieho oznaceneho STR
-                    rep_start_coordinate = coordinates.iloc[i] # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
+                    start_coordinate = coordinates.iloc[i] # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
                     chromosome = df.iloc[index - 1, 2]
 
                 if pd.notnull(pd.to_numeric(str_indexes.iloc[i], errors='coerce')) and str(str_indexes.iloc[i]).strip() == '2':
@@ -49,16 +49,17 @@ for index, row in df.iterrows():
         ref_after = ref_seq[str_size*number_of_repetitions:] 
         ref_seq = ref_seq[:str_size*number_of_repetitions] 
         
-        ref_seq_dict[row.iloc[0].replace(" ", "")] = (chromosome, str_size, number_of_repetitions, ref_seq, ref_before, ref_after)
+        ref_seq_dict[row.iloc[0].replace(" ", "")] = (chromosome, str_size, start_coordinate, number_of_repetitions, ref_seq, ref_before, ref_after)
 
 # ulozenie dat z ref. databazy do jsnu
 with open('data/transformed_data.json', 'r') as json_file:
     data = json.load(json_file)
 
 for key, value in ref_seq_dict.items():
-    chromosome, str_size, allele, sequence, before, after = value # rozbalenie n-tice    
+    chromosome, str_size, start_coordinate, allele, sequence, before, after = value # rozbalenie n-tice    
     data["markers"][key]["chromosome"] = chromosome
     data["markers"][key]["STRsize"] = str_size
+    data["markers"][key]["startCoordinate"] = start_coordinate
     data["markers"][key]["referenceAllele"] = {
         "allele": allele,
         "sequence": sequence,

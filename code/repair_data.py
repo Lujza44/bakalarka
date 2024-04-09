@@ -5,6 +5,7 @@ wrong_after_flank = ['D13S317', 'D18S51', 'D19S433', 'D21S11']
 wrong_before_flank = ['D1S1656', 'D5S818', 'D7S820', 'PentaD', 'vWA']
 wrong_both = 'D19S433'
 wrong_ref = 'PentaE'  
+long_before_flank = ['PentaD', 'D22S1045']
 
 def complement_dna(s):
     trans_table = str.maketrans('ATCG', 'TAGC')
@@ -104,6 +105,7 @@ def repair_ref_allele():
 
     marker['chromosome'] = "Chr15"
     marker['STRsize'] = 5
+    #marker['startCoordinate'] = # TODO doplnit
 
     sequence_to_find = "TCTTT" * 5
 
@@ -149,6 +151,18 @@ def adjust_ref_allele():
                     reference_allele['after'] = ref_after[:aft_size] if aft_size > 0 else ""
                     break
 
+def shorten_before_flank():
+    for marker_name in long_before_flank:
+        marker = data["markers"].get(marker_name)
+        for variant in marker["alleleVariants"]:                
+            for sequenceVariant in variant["sequenceVariants"]:  
+                for flankingVariant in sequenceVariant["flankingRegionsVariants"]:
+                    if marker_name == 'D22S1045':
+                        flankingVariant["before"] = flankingVariant["before"][6:] # skipnem prvych 6 pismen
+                    elif marker_name == 'PentaD':
+                        flankingVariant["before"] = flankingVariant["before"][5:] # skipnem prvych 5 pismen
+
+
 json_file_path = 'data/transformed_data.json'
 
 with open(json_file_path, 'r') as file:
@@ -171,6 +185,9 @@ repair_ref_allele()
 
 # osekanie flanking oblasti vsetkych ref. alel, ponechanie iba casti, ktore boli citane aj v CZ databaze
 adjust_ref_allele()
+
+# skratenie before flanking regions u lokusov D22 a PentaD, pretoze v referencii take dlhe nie su (neda sa porovnavat)
+shorten_before_flank()
 
 # oprava nadbytocnych referencnych repeats lokusu D21
 d21 = data['markers'].get("D21S11")

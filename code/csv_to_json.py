@@ -20,6 +20,7 @@ def transform_csv_to_json(data):
             json_structure['markers'][marker] = {
                 "chromosome": "",
                 "STRsize": 0,
+                "startCoordinate": 0,
                 "repeats": [],
                 "referenceAllele": {}, 
                 "alleleVariants": []}
