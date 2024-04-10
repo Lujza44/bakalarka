@@ -103,7 +103,7 @@ def repair_ref_allele():
     ref_allele = marker.get('referenceAllele', {})
     whole_seq = ref_allele.get('before', '')
 
-    marker['chromosome'] = "Chr15"
+    marker['chromosome'] = 15
     marker['STRsize'] = 5
     #marker['startCoordinate'] = # TODO doplnit
 

@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import re
+import requests
 
 
 def to_bracket_notation(dna_sequence, substring_size, repeats):
@@ -42,6 +43,41 @@ def chromosome_key(chromosome_str):
         return int(match.group())
     return 0  # Default value for strings without numbers
 
+def find_SNPs(s1, s2, coordinate, before, STRsize, allele):
+    diff_positions = []
+    for i in range(min(len(s1),len(s2))):
+        if s1[i] != s2[i]:
+            if before: # before flanking region
+                diff_positions.append(coordinate - (len(s1) - i))
+            else: # after flanking region
+                diff_positions.append(i + coordinate + STRsize * allele) # allele z ref. allele
+    return diff_positions
+    
+def get_rs_number(chromosome, position):
+    """Query Ensembl REST API for rs number at a specific genomic position."""
+    server = "https://rest.ensembl.org"
+    # Adjusted to use the overlap region endpoint, specifying variation as the feature type
+    ext = f"/overlap/region/human/{chromosome}:{position}-{position}?feature=variation"
+    headers = {"Content-Type": "application/json"}
+    
+    try:
+        response = requests.get(f"{server}{ext}", headers=headers)
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        print(f"HTTP error occurred: {err}")
+        return None
+    except Exception as err:
+        print(f"An error occurred: {err}")
+        return None
+    
+    data = response.json()
+    
+    # Extract rs numbers if present
+    rs_numbers = [item['id'] for item in data if 'id' in item]
+    
+    return rs_numbers
+
+
 json_file_path = 'data/transformed_data.json'
 #json_file_path = 'data/repaired.json'
 with open(json_file_path, 'r') as file:
@@ -50,12 +86,24 @@ with open(json_file_path, 'r') as file:
 rows = [[]]
 
 # iterovanie cez vsetky markery ZORADENE podla 'chromosome'
-for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromosome_key(x[1].get('chromosome', '0'))):
+for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].get('chromosome', 0)):
+    if marker == 'D19S433': continue
     sum_count = 0
     sum_freq = 0
 
     str_length = marker_info['STRsize']
     repeats = marker_info['repeats']
+
+    reference_allele = marker_info.get('referenceAllele', {})
+    chromosome = marker_info.get('chromosome', 0)
+
+    # toto sa bude porovnavat
+    ref_before = reference_allele.get('before', '')
+    ref_after = reference_allele.get('after', '')
+
+    # parametre
+    start_coordinate = marker_info.get('startCoordinate', '')
+    ref_allele_number = reference_allele.get('allele', '')
 
     if not str_length or not repeats:
         continue
@@ -72,11 +120,30 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: chromos
                 for flank_var in seq_var['flankingRegionsVariants']:
                     before = flank_var['before']
                     after = flank_var['after']
+                    rs_numbers = ""
+
+                    SNPs_before = find_SNPs(ref_before, before, start_coordinate, True, str_length, ref_allele_number) # zoznam
+                    SNPs_after = find_SNPs(ref_after, after, start_coordinate, False, str_length, ref_allele_number) # zoznam
+
+                    if SNPs_before:
+                        for snp in SNPs_before:
+                            SNPs.append((marker, chromosome, snp))
+                    if SNPs_after:
+                        for snp in SNPs_after:
+                            SNPs.append((marker, chromosome, snp))
+
+                    SNPs = SNPs_before + SNPs_after
+
+                    for snp in SNPs:
+                        rs_numbers = ', '.join(get_rs_number(chromosome, snp))
+                        #print(f"Position {chromosome}:{snp} has rs number(s): {'No SNPs found' if not rs_numbers else rs_numbers}")
+                        # TODO co s No SNPs found?
+
                     count = flank_var['count']
                     frequency = flank_var['frequency']
                     sum_count += count
                     sum_freq += frequency
-                    rows.append([marker, allele, sequence, "", count, frequency, before, after])
+                    rows.append([marker, allele, sequence, rs_numbers, count, frequency, before, after])
             else: # ak neexistuju, bunky ostanu prazdne
                 rows.append([marker, allele, sequence, "", "", "", "", ""])
     rows.append(["", "", "", "", sum_count, sum_freq, "", ""])
@@ -87,6 +154,6 @@ df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', '
 csv_file_path = 'data/output_data.csv'
 df.to_csv(csv_file_path, index=False)
 
-excel_file_path = 'data/output_data.xlsx'
-df.to_excel(excel_file_path, index=False, engine='openpyxl')
+#excel_file_path = 'data/output_data.xlsx'
+#df.to_excel(excel_file_path, index=False, engine='openpyxl')
 

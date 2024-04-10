@@ -2183,8 +2183,8 @@
             "STRsize": 4,
             "startCoordinate": 29926235,
             "repeats": [
-                "CCTT",
-                "CCTA"
+                "CCTA",
+                "CCTT"
             ],
             "referenceAllele": {
                 "allele": 14,
@@ -2464,8 +2464,8 @@
             "STRsize": 4,
             "startCoordinate": 230769616,
             "repeats": [
-                "CCTA",
-                "TCTA"
+                "TCTA",
+                "CCTA"
             ],
             "referenceAllele": {
                 "allele": 17,
@@ -3682,8 +3682,8 @@
             "STRsize": 3,
             "startCoordinate": 37140287,
             "repeats": [
-                "ATT",
-                "ACT"
+                "ACT",
+                "ATT"
             ],
             "referenceAllele": {
                 "allele": 17,
@@ -6508,10 +6508,10 @@
             "startCoordinate": 154587736,
             "repeats": [
                 "GGAA",
-                "AAAA",
                 "GAAA",
-                "AAAG",
                 "GGAG",
+                "AAAG",
+                "AAAA",
                 "AGAA"
             ],
             "referenceAllele": {
@@ -7142,7 +7142,7 @@
             ]
         },
         "PentaE": {
-            "chromosome": "Chr15",
+            "chromosome": 15,
             "STRsize": 5,
             "startCoordinate": 0,
             "repeats": [
