@@ -37,12 +37,6 @@ def to_bracket_notation(dna_sequence, substring_size, repeats):
             i += 1
     return result.strip()
 
-def chromosome_key(chromosome_str):
-    match = re.search(r'\d+', chromosome_str)
-    if match:
-        return int(match.group())
-    return 0  # Default value for strings without numbers
-
 def find_SNPs(s1, s2, coordinate, before, STRsize, allele):
     diff_positions = []
     for i in range(min(len(s1),len(s2))):
@@ -156,4 +150,3 @@ df.to_csv(csv_file_path, index=False)
 
 #excel_file_path = 'data/output_data.xlsx'
 #df.to_excel(excel_file_path, index=False, engine='openpyxl')
-
