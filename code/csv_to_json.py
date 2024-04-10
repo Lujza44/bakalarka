@@ -18,7 +18,7 @@ def transform_csv_to_json(data):
         # URCENIE STRUKTURY MARKERU V JSNE
         if marker not in json_structure['markers']: # inicializujem marker ak este v strukture nie je
             json_structure['markers'][marker] = {
-                "chromosome": "",
+                "chromosome": 0,
                 "STRsize": 0,
                 "startCoordinate": 0,
                 "repeats": [],

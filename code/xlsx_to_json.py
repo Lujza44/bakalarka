@@ -1,11 +1,22 @@
 import pandas as pd
 import json
+import re
 
 xlsx_file_path = 'data/414_2021_2685_MOESM8_ESM.xlsx'
 df = pd.read_excel(xlsx_file_path, sheet_name = 'Table S6', engine='openpyxl') # precitanie konnkretneho sheetu = Table S6, odtial budem cerpat referecncne sekvencie
 df.iloc[:, 0] = df.iloc[:, 0].ffill() # forward fill na vyplnenie stlpca s nazvami markerov tam kde su merged bunky
 
 ref_seq_dict = {}
+
+
+def extract_number(chromosome_str):
+    # Use regex to find all digits in the string
+    numbers = re.findall(r'\d+', chromosome_str)
+    # Join the digits and convert to an integer
+    if numbers:
+        return int(''.join(numbers))
+    else:
+        return None
 
 # spracovanie dat z ref. databazy
 for index, row in df.iterrows():
@@ -14,7 +25,7 @@ for index, row in df.iterrows():
         ref_seq = ""    # toto bude ref. sekvencia repet. oblasti
         ref_after = ""  # toto bude ref. 3' flanking region
         str_size = 0    # dlzka jedneho STR
-        chromosome = ""
+        chromosome = 0
         start_coordinate = 0 # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
 
         if index + 3 < len(df) and index - 1 >= 0: 
@@ -31,7 +42,7 @@ for index, row in df.iterrows():
                     is_storing_ref_seq = True # ak sme narazili na zaciatok repetitivnej oblasti, ukladame nt do ref_seq
                     increment_str_size = True # a pocitame vzdialenost do dalsieho oznaceneho STR
                     start_coordinate = coordinates.iloc[i] # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
-                    chromosome = df.iloc[index - 1, 2]
+                    chromosome = extract_number(df.iloc[index - 1, 2])
 
                 if pd.notnull(pd.to_numeric(str_indexes.iloc[i], errors='coerce')) and str(str_indexes.iloc[i]).strip() == '2':
                     increment_str_size = False
