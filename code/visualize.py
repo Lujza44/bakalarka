@@ -86,3 +86,7 @@ df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', '
 
 csv_file_path = 'data/output_data.csv'
 df.to_csv(csv_file_path, index=False)
+
+excel_file_path = 'data/output_data.xlsx'
+df.to_excel(excel_file_path, index=False, engine='openpyxl')
+

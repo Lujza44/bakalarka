@@ -1,7 +1,7 @@
 {
     "markers": {
         "CSF1PO": {
-            "chromosome": "Chr5",
+            "chromosome": 5,
             "STRsize": 4,
             "startCoordinate": 150076324,
             "repeats": [
@@ -197,7 +197,7 @@
             ]
         },
         "D10S1248": {
-            "chromosome": "Chr10",
+            "chromosome": 10,
             "STRsize": 4,
             "startCoordinate": 129294244,
             "repeats": [
@@ -410,12 +410,12 @@
             ]
         },
         "D12S391": {
-            "chromosome": "Chr12",
+            "chromosome": 12,
             "STRsize": 4,
             "startCoordinate": 12297020,
             "repeats": [
-                "AGAT",
-                "AGAC"
+                "AGAC",
+                "AGAT"
             ],
             "referenceAllele": {
                 "allele": 19,
@@ -1181,7 +1181,7 @@
             ]
         },
         "D13S317": {
-            "chromosome": "Chr13",
+            "chromosome": 13,
             "STRsize": 4,
             "startCoordinate": 82148025,
             "repeats": [
@@ -1491,7 +1491,7 @@
             ]
         },
         "D16S539": {
-            "chromosome": "Chr16",
+            "chromosome": 16,
             "STRsize": 4,
             "startCoordinate": 86352702,
             "repeats": [
@@ -1705,7 +1705,7 @@
             ]
         },
         "D17S1301": {
-            "chromosome": "",
+            "chromosome": 0,
             "STRsize": 0,
             "startCoordinate": 0,
             "repeats": [],
@@ -1898,7 +1898,7 @@
             ]
         },
         "D18S51": {
-            "chromosome": "Chr18",
+            "chromosome": 18,
             "STRsize": 4,
             "startCoordinate": 63281667,
             "repeats": [
@@ -2179,12 +2179,12 @@
             ]
         },
         "D19S433": {
-            "chromosome": "Chr19",
+            "chromosome": 19,
             "STRsize": 4,
             "startCoordinate": 29926235,
             "repeats": [
-                "CCTA",
-                "CCTT"
+                "CCTT",
+                "CCTA"
             ],
             "referenceAllele": {
                 "allele": 14,
@@ -2460,12 +2460,12 @@
             ]
         },
         "D1S1656": {
-            "chromosome": "Chr1",
+            "chromosome": 1,
             "STRsize": 4,
             "startCoordinate": 230769616,
             "repeats": [
-                "TCTA",
-                "CCTA"
+                "CCTA",
+                "TCTA"
             ],
             "referenceAllele": {
                 "allele": 17,
@@ -2854,7 +2854,7 @@
             ]
         },
         "D20S482": {
-            "chromosome": "",
+            "chromosome": 0,
             "STRsize": 0,
             "startCoordinate": 0,
             "repeats": [],
@@ -3051,7 +3051,7 @@
             ]
         },
         "D21S11": {
-            "chromosome": "Chr21",
+            "chromosome": 21,
             "STRsize": 4,
             "startCoordinate": 19181973,
             "repeats": [
@@ -3678,7 +3678,7 @@
             ]
         },
         "D22S1045": {
-            "chromosome": "Chr22",
+            "chromosome": 22,
             "STRsize": 3,
             "startCoordinate": 37140287,
             "repeats": [
@@ -3881,13 +3881,13 @@
             ]
         },
         "D2S1338": {
-            "chromosome": "Chr2",
+            "chromosome": 2,
             "STRsize": 4,
             "startCoordinate": 218014859,
             "repeats": [
-                "GGAA",
+                "GGAC",
                 "GGCA",
-                "GGAC"
+                "GGAA"
             ],
             "referenceAllele": {
                 "allele": 23,
@@ -4373,7 +4373,7 @@
             ]
         },
         "D2S441": {
-            "chromosome": "Chr2",
+            "chromosome": 2,
             "STRsize": 4,
             "startCoordinate": 68011947,
             "repeats": [
@@ -4648,12 +4648,12 @@
             ]
         },
         "D3S1358": {
-            "chromosome": "Chr3",
+            "chromosome": 3,
             "STRsize": 4,
             "startCoordinate": 45540739,
             "repeats": [
-                "TCTG",
-                "TCTA"
+                "TCTA",
+                "TCTG"
             ],
             "referenceAllele": {
                 "allele": 16,
@@ -4963,7 +4963,7 @@
             ]
         },
         "D4S2408": {
-            "chromosome": "",
+            "chromosome": 0,
             "STRsize": 0,
             "startCoordinate": 0,
             "repeats": [],
@@ -5107,7 +5107,7 @@
             ]
         },
         "D5S818": {
-            "chromosome": "Chr5",
+            "chromosome": 5,
             "STRsize": 4,
             "startCoordinate": 123775556,
             "repeats": [
@@ -5373,7 +5373,7 @@
             ]
         },
         "D6S1043": {
-            "chromosome": "",
+            "chromosome": 0,
             "STRsize": 0,
             "startCoordinate": 0,
             "repeats": [],
@@ -5664,7 +5664,7 @@
             ]
         },
         "D7S820": {
-            "chromosome": "Chr7",
+            "chromosome": 7,
             "STRsize": 4,
             "startCoordinate": 84160226,
             "repeats": [
@@ -5915,12 +5915,12 @@
             ]
         },
         "D8S1179": {
-            "chromosome": "Chr8",
+            "chromosome": 8,
             "STRsize": 4,
             "startCoordinate": 124894865,
             "repeats": [
-                "TCTG",
-                "TCTA"
+                "TCTA",
+                "TCTG"
             ],
             "referenceAllele": {
                 "allele": 13,
@@ -6264,7 +6264,7 @@
             ]
         },
         "D9S1122": {
-            "chromosome": "",
+            "chromosome": 0,
             "STRsize": 0,
             "startCoordinate": 0,
             "repeats": [],
@@ -6503,16 +6503,16 @@
             ]
         },
         "FGA": {
-            "chromosome": "Chr4",
+            "chromosome": 4,
             "STRsize": 4,
             "startCoordinate": 154587736,
             "repeats": [
-                "AAAG",
                 "GGAA",
-                "AGAA",
-                "GAAA",
                 "AAAA",
-                "GGAG"
+                "GAAA",
+                "AAAG",
+                "GGAG",
+                "AGAA"
             ],
             "referenceAllele": {
                 "allele": 22,
@@ -6887,7 +6887,7 @@
             ]
         },
         "PentaD": {
-            "chromosome": "Chr21",
+            "chromosome": 21,
             "STRsize": 5,
             "startCoordinate": 43636205,
             "repeats": [
@@ -7499,7 +7499,7 @@
             ]
         },
         "TH01": {
-            "chromosome": "Chr11",
+            "chromosome": 11,
             "STRsize": 4,
             "startCoordinate": 2171088,
             "repeats": [
@@ -7634,7 +7634,7 @@
             ]
         },
         "TPOX": {
-            "chromosome": "Chr2",
+            "chromosome": 2,
             "STRsize": 4,
             "startCoordinate": 1489653,
             "repeats": [
@@ -7794,12 +7794,12 @@
             ]
         },
         "vWA": {
-            "chromosome": "Chr12",
+            "chromosome": 12,
             "STRsize": 4,
             "startCoordinate": 5983977,
             "repeats": [
-                "CAGA",
-                "TAGA"
+                "TAGA",
+                "CAGA"
             ],
             "referenceAllele": {
                 "allele": 17,
