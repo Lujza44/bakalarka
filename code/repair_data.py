@@ -17,7 +17,7 @@ def reverse_string(s):
 def unify_strand():
     for marker_name in other_strand:
         marker = data["markers"].get(marker_name)
-        for allele_var in marker['alleleVariants']:
+        for allele_var in marker['lengthVariants']:
             for seq_var in allele_var['sequenceVariants']:
                 # reverse sequence
                 seq = seq_var['sequence']
@@ -35,10 +35,10 @@ def repair_after_flanks():
     for marker_name in wrong_after_flank:
         marker = data["markers"].get(marker_name)
 
-        STRsize = marker["STRsize"]
+        STRsize = marker["STRlength"]
             
-        for variant in marker["alleleVariants"]:
-            allele_str = str(variant["allele"])
+        for variant in marker["lengthVariants"]:
+            allele_str = str(variant["numberOfRepeats"])
             if '.' in allele_str:
                 integer_part, decimal_part = allele_str.split('.')
                 integer_part = int(integer_part)
@@ -63,10 +63,10 @@ def repair_before_flanks():
     for marker_name in wrong_before_flank:
         marker = data["markers"].get(marker_name)
 
-        STRsize = marker["STRsize"]
+        STRsize = marker["STRlength"]
             
-        for variant in marker["alleleVariants"]:
-            allele_str = str(variant["allele"])
+        for variant in marker["lengthVariants"]:
+            allele_str = str(variant["numberOfRepeats"])
             if '.' in allele_str:
                 integer_part, decimal_part = allele_str.split('.')
                 integer_part = int(integer_part)
@@ -90,8 +90,8 @@ def repair_before_flanks():
 
 def repair_both_flanks():
     marker = data["markers"].get(wrong_both)
-    for allele_variant in marker['alleleVariants']:
-        if allele_variant['allele'] > 0.0:
+    for allele_variant in marker['lengthVariants']:
+        if allele_variant['numberOfRepeats'] > 0.0:
             for seq_variant in allele_variant['sequenceVariants']:
                 last_18_letters = seq_variant['sequence'][-18:]
                 seq_variant['sequence'] = seq_variant['sequence'][:-18]    
@@ -104,8 +104,8 @@ def repair_ref_allele():
     whole_seq = ref_allele.get('before', '')
 
     marker['chromosome'] = 15
-    marker['STRsize'] = 5
-    #marker['startCoordinate'] = # TODO doplnit
+    marker['STRlength'] = 5
+    marker['startCoordinate'] = 96831015
 
     sequence_to_find = "TCTTT" * 5
 
@@ -130,7 +130,7 @@ def find_repeats(sequence, repeat_length):
 def adjust_ref_allele():
     for marker, details in data['markers'].items():
         reference_allele = details.get('referenceAllele', {})
-        str_size = details.get('STRsize', 4)  # Default to 4 if not specified
+        str_size = details.get('STRlength', 4)  # Default to 4 if not specified
         ref_seq = reference_allele.get('sequence', '')
 
         repeats = find_repeats(ref_seq, str_size)
@@ -139,7 +139,7 @@ def adjust_ref_allele():
         ref_before = reference_allele.get('before', '')
         ref_after = reference_allele.get('after', '')
 
-        allele_variants = details.get('alleleVariants', [])
+        allele_variants = details.get('lengthVariants', [])
         for variant in allele_variants:
             for sequence_variant in variant.get('sequenceVariants', []):
                 flanking_variants = sequence_variant.get('flankingRegionsVariants', [])
@@ -154,7 +154,7 @@ def adjust_ref_allele():
 def shorten_before_flank():
     for marker_name in long_before_flank:
         marker = data["markers"].get(marker_name)
-        for variant in marker["alleleVariants"]:                
+        for variant in marker["lengthVariants"]:                
             for sequenceVariant in variant["sequenceVariants"]:  
                 for flankingVariant in sequenceVariant["flankingRegionsVariants"]:
                     if marker_name == 'D22S1045':

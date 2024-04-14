@@ -2,20 +2,20 @@
     "markers": {
         "CSF1PO": {
             "chromosome": 5,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 150076324,
             "repeats": [
                 "ATCT"
             ],
             "referenceAllele": {
-                "allele": 13,
+                "numberOfRepeats": 13,
                 "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
                 "before": "CTTCCT",
                 "after": "AATCTATCTATCTT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -33,7 +33,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -51,7 +51,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -69,7 +69,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -87,7 +87,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -105,7 +105,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -123,7 +123,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -141,7 +141,7 @@
                     ]
                 },
                 {
-                    "allele": 7.0,
+                    "numberOfRepeats": 7.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCT",
@@ -159,7 +159,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -177,7 +177,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -198,20 +198,20 @@
         },
         "D10S1248": {
             "chromosome": 10,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 129294244,
             "repeats": [
                 "GGAA"
             ],
             "referenceAllele": {
-                "allele": 13,
+                "numberOfRepeats": 13,
                 "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
                 "before": "TTGAACAAATGAGTGAGT",
                 "after": "ATGAAGACAATACAACCAGAGTT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -229,7 +229,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -247,7 +247,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -265,7 +265,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -289,7 +289,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -307,7 +307,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -325,7 +325,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -343,7 +343,7 @@
                     ]
                 },
                 {
-                    "allele": 16.3,
+                    "numberOfRepeats": 16.3,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -361,7 +361,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -379,7 +379,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -390,7 +390,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAA",
@@ -411,21 +411,21 @@
         },
         "D12S391": {
             "chromosome": 12,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 12297020,
             "repeats": [
-                "AGAC",
-                "AGAT"
+                "AGAT",
+                "AGAC"
             ],
             "referenceAllele": {
-                "allele": 19,
+                "numberOfRepeats": 19,
                 "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT",
                 "before": "CAGAGAGAAAGAATCAACAGGATCAATGGATGCATAGGT",
                 "after": "GAGAGGGGATTTATTAGAGGAATTAGCTCAAGTGATATGGAGGCTGAAAAATCTCATGACAGTCCATCTGCAAGCTGGAGACCCAGGGACACTA"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -443,7 +443,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT",
@@ -461,7 +461,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT",
@@ -479,7 +479,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT",
@@ -516,7 +516,7 @@
                     ]
                 },
                 {
-                    "allele": 17.3,
+                    "numberOfRepeats": 17.3,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT",
@@ -534,7 +534,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT",
@@ -578,7 +578,7 @@
                     ]
                 },
                 {
-                    "allele": 18.3,
+                    "numberOfRepeats": 18.3,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAT",
@@ -596,7 +596,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -665,7 +665,7 @@
                     ]
                 },
                 {
-                    "allele": 19.1,
+                    "numberOfRepeats": 19.1,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT",
@@ -683,7 +683,7 @@
                     ]
                 },
                 {
-                    "allele": 19.3,
+                    "numberOfRepeats": 19.3,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGAT",
@@ -707,7 +707,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -821,7 +821,7 @@
                     ]
                 },
                 {
-                    "allele": 21.0,
+                    "numberOfRepeats": 21.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -923,7 +923,7 @@
                     ]
                 },
                 {
-                    "allele": 21.3,
+                    "numberOfRepeats": 21.3,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -934,7 +934,7 @@
                     ]
                 },
                 {
-                    "allele": 22.0,
+                    "numberOfRepeats": 22.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -1030,7 +1030,7 @@
                     ]
                 },
                 {
-                    "allele": 23.0,
+                    "numberOfRepeats": 23.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -1087,7 +1087,7 @@
                     ]
                 },
                 {
-                    "allele": 24.0,
+                    "numberOfRepeats": 24.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -1150,7 +1150,7 @@
                     ]
                 },
                 {
-                    "allele": 25.0,
+                    "numberOfRepeats": 25.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGACAGACAGACAGAC",
@@ -1182,20 +1182,20 @@
         },
         "D13S317": {
             "chromosome": 13,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 82148025,
             "repeats": [
                 "TATC"
             ],
             "referenceAllele": {
-                "allele": 11,
+                "numberOfRepeats": 11,
                 "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
                 "before": "TCTGACCCATCTAACGCCTATCTGTATTTACAAATACAT",
                 "after": "AATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -1213,7 +1213,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1250,7 +1250,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1287,7 +1287,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1324,7 +1324,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1361,7 +1361,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1392,7 +1392,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1423,7 +1423,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1434,7 +1434,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATC",
@@ -1452,7 +1452,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCAATC",
@@ -1492,20 +1492,20 @@
         },
         "D16S539": {
             "chromosome": 16,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 86352702,
             "repeats": [
                 "GATA"
             ],
             "referenceAllele": {
-                "allele": 11,
+                "numberOfRepeats": 11,
                 "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
                 "before": "TCCTCTTCCCTAGATCAATACAGACAGACAGACAGGTG",
                 "after": "TCATTGAAAGACAAAACAGAGATGGATGATAGATAC"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -1523,7 +1523,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1547,7 +1547,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1571,7 +1571,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1595,7 +1595,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1619,7 +1619,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1637,7 +1637,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1655,7 +1655,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1679,7 +1679,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GATAGATAGATAGATAGATAGATAGATAGATAGATA",
@@ -1706,16 +1706,16 @@
         },
         "D17S1301": {
             "chromosome": 0,
-            "STRsize": 0,
+            "STRlength": 0,
             "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
                 "after": ""
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -1733,7 +1733,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -1751,7 +1751,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGACAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -1782,7 +1782,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -1800,7 +1800,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -1831,7 +1831,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -1849,7 +1849,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -1867,7 +1867,7 @@
                     ]
                 },
                 {
-                    "allele": 7.0,
+                    "numberOfRepeats": 7.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGAT",
@@ -1885,7 +1885,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -1899,20 +1899,20 @@
         },
         "D18S51": {
             "chromosome": 18,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 63281667,
             "repeats": [
                 "AGAA"
             ],
             "referenceAllele": {
-                "allele": 18,
+                "numberOfRepeats": 18,
                 "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
                 "before": "GTCTC",
                 "after": "AAAGAGAGAGGAAAGAAAGAGAAAAAGAAAAGAAATAGTAGCAACTGTTATTGTAAGA"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -1930,7 +1930,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -1948,7 +1948,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -1966,7 +1966,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -1984,7 +1984,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2002,7 +2002,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2033,7 +2033,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2051,7 +2051,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2069,7 +2069,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2087,7 +2087,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2105,7 +2105,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2123,7 +2123,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2141,7 +2141,7 @@
                     ]
                 },
                 {
-                    "allele": 21.0,
+                    "numberOfRepeats": 21.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2159,7 +2159,7 @@
                     ]
                 },
                 {
-                    "allele": 22.0,
+                    "numberOfRepeats": 22.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAA",
@@ -2180,21 +2180,21 @@
         },
         "D19S433": {
             "chromosome": 19,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 29926235,
             "repeats": [
-                "CCTA",
-                "CCTT"
+                "CCTT",
+                "CCTA"
             ],
             "referenceAllele": {
-                "allele": 14,
+                "numberOfRepeats": 14,
                 "sequence": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTT",
                 "before": "TTCTTCCTCTCT",
                 "after": "CTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCTTTTTGCAGCCTCAACCTCCTGGGCTCAAGTGATCTT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -2212,7 +2212,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTT",
@@ -2230,7 +2230,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTT",
@@ -2248,7 +2248,7 @@
                     ]
                 },
                 {
-                    "allele": 12.2,
+                    "numberOfRepeats": 12.2,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCC",
@@ -2266,7 +2266,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTT",
@@ -2284,7 +2284,7 @@
                     ]
                 },
                 {
-                    "allele": 13.2,
+                    "numberOfRepeats": 13.2,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCC",
@@ -2308,7 +2308,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTT",
@@ -2332,7 +2332,7 @@
                     ]
                 },
                 {
-                    "allele": 14.2,
+                    "numberOfRepeats": 14.2,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCC",
@@ -2350,7 +2350,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTT",
@@ -2368,7 +2368,7 @@
                     ]
                 },
                 {
-                    "allele": 15.2,
+                    "numberOfRepeats": 15.2,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCC",
@@ -2386,7 +2386,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
@@ -2404,7 +2404,7 @@
                     ]
                 },
                 {
-                    "allele": 16.2,
+                    "numberOfRepeats": 16.2,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
@@ -2422,7 +2422,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
@@ -2440,7 +2440,7 @@
                     ]
                 },
                 {
-                    "allele": 17.2,
+                    "numberOfRepeats": 17.2,
                     "sequenceVariants": [
                         {
                             "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
@@ -2461,21 +2461,21 @@
         },
         "D1S1656": {
             "chromosome": 1,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 230769616,
             "repeats": [
-                "TCTA",
-                "CCTA"
+                "CCTA",
+                "TCTA"
             ],
             "referenceAllele": {
-                "allele": 17,
+                "numberOfRepeats": 17,
                 "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
                 "before": "TTCAGAGAAATAGAATCACTAGGGAACCAAATATATATACATACAATTAAACACACACACA",
                 "after": ""
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -2493,7 +2493,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2517,7 +2517,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2548,7 +2548,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2579,7 +2579,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2616,7 +2616,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2647,7 +2647,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2678,7 +2678,7 @@
                     ]
                 },
                 {
-                    "allele": 15.2,
+                    "numberOfRepeats": 15.2,
                     "sequenceVariants": [
                         {
                             "sequence": "CATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2689,7 +2689,7 @@
                     ]
                 },
                 {
-                    "allele": 15.3,
+                    "numberOfRepeats": 15.3,
                     "sequenceVariants": [
                         {
                             "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCATCTATCTATCTATCTA",
@@ -2720,7 +2720,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CTTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2751,7 +2751,7 @@
                     ]
                 },
                 {
-                    "allele": 16.3,
+                    "numberOfRepeats": 16.3,
                     "sequenceVariants": [
                         {
                             "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCATCTATCTATCTATCTA",
@@ -2769,7 +2769,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2787,7 +2787,7 @@
                     ]
                 },
                 {
-                    "allele": 17.3,
+                    "numberOfRepeats": 17.3,
                     "sequenceVariants": [
                         {
                             "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCATCTATCTATCTATCTA",
@@ -2805,7 +2805,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -2816,7 +2816,7 @@
                     ]
                 },
                 {
-                    "allele": 18.3,
+                    "numberOfRepeats": 18.3,
                     "sequenceVariants": [
                         {
                             "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCATCTATCTATCTATCTA",
@@ -2834,7 +2834,7 @@
                     ]
                 },
                 {
-                    "allele": 19.3,
+                    "numberOfRepeats": 19.3,
                     "sequenceVariants": [
                         {
                             "sequence": "CCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCATCTATCTATCTATCTA",
@@ -2855,16 +2855,16 @@
         },
         "D20S482": {
             "chromosome": 0,
-            "STRsize": 0,
+            "STRlength": 0,
             "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
                 "after": ""
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -2875,7 +2875,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -2893,7 +2893,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -2911,7 +2911,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -2935,7 +2935,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -2959,7 +2959,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -2983,7 +2983,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -3007,7 +3007,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -3031,7 +3031,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -3052,21 +3052,21 @@
         },
         "D21S11": {
             "chromosome": 21,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 19181973,
             "repeats": [
                 "TCTA",
                 "TCTG"
             ],
             "referenceAllele": {
-                "allele": 29,
+                "numberOfRepeats": 29,
                 "sequence": "TCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTAT",
                 "before": "AAATATGTGAGTCAATTCCCCAAGTGAATTGCCT",
                 "after": "CTATCTATCTATCGTCTATCTAT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -3077,7 +3077,7 @@
                     ]
                 },
                 {
-                    "allele": 14.3,
+                    "numberOfRepeats": 14.3,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATAT",
@@ -3100,7 +3100,7 @@
                     ]
                 },
                 {
-                    "allele": 15.3,
+                    "numberOfRepeats": 15.3,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATAT",
@@ -3111,7 +3111,7 @@
                     ]
                 },
                 {
-                    "allele": 25.0,
+                    "numberOfRepeats": 25.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTAT",
@@ -3122,7 +3122,7 @@
                     ]
                 },
                 {
-                    "allele": 26.0,
+                    "numberOfRepeats": 26.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTAT",
@@ -3140,7 +3140,7 @@
                     ]
                 },
                 {
-                    "allele": 27.0,
+                    "numberOfRepeats": 27.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTAT",
@@ -3184,7 +3184,7 @@
                     ]
                 },
                 {
-                    "allele": 28.0,
+                    "numberOfRepeats": 28.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTAT",
@@ -3221,7 +3221,7 @@
                     ]
                 },
                 {
-                    "allele": 29.0,
+                    "numberOfRepeats": 29.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTAT",
@@ -3284,7 +3284,7 @@
                     ]
                 },
                 {
-                    "allele": 29.2,
+                    "numberOfRepeats": 29.2,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -3295,7 +3295,7 @@
                     ]
                 },
                 {
-                    "allele": 30.0,
+                    "numberOfRepeats": 30.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATATATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTAT",
@@ -3384,7 +3384,7 @@
                     ]
                 },
                 {
-                    "allele": 30.2,
+                    "numberOfRepeats": 30.2,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -3415,7 +3415,7 @@
                     ]
                 },
                 {
-                    "allele": 31.0,
+                    "numberOfRepeats": 31.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTAT",
@@ -3485,7 +3485,7 @@
                     ]
                 },
                 {
-                    "allele": 31.2,
+                    "numberOfRepeats": 31.2,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -3516,7 +3516,7 @@
                     ]
                 },
                 {
-                    "allele": 32.0,
+                    "numberOfRepeats": 32.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTAT",
@@ -3572,7 +3572,7 @@
                     ]
                 },
                 {
-                    "allele": 32.2,
+                    "numberOfRepeats": 32.2,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -3596,7 +3596,7 @@
                     ]
                 },
                 {
-                    "allele": 33.2,
+                    "numberOfRepeats": 33.2,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -3640,7 +3640,7 @@
                     ]
                 },
                 {
-                    "allele": 34.2,
+                    "numberOfRepeats": 34.2,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -3658,7 +3658,7 @@
                     ]
                 },
                 {
-                    "allele": 35.0,
+                    "numberOfRepeats": 35.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCATCTATCTATCTATCATCT",
@@ -3679,21 +3679,21 @@
         },
         "D22S1045": {
             "chromosome": 22,
-            "STRsize": 3,
+            "STRlength": 3,
             "startCoordinate": 37140287,
             "repeats": [
-                "ACT",
-                "ATT"
+                "ATT",
+                "ACT"
             ],
             "referenceAllele": {
-                "allele": 17,
+                "numberOfRepeats": 17,
                 "sequence": "ATTATTATTATTATTATTATTATTATTATTATTATTATTATTACTATTATT",
                 "before": "AATTCCCCAAACTGGCCAGTTCCTCTCCACCCTATAGACCCTGTCCTAGCCTTCTTATAGCTGCTATGGGGGCTAGATTTTCCCCGATGATAGTAGTCTC",
                 "after": "GTTATAAAAATATTGCCAAT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -3711,7 +3711,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTACTATTATT",
@@ -3729,7 +3729,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTACTATTATT",
@@ -3747,7 +3747,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTATTACTATTATT",
@@ -3771,7 +3771,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTATTATTACTATTATT",
@@ -3789,7 +3789,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTATTATTATTACTATTATT",
@@ -3807,7 +3807,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTATTATTATTATTACTATTATT",
@@ -3825,7 +3825,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTATTATTATTATTATTACTATTATT",
@@ -3843,7 +3843,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTATTATTATTATTATTATTACTATTATT",
@@ -3861,7 +3861,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATTATTATTATTATTATTATTATTATTATTATTATTATTATTATTACTATTATT",
@@ -3882,22 +3882,22 @@
         },
         "D2S1338": {
             "chromosome": 2,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 218014859,
             "repeats": [
-                "GGAC",
                 "GGCA",
+                "GGAC",
                 "GGAA"
             ],
             "referenceAllele": {
-                "allele": 23,
+                "numberOfRepeats": 23,
                 "sequence": "GGAAGGAAGGACGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
                 "before": "GAG",
                 "after": "AGGCCAAGCCATTT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -3915,7 +3915,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCA",
@@ -3926,7 +3926,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -3957,7 +3957,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -3994,7 +3994,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4025,7 +4025,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGGAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4080,7 +4080,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGGAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4137,7 +4137,7 @@
                     ]
                 },
                 {
-                    "allele": 21.0,
+                    "numberOfRepeats": 21.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGACGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4187,7 +4187,7 @@
                     ]
                 },
                 {
-                    "allele": 22.0,
+                    "numberOfRepeats": 22.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGACGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4211,7 +4211,7 @@
                     ]
                 },
                 {
-                    "allele": 23.0,
+                    "numberOfRepeats": 23.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4255,7 +4255,7 @@
                     ]
                 },
                 {
-                    "allele": 24.0,
+                    "numberOfRepeats": 24.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGACGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4298,7 +4298,7 @@
                     ]
                 },
                 {
-                    "allele": 25.0,
+                    "numberOfRepeats": 25.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGACGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4329,7 +4329,7 @@
                     ]
                 },
                 {
-                    "allele": 26.0,
+                    "numberOfRepeats": 26.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGACGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4360,7 +4360,7 @@
                     ]
                 },
                 {
-                    "allele": 27.0,
+                    "numberOfRepeats": 27.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGACGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGCAGGCAGGCAGGCAGGCAGGCAGGCA",
@@ -4374,20 +4374,20 @@
         },
         "D2S441": {
             "chromosome": 2,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 68011947,
             "repeats": [
                 "TCTA"
             ],
             "referenceAllele": {
-                "allele": 12,
+                "numberOfRepeats": 12,
                 "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
                 "before": "CCAGGAACTGTGGCTCATCTATGAAAACT",
                 "after": "TATCATAACACCACAGCCACTTA"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -4405,7 +4405,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4436,7 +4436,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4473,7 +4473,7 @@
                     ]
                 },
                 {
-                    "allele": 11.3,
+                    "numberOfRepeats": 11.3,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCATCTATCTATCTATCTATCTATCTATCTA",
@@ -4491,7 +4491,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4521,7 +4521,7 @@
                     ]
                 },
                 {
-                    "allele": 12.3,
+                    "numberOfRepeats": 12.3,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4539,7 +4539,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4563,7 +4563,7 @@
                     ]
                 },
                 {
-                    "allele": 13.3,
+                    "numberOfRepeats": 13.3,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4581,7 +4581,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATTTATCTATCTA",
@@ -4599,7 +4599,7 @@
                     ]
                 },
                 {
-                    "allele": 14.1,
+                    "numberOfRepeats": 14.1,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATTTATCTATCTA",
@@ -4610,7 +4610,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATTTATCTATCTA",
@@ -4628,7 +4628,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATTTATCTATCTA",
@@ -4649,21 +4649,21 @@
         },
         "D3S1358": {
             "chromosome": 3,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 45540739,
             "repeats": [
-                "TCTA",
-                "TCTG"
+                "TCTG",
+                "TCTA"
             ],
             "referenceAllele": {
-                "allele": 16,
+                "numberOfRepeats": 16,
                 "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
                 "before": "TTTGGGGGCATCTCTTATACTCATGAAATCAACAGAGGCTTGCATGTA",
                 "after": "TGAGACAGGGTCTTGCTC"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -4681,7 +4681,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4699,7 +4699,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4723,7 +4723,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4767,7 +4767,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4811,7 +4811,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4868,7 +4868,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4925,7 +4925,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4943,7 +4943,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -4964,16 +4964,16 @@
         },
         "D4S2408": {
             "chromosome": 0,
-            "STRsize": 0,
+            "STRlength": 0,
             "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
                 "after": ""
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -4984,7 +4984,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5002,7 +5002,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5020,7 +5020,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5038,7 +5038,7 @@
                     ]
                 },
                 {
-                    "allele": 6.0,
+                    "numberOfRepeats": 6.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCT",
@@ -5056,7 +5056,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5074,7 +5074,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5108,20 +5108,20 @@
         },
         "D5S818": {
             "chromosome": 5,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 123775556,
             "repeats": [
                 "ATCT"
             ],
             "referenceAllele": {
-                "allele": 11,
+                "numberOfRepeats": 11,
                 "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
                 "before": "TATTTATACCTCT",
                 "after": "TCAAAAT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -5139,7 +5139,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5170,7 +5170,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5201,7 +5201,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5232,7 +5232,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5263,7 +5263,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5294,7 +5294,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5305,7 +5305,7 @@
                     ]
                 },
                 {
-                    "allele": 7.0,
+                    "numberOfRepeats": 7.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCT",
@@ -5323,7 +5323,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5347,7 +5347,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "ATCTATCTATCTATCTATCTATCTATCTATCTATCT",
@@ -5374,16 +5374,16 @@
         },
         "D6S1043": {
             "chromosome": 0,
-            "STRsize": 0,
+            "STRlength": 0,
             "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
                 "after": ""
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -5394,7 +5394,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -5412,7 +5412,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -5430,7 +5430,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -5448,7 +5448,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -5466,7 +5466,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGAT",
@@ -5497,7 +5497,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGAT",
@@ -5528,7 +5528,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGAT",
@@ -5559,7 +5559,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGATAGATAGATAGATAGAT",
@@ -5590,7 +5590,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGATAGATAGATAGATAGAT",
@@ -5608,7 +5608,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGATAGATAGATAGATAGAT",
@@ -5626,7 +5626,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGATAGATAGATAGATAGAT",
@@ -5644,7 +5644,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AGATAGATAGATAGATAGATAGATAGATAGATAGAT",
@@ -5665,20 +5665,20 @@
         },
         "D7S820": {
             "chromosome": 7,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 84160226,
             "repeats": [
                 "TATC"
             ],
             "referenceAllele": {
-                "allele": 13,
+                "numberOfRepeats": 13,
                 "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
                 "before": "TATTTAGTGAGATTAAAAAAAACTATCAATCTGTC",
                 "after": "GTTAGTTCGTTCTAAACTAT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -5696,7 +5696,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5720,7 +5720,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5744,7 +5744,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5768,7 +5768,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5792,7 +5792,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5816,7 +5816,7 @@
                     ]
                 },
                 {
-                    "allele": 7.0,
+                    "numberOfRepeats": 7.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATC",
@@ -5834,7 +5834,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5858,7 +5858,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TGTCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5895,7 +5895,7 @@
                     ]
                 },
                 {
-                    "allele": 9.1,
+                    "numberOfRepeats": 9.1,
                     "sequenceVariants": [
                         {
                             "sequence": "CTATCTATCTATCTATCTATCTATCTATCTATCTATC",
@@ -5916,21 +5916,21 @@
         },
         "D8S1179": {
             "chromosome": 8,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 124894865,
             "repeats": [
-                "TCTA",
-                "TCTG"
+                "TCTG",
+                "TCTA"
             ],
             "referenceAllele": {
-                "allele": 13,
+                "numberOfRepeats": 13,
                 "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
                 "before": "",
                 "after": "TTCCC"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -5948,7 +5948,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -5966,7 +5966,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -5997,7 +5997,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6041,7 +6041,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6085,7 +6085,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6135,7 +6135,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6166,7 +6166,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6197,7 +6197,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6215,7 +6215,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6226,7 +6226,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6244,7 +6244,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTATCTATCTATCTATCTATCTATCTATCTATCTA",
@@ -6265,16 +6265,16 @@
         },
         "D9S1122": {
             "chromosome": 0,
-            "STRsize": 0,
+            "STRlength": 0,
             "startCoordinate": 0,
             "repeats": [],
             "referenceAllele": {
                 "before": "",
                 "after": ""
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -6292,7 +6292,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6323,7 +6323,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6354,7 +6354,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6385,7 +6385,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6416,7 +6416,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6447,7 +6447,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATCGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6465,7 +6465,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATCGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6483,7 +6483,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGA",
@@ -6504,25 +6504,25 @@
         },
         "FGA": {
             "chromosome": 4,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 154587736,
             "repeats": [
-                "GGAA",
-                "GAAA",
-                "GGAG",
                 "AAAG",
-                "AAAA",
-                "AGAA"
+                "GGAG",
+                "GAAA",
+                "AGAA",
+                "GGAA",
+                "AAAA"
             ],
             "referenceAllele": {
-                "allele": 22,
+                "numberOfRepeats": 22,
                 "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
                 "before": "CCAGCAAAAAAGAAAGGAAGAAA",
                 "after": "CTAGCTTGTAAATATGC"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -6540,7 +6540,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6558,7 +6558,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6576,7 +6576,7 @@
                     ]
                 },
                 {
-                    "allele": 18.2,
+                    "numberOfRepeats": 18.2,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAAAGAAAGAAAGAAA",
@@ -6587,7 +6587,7 @@
                     ]
                 },
                 {
-                    "allele": 18.3,
+                    "numberOfRepeats": 18.3,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAA",
@@ -6605,7 +6605,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6623,7 +6623,7 @@
                     ]
                 },
                 {
-                    "allele": 19.2,
+                    "numberOfRepeats": 19.2,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAAAGAAAGAAAGAAA",
@@ -6634,7 +6634,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6652,7 +6652,7 @@
                     ]
                 },
                 {
-                    "allele": 21.0,
+                    "numberOfRepeats": 21.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6670,7 +6670,7 @@
                     ]
                 },
                 {
-                    "allele": 21.2,
+                    "numberOfRepeats": 21.2,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAAAGAAAGAAAGAAA",
@@ -6688,7 +6688,7 @@
                     ]
                 },
                 {
-                    "allele": 22.0,
+                    "numberOfRepeats": 22.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6706,7 +6706,7 @@
                     ]
                 },
                 {
-                    "allele": 22.2,
+                    "numberOfRepeats": 22.2,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAAAGAAAGAAAGAAA",
@@ -6724,7 +6724,7 @@
                     ]
                 },
                 {
-                    "allele": 23.0,
+                    "numberOfRepeats": 23.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6742,7 +6742,7 @@
                     ]
                 },
                 {
-                    "allele": 23.1,
+                    "numberOfRepeats": 23.1,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6753,7 +6753,7 @@
                     ]
                 },
                 {
-                    "allele": 23.2,
+                    "numberOfRepeats": 23.2,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAAAGAAAGAAAGAAA",
@@ -6771,7 +6771,7 @@
                     ]
                 },
                 {
-                    "allele": 24.0,
+                    "numberOfRepeats": 24.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6801,7 +6801,7 @@
                     ]
                 },
                 {
-                    "allele": 24.2,
+                    "numberOfRepeats": 24.2,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAAAGAAAGAAAGAAA",
@@ -6812,7 +6812,7 @@
                     ]
                 },
                 {
-                    "allele": 25.0,
+                    "numberOfRepeats": 25.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAGGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6849,7 +6849,7 @@
                     ]
                 },
                 {
-                    "allele": 26.0,
+                    "numberOfRepeats": 26.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6867,7 +6867,7 @@
                     ]
                 },
                 {
-                    "allele": 27.0,
+                    "numberOfRepeats": 27.0,
                     "sequenceVariants": [
                         {
                             "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
@@ -6888,20 +6888,20 @@
         },
         "PentaD": {
             "chromosome": 21,
-            "STRsize": 5,
+            "STRlength": 5,
             "startCoordinate": 43636205,
             "repeats": [
                 "AAAGA"
             ],
             "referenceAllele": {
-                "allele": 13,
+                "numberOfRepeats": 13,
                 "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
                 "before": "CTTGAGCCTGGAAGGTCGAAGCTGAAGTGAGCCATGATCACACCACTACACTCCAGCCTAGGTGACAGAGCAAGACACCATCTCAAGAAAGAAAAAAAAG",
                 "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -6919,7 +6919,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -6949,7 +6949,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -6979,7 +6979,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7009,7 +7009,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7033,7 +7033,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7051,7 +7051,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7069,7 +7069,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7080,7 +7080,7 @@
                     ]
                 },
                 {
-                    "allele": 7.0,
+                    "numberOfRepeats": 7.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7098,7 +7098,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7116,7 +7116,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGA",
@@ -7143,20 +7143,20 @@
         },
         "PentaE": {
             "chromosome": 15,
-            "STRsize": 5,
-            "startCoordinate": 0,
+            "STRlength": 5,
+            "startCoordinate": 96831015,
             "repeats": [
                 "TCTTT"
             ],
             "referenceAllele": {
-                "allele": 5,
+                "numberOfRepeats": 5,
                 "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTT",
                 "before": "AGAAAACTCCTTACAATTT",
                 "after": ""
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -7174,7 +7174,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7192,7 +7192,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7210,7 +7210,7 @@
                     ]
                 },
                 {
-                    "allele": 11.3,
+                    "numberOfRepeats": 11.3,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7221,7 +7221,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7239,7 +7239,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7257,7 +7257,7 @@
                     ]
                 },
                 {
-                    "allele": 13.4,
+                    "numberOfRepeats": 13.4,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7275,7 +7275,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7293,7 +7293,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7311,7 +7311,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7329,7 +7329,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7347,7 +7347,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7365,7 +7365,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7383,7 +7383,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7401,7 +7401,7 @@
                     ]
                 },
                 {
-                    "allele": 23.0,
+                    "numberOfRepeats": 23.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7419,7 +7419,7 @@
                     ]
                 },
                 {
-                    "allele": 5.0,
+                    "numberOfRepeats": 5.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7443,7 +7443,7 @@
                     ]
                 },
                 {
-                    "allele": 7.0,
+                    "numberOfRepeats": 7.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7461,7 +7461,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7479,7 +7479,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTT",
@@ -7500,20 +7500,20 @@
         },
         "TH01": {
             "chromosome": 11,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 2171088,
             "repeats": [
                 "AATG"
             ],
             "referenceAllele": {
-                "allele": 7,
+                "numberOfRepeats": 7,
                 "sequence": "AATGAATGAATGAATGAATGAATGAATG",
                 "before": "TGCAGGTCACAGGGAACACAGACTCCATGGTG",
                 "after": "AGGGAAATAAGG"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -7524,7 +7524,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7542,7 +7542,7 @@
                     ]
                 },
                 {
-                    "allele": 6.0,
+                    "numberOfRepeats": 6.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATG",
@@ -7560,7 +7560,7 @@
                     ]
                 },
                 {
-                    "allele": 7.0,
+                    "numberOfRepeats": 7.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATG",
@@ -7578,7 +7578,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7596,7 +7596,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7614,7 +7614,7 @@
                     ]
                 },
                 {
-                    "allele": 9.3,
+                    "numberOfRepeats": 9.3,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGATGAATGAATGAATG",
@@ -7635,20 +7635,20 @@
         },
         "TPOX": {
             "chromosome": 2,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 1489653,
             "repeats": [
                 "AATG"
             ],
             "referenceAllele": {
-                "allele": 8,
+                "numberOfRepeats": 8,
                 "sequence": "AATGAATGAATGAATGAATGAATGAATGAATG",
                 "before": "",
                 "after": "TTTGG"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -7666,7 +7666,7 @@
                     ]
                 },
                 {
-                    "allele": 10.0,
+                    "numberOfRepeats": 10.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7684,7 +7684,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7702,7 +7702,7 @@
                     ]
                 },
                 {
-                    "allele": 12.0,
+                    "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7720,7 +7720,7 @@
                     ]
                 },
                 {
-                    "allele": 13.0,
+                    "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7738,7 +7738,7 @@
                     ]
                 },
                 {
-                    "allele": 6.0,
+                    "numberOfRepeats": 6.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATG",
@@ -7756,7 +7756,7 @@
                     ]
                 },
                 {
-                    "allele": 8.0,
+                    "numberOfRepeats": 8.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7774,7 +7774,7 @@
                     ]
                 },
                 {
-                    "allele": 9.0,
+                    "numberOfRepeats": 9.0,
                     "sequenceVariants": [
                         {
                             "sequence": "AATGAATGAATGAATGAATGAATGAATGAATGAATG",
@@ -7795,21 +7795,21 @@
         },
         "vWA": {
             "chromosome": 12,
-            "STRsize": 4,
+            "STRlength": 4,
             "startCoordinate": 5983977,
             "repeats": [
-                "TAGA",
-                "CAGA"
+                "CAGA",
+                "TAGA"
             ],
             "referenceAllele": {
-                "allele": 17,
+                "numberOfRepeats": 17,
                 "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGATAGA",
                 "before": "AATACATAGGATGGATGGATAGATGGA",
                 "after": "TCAAT"
             },
-            "alleleVariants": [
+            "lengthVariants": [
                 {
-                    "allele": 0.0,
+                    "numberOfRepeats": 0.0,
                     "sequenceVariants": [
                         {
                             "sequence": "",
@@ -7827,7 +7827,7 @@
                     ]
                 },
                 {
-                    "allele": 11.0,
+                    "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGACAGACAGACAGATAGA",
@@ -7838,7 +7838,7 @@
                     ]
                 },
                 {
-                    "allele": 14.0,
+                    "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATGGATAGATAGATAGACAGACAGACAGACAGATAGACAGATAGA",
@@ -7895,7 +7895,7 @@
                     ]
                 },
                 {
-                    "allele": 15.0,
+                    "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGATAGA",
@@ -7926,7 +7926,7 @@
                     ]
                 },
                 {
-                    "allele": 16.0,
+                    "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGATAGA",
@@ -7957,7 +7957,7 @@
                     ]
                 },
                 {
-                    "allele": 17.0,
+                    "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGATAGA",
@@ -8007,7 +8007,7 @@
                     ]
                 },
                 {
-                    "allele": 18.0,
+                    "numberOfRepeats": 18.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGATAGA",
@@ -8025,7 +8025,7 @@
                     ]
                 },
                 {
-                    "allele": 19.0,
+                    "numberOfRepeats": 19.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGATAGA",
@@ -8043,7 +8043,7 @@
                     ]
                 },
                 {
-                    "allele": 20.0,
+                    "numberOfRepeats": 20.0,
                     "sequenceVariants": [
                         {
                             "sequence": "TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGATAGA",

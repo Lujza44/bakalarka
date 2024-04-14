@@ -19,18 +19,18 @@ def transform_csv_to_json(data):
         if marker not in json_structure['markers']: # inicializujem marker ak este v strukture nie je
             json_structure['markers'][marker] = {
                 "chromosome": 0,
-                "STRsize": 0,
+                "STRlength": 0,
                 "startCoordinate": 0,
                 "repeats": [],
                 "referenceAllele": {}, 
-                "alleleVariants": []}
+                "lengthVariants": []}
         
         # najdenie alebo inicializacia alely
-        alleles = json_structure['markers'][marker]["alleleVariants"]
-        allele_entry = next((a for a in alleles if a['allele'] == allele), None)
+        alleles = json_structure['markers'][marker]["lengthVariants"]
+        allele_entry = next((a for a in alleles if a['numberOfRepeats'] == allele), None)
         if allele_entry is None:
             allele_entry = {
-                "allele": allele, 
+                "numberOfRepeats": allele, 
                 "sequenceVariants": []}
             alleles.append(allele_entry)
         

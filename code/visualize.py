@@ -1,8 +1,6 @@
 import pandas as pd
 import json
-import re
-import requests
-
+import pysam
 
 def to_bracket_notation(dna_sequence, substring_size, repeats):
     result = ""
@@ -37,40 +35,35 @@ def to_bracket_notation(dna_sequence, substring_size, repeats):
             i += 1
     return result.strip()
 
-def find_SNPs(s1, s2, coordinate, before, STRsize, allele):
+# toto appenduje konkretne SNPs do pola
+def find_SNPs(s1, s2, coordinate, before, STRsize, allele, chromosome):
     diff_positions = []
     for i in range(min(len(s1),len(s2))):
         if s1[i] != s2[i]:
             if before: # before flanking region
-                diff_positions.append(coordinate - (len(s1) - i))
+                diff_positions.append((str(chromosome), coordinate - (len(s1) - i)))
             else: # after flanking region
-                diff_positions.append(i + coordinate + STRsize * allele) # allele z ref. allele
+                diff_positions.append((str(chromosome), i + coordinate + STRsize * allele)) # allele z ref. allele
     return diff_positions
     
-def get_rs_number(chromosome, position):
-    """Query Ensembl REST API for rs number at a specific genomic position."""
-    server = "https://rest.ensembl.org"
-    # Adjusted to use the overlap region endpoint, specifying variation as the feature type
-    ext = f"/overlap/region/human/{chromosome}:{position}-{position}?feature=variation"
-    headers = {"Content-Type": "application/json"}
-    
-    try:
-        response = requests.get(f"{server}{ext}", headers=headers)
-        response.raise_for_status()
-    except requests.exceptions.HTTPError as err:
-        print(f"HTTP error occurred: {err}")
-        return None
-    except Exception as err:
-        print(f"An error occurred: {err}")
-        return None
-    
-    data = response.json()
-    
-    # Extract rs numbers if present
-    rs_numbers = [item['id'] for item in data if 'id' in item]
-    
-    return rs_numbers
 
+def get_rs_number(vcf_path, chromosome, position):
+    vcf_in = pysam.VariantFile(vcf_path)
+    rs_number = None
+
+    for record in vcf_in.fetch(chromosome, position -1, position):
+        rs_number = record.id
+
+    vcf_in.close()
+    return rs_number
+
+vcf_path = 'data/00-common_all.vcf.gz'
+
+'''
+for chromosome, position in diff_positions:
+    rs_number = get_rs_number(vcf_path, chromosome, position)
+    print(f"Position {chromosome}:{position} has rs number(s): {'No SNPs found' if not rs_number else rs_number}")
+'''
 
 json_file_path = 'data/transformed_data.json'
 #json_file_path = 'data/repaired.json'
@@ -85,7 +78,7 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
     sum_count = 0
     sum_freq = 0
 
-    str_length = marker_info['STRsize']
+    str_length = marker_info['STRlength']
     repeats = marker_info['repeats']
 
     reference_allele = marker_info.get('referenceAllele', {})
@@ -97,14 +90,14 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
 
     # parametre
     start_coordinate = marker_info.get('startCoordinate', '')
-    ref_allele_number = reference_allele.get('allele', '')
+    ref_allele_number = reference_allele.get('numberOfRepeats', '')
 
     if not str_length or not repeats:
         continue
 
     # iterovanie cez vsetky varianty alel ZORADENE podla 'allele'
-    for allele_var in sorted(marker_info['alleleVariants'], key=lambda x: x['allele']): 
-        allele = allele_var['allele']
+    for allele_var in sorted(marker_info['lengthVariants'], key=lambda x: x['numberOfRepeats']): 
+        allele = allele_var['numberOfRepeats']
         for seq_var in allele_var['sequenceVariants']:
             sequence = seq_var['sequence']
 
@@ -114,22 +107,25 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                 for flank_var in seq_var['flankingRegionsVariants']:
                     before = flank_var['before']
                     after = flank_var['after']
-                    rs_numbers = ""
 
-                    SNPs_before = find_SNPs(ref_before, before, start_coordinate, True, str_length, ref_allele_number) # zoznam
-                    SNPs_after = find_SNPs(ref_after, after, start_coordinate, False, str_length, ref_allele_number) # zoznam
+                    SNPs_before = find_SNPs(ref_before, before, start_coordinate, True, str_length, ref_allele_number, chromosome) # zoznam
+                    SNPs_after = find_SNPs(ref_after, after, start_coordinate, False, str_length, ref_allele_number, chromosome) # zoznam
 
                     if SNPs_before:
                         for snp in SNPs_before:
-                            SNPs.append((marker, chromosome, snp))
+                            SNPs.append((chromosome, snp))
                     if SNPs_after:
                         for snp in SNPs_after:
-                            SNPs.append((marker, chromosome, snp))
+                            SNPs.append((chromosome, snp))
 
                     SNPs = SNPs_before + SNPs_after
 
-                    for snp in SNPs:
-                        rs_numbers = ', '.join(get_rs_number(chromosome, snp))
+                    rs_numbers = []
+                    for chromosome, position in SNPs:
+                        rs_num = get_rs_number(vcf_path, chromosome, position)
+                        if rs_num is not None: 
+                            rs_numbers.append(rs_num)
+                    rs_numbers = ', '.join(rs_numbers)
                         #print(f"Position {chromosome}:{snp} has rs number(s): {'No SNPs found' if not rs_numbers else rs_numbers}")
                         # TODO co s No SNPs found?
 

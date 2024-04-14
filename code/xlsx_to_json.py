@@ -69,10 +69,10 @@ with open('data/transformed_data.json', 'r') as json_file:
 for key, value in ref_seq_dict.items():
     chromosome, str_size, start_coordinate, allele, sequence, before, after = value # rozbalenie n-tice    
     data["markers"][key]["chromosome"] = chromosome
-    data["markers"][key]["STRsize"] = str_size
+    data["markers"][key]["STRlength"] = str_size
     data["markers"][key]["startCoordinate"] = start_coordinate
     data["markers"][key]["referenceAllele"] = {
-        "allele": allele,
+        "numberOfRepeats": allele,
         "sequence": sequence,
         "before": before,
         "after": after
