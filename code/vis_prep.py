@@ -76,7 +76,6 @@ rows = [[]]
 for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].get('chromosome', 0)):
     if marker == 'D19S433': continue
     sum_count = 0
-    sum_freq = 0
 
     str_length = marker_info['STRlength']
     repeats = marker_info['repeats']
@@ -84,7 +83,7 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
     reference_allele = marker_info.get('referenceAllele', {})
     chromosome = marker_info.get('chromosome', 0)
 
-    # toto sa bude porovnavat
+    # toto sa bude porovnavat s variantami na urcenie SNPs
     ref_before = reference_allele.get('before', '')
     ref_after = reference_allele.get('after', '')
 
@@ -108,10 +107,17 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                     before = flank_var['before']
                     after = flank_var['after']
 
-                    SNPs_before, before_indexes = find_SNPs_before(ref_before, before, start_coordinate, chromosome) # zoznam
-                    SNPs_after, after_indexes = find_SNPs_after(ref_after, after, start_coordinate, str_length, ref_allele_number, chromosome) # zoznam
-                    before_indexes = ', '.join(before_indexes)
-                    after_indexes = ', '.join(after_indexes)
+                    SNPs_before, before_indexes = find_SNPs_before(ref_before, before, start_coordinate, chromosome)
+                    SNPs_after, after_indexes = find_SNPs_after(ref_after, after, start_coordinate, str_length, ref_allele_number, chromosome)
+                    if before_indexes != []:
+                        before_indexes = ', '.join(before_indexes)
+                    else: 
+                        before_indexes = None
+
+                    if after_indexes != []:
+                        after_indexes = ', '.join(after_indexes)
+                    else:
+                        after_indexes = None
                     
                     if SNPs_before:
                         for snp in SNPs_before:
@@ -134,14 +140,14 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                     count = flank_var['count']
                     frequency = flank_var['frequency']
                     sum_count += count
-                    sum_freq += frequency
                     rows.append([marker, allele, sequence, rs_numbers, count, frequency, before, before_indexes, after, after_indexes])
             else: # ak neexistuju, bunky ostanu prazdne
                 rows.append([marker, allele, sequence])
-    rows.append(["", "", "", "", sum_count, sum_freq])
+    rows.append(["", "", "", "", sum_count])
     rows.append([])
 
-df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', 'Flanking Region Variants from GRCh38', 'Counts', 'Frequencies', '5\'-Flanking Region', 'SNP indexes', '3\'-Flanking Region', 'SNP indexes'])
+df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', 'Flanking Region Variants from GRCh38', 'Counts', 'Frequencies', '5\'-Flanking Region', '5\' SNP indexes', '3\'-Flanking Region', '3\' SNP indexes'])
 
-csv_file_path = 'data/output_data.csv'
+csv_file_path = 'data/raw_vis.csv'
+
 df.to_csv(csv_file_path, index=False)
