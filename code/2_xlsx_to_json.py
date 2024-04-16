@@ -26,7 +26,7 @@ for index, row in df.iterrows():
         ref_after = ""  # toto bude ref. 3' flanking region
         str_size = 0    # dlzka jedneho STR
         chromosome = 0
-        start_coordinate = 0 # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
+        start_coordinate = 0 # suradnica zaciatku repetitivnej oblasti v ref. genome
 
         if index + 3 < len(df) and index - 1 >= 0: 
             coordinates = df.iloc[index + 3] # budem sa pozerat do riadka o 3 nizsie, tam su koordinaty jednotlivych nt z ref. genomu

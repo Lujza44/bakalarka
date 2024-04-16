@@ -1,6 +1,5 @@
 import pandas as pd
 import json
-import pysam
 
 def to_bracket_notation(dna_sequence, substring_size, repeats):
     result = ""
@@ -35,36 +34,6 @@ def to_bracket_notation(dna_sequence, substring_size, repeats):
             i += 1
     return result.strip()
 
-def find_SNPs_before(s1, s2, coordinate, chromosome):
-    diff_positions = []
-    before_snp_indexes = []
-    for i in range(min(len(s1),len(s2))):
-        if s1[i] != s2[i]:
-            diff_positions.append((str(chromosome), coordinate - (len(s1) - i)))
-            before_snp_indexes.append(str(i))
-    return diff_positions, before_snp_indexes
-
-def find_SNPs_after(s1, s2, coordinate, STRsize, allele, chromosome):
-    diff_positions = []
-    after_snp_indexes = []
-    for i in range(min(len(s1),len(s2))):
-        if s1[i] != s2[i]:
-            diff_positions.append((str(chromosome), i + coordinate + STRsize * allele)) # allele z ref. allele
-            after_snp_indexes.append(str(i))
-    return diff_positions, after_snp_indexes
-    
-def get_rs_number(vcf_path, chromosome, position):
-    vcf_in = pysam.VariantFile(vcf_path)
-    rs_number = None
-
-    for record in vcf_in.fetch(chromosome, position -1, position):
-        rs_number = record.id
-
-    vcf_in.close()
-    return rs_number
-
-vcf_path = 'data/00-common_all.vcf.gz'
-
 json_file_path = 'data/transformed_data.json'
 
 with open(json_file_path, 'r') as file:
@@ -72,7 +41,7 @@ with open(json_file_path, 'r') as file:
 
 rows = [[]]
 
-# iterovanie cez vsetky markery ZORADENE podla 'chromosome'
+# iterovanie cez vsetky markery v JSNE ZORADENE podla 'chromosome'
 for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].get('chromosome', 0)):
     if marker == 'D19S433': continue
     sum_count = 0
@@ -82,14 +51,6 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
 
     reference_allele = marker_info.get('referenceAllele', {})
     chromosome = marker_info.get('chromosome', 0)
-
-    # toto sa bude porovnavat s variantami na urcenie SNPs
-    ref_before = reference_allele.get('before', '')
-    ref_after = reference_allele.get('after', '')
-
-    # parametre
-    start_coordinate = marker_info.get('startCoordinate', '')
-    ref_allele_number = reference_allele.get('numberOfRepeats', '')
 
     if not str_length or not repeats:
         continue
@@ -107,39 +68,18 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                     before = flank_var['before']
                     after = flank_var['after']
 
-                    SNPs_before, before_indexes = find_SNPs_before(ref_before, before, start_coordinate, chromosome)
-                    SNPs_after, after_indexes = find_SNPs_after(ref_after, after, start_coordinate, str_length, ref_allele_number, chromosome)
-                    if before_indexes != []:
-                        before_indexes = ', '.join(before_indexes)
-                    else: 
-                        before_indexes = None
-
-                    if after_indexes != []:
-                        after_indexes = ', '.join(after_indexes)
-                    else:
-                        after_indexes = None
-                    
-                    if SNPs_before:
-                        for snp in SNPs_before:
-                            SNPs.append((chromosome, snp))
-                    if SNPs_after:
-                        for snp in SNPs_after:
-                            SNPs.append((chromosome, snp))
-
-                    SNPs = SNPs_before + SNPs_after
-
-                    rs_numbers = []
-                    for chromosome, position in SNPs:
-                        rs_num = get_rs_number(vcf_path, chromosome, position)
-                        if rs_num is not None: 
-                            rs_numbers.append(rs_num)
-                    rs_numbers = ', '.join(rs_numbers)
-                        #print(f"Position {chromosome}:{snp} has rs number(s): {'No SNPs found' if not rs_numbers else rs_numbers}")
-                        # TODO co s No SNPs found?
-
+                    before_indexes = flank_var["beforeSNPIndices"]
+                    before_rs = flank_var["beforeRsNumbers"]
+                    after_indexes = flank_var["afterSNPIndices"]
+                    after_rs = flank_var["afterRsNumbers"]
                     count = flank_var['count']
                     frequency = flank_var['frequency']
                     sum_count += count
+
+                    rs_numbers = ", ".join(before_rs + after_rs)
+                    before_indexes = ", ".join(str(num) for num in before_indexes)
+                    after_indexes = ", ".join(str(num) for num in after_indexes)
+
                     rows.append([marker, allele, sequence, rs_numbers, count, frequency, before, before_indexes, after, after_indexes])
             else: # ak neexistuju, bunky ostanu prazdne
                 rows.append([marker, allele, sequence])

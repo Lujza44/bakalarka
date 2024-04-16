@@ -49,13 +49,18 @@ def transform_csv_to_json(data):
         # pridanie flanking region variant, ak existuju
         if pd.notnull(flank_sequence) and pd.notnull(flank_count) and pd.notnull(flank_frequency):
             allele_index = flank_sequence.find(sequence)
-            before = flank_sequence[:allele_index]  # Substring before the allele sequence
+            before = flank_sequence[:allele_index]
             after = flank_sequence[allele_index + len(sequence):]            
             variant_entry['flankingRegionsVariants'].append({
                 "before": before,
                 "after": after,
                 "count": int(flank_count),
-                "frequency": flank_frequency
+                "frequency": flank_frequency,
+                #"SNPs": []
+                "beforeSNPIndices": [],
+                "beforeRsNumbers": [],
+                "afterSNPIndices": [],
+                "afterRsNumbers": []
             })
     
     return json_structure

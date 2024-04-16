@@ -9,7 +9,7 @@ worksheet = workbook.add_worksheet()
 red_format = workbook.add_format({'color': 'red', 'underline': 1})
 default_format = workbook.add_format({'color': 'black'})
 
-# zapisanie heads, 
+# zapisanie heads
 write_col_index = 0
 for col_num, value in enumerate(data.columns):
     if col_num in [7, 9]:
