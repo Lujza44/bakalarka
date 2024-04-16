@@ -71,11 +71,11 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                     else:
                         row = before + sequence + after
                     
-                    rows.append(['', '', ''] + row)
+                    rows.append(['', allele, ''] + row)
 
             else: # ak neexistuju
                 row = ['' for _ in range(before_length)] + list(sequence)
-                rows.append(['', '', ''] + row)
+                rows.append(['', allele, ''] + row)
     rows.append([]) # prazdne riadky na oddelenie
     rows.append([])
     rows.append([])
