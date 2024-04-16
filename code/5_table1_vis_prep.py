@@ -34,8 +34,9 @@ def to_bracket_notation(dna_sequence, substring_size, repeats):
             i += 1
     return result.strip()
 
-json_file_path = 'data/transformed_data.json'
 
+# DATA Z JSNU
+json_file_path = 'data/transformed_data.json'
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 
@@ -86,8 +87,9 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
     rows.append(["", "", "", "", sum_count])
     rows.append([])
 
+# skonvertovanie riadkov do objektu DataFrame
 df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', 'Flanking Region Variants from GRCh38', 'Counts', 'Frequencies', '5\'-Flanking Region', '5\' SNP indexes', '3\'-Flanking Region', '3\' SNP indexes'])
 
+# DataFrame zapisany do CSV
 csv_file_path = 'data/raw_vis.csv'
-
 df.to_csv(csv_file_path, index=False)
