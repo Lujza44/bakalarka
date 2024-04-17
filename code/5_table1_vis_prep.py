@@ -85,7 +85,6 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                         for snp in after_tuples:
                             after_indices.append(snp[0])
                             after_rs.append(snp[1])
-                    
 
                     before_indices = ", ".join(str(num) for num in before_indices)
                     after_indices = ", ".join(str(num) for num in after_indices)
@@ -93,33 +92,6 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                     before_rs = [x for x in before_rs if x != '']
                     after_rs = [x for x in after_rs if x != '']
                     rs_numbers = ", ".join(before_rs + after_rs)
-
-
-                    '''
-                    before_indexes = ""
-                    after_indexes = ""
-                    rs_numbers = ""
-                    
-                    if "beforeSNPIndices" in flank_var: 
-                        before_indexes = flank_var["beforeSNPIndices"]
-                        before_indexes = ", ".join(str(num) for num in before_indexes)
-                    if "beforeRsNumbers" in flank_var: 
-                        before_rs = flank_var["beforeRsNumbers"]
-                    if "afterSNPIndices" in flank_var: 
-                        after_indexes = flank_var["afterSNPIndices"]
-                        after_indexes = ", ".join(str(num) for num in after_indexes)
-                    if "afterRsNumbers" in flank_var: 
-                        after_rs = flank_var["afterRsNumbers"]
-                    
-                    if "beforeRsNumbers" in flank_var and "afterRsNumbers" in flank_var:
-                        rs_numbers = ", ".join(before_rs + after_rs)
-                    elif "beforeRsNumbers" in flank_var and "afterRsNumbers" not in flank_var :
-                        rs_numbers = ", ".join(before_rs)
-                    elif "afterRsNumbers" in flank_var and "beforeRsNumbers" not in flank_var:
-                        rs_numbers = ", ".join(after_rs)
-                    '''
-
-
 
                     count = flank_var['count']
                     frequency = flank_var['frequency']
