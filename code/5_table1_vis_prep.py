@@ -68,18 +68,28 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                 for flank_var in seq_var['flankingRegionsVariants']:
                     before = flank_var['before']
                     after = flank_var['after']
+                    
+                    before_indexes = ""
+                    after_indexes = ""
+                    rs_numbers = ""
+                    if "beforeSNPIndices" in flank_var: 
+                        before_indexes = flank_var["beforeSNPIndices"]
+                        before_indexes = ", ".join(str(num) for num in before_indexes)
+                    if "beforeRsNumbers" in flank_var: 
+                        before_rs = flank_var["beforeRsNumbers"]
+                    if "afterSNPIndices" in flank_var: 
+                        after_indexes = flank_var["afterSNPIndices"]
+                        after_indexes = ", ".join(str(num) for num in after_indexes)
+                    if "afterRsNumbers" in flank_var: 
+                        after_rs = flank_var["afterRsNumbers"]
+                    if "beforeRsNumbers" in flank_var and "afterRsNumbers" in flank_var:
+                        rs_numbers = ", ".join(before_rs + after_rs)
 
-                    before_indexes = flank_var["beforeSNPIndices"]
-                    before_rs = flank_var["beforeRsNumbers"]
-                    after_indexes = flank_var["afterSNPIndices"]
-                    after_rs = flank_var["afterRsNumbers"]
                     count = flank_var['count']
                     frequency = flank_var['frequency']
                     sum_count += count
 
-                    rs_numbers = ", ".join(before_rs + after_rs)
-                    before_indexes = ", ".join(str(num) for num in before_indexes)
-                    after_indexes = ", ".join(str(num) for num in after_indexes)
+
 
                     rows.append([marker, allele, sequence, rs_numbers, count, frequency, before, before_indexes, after, after_indexes])
             else: # ak neexistuju, bunky ostanu prazdne

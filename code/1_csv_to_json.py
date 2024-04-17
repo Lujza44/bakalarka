@@ -56,11 +56,6 @@ def transform_csv_to_json(data):
                 "after": after,
                 "count": int(flank_count),
                 "frequency": flank_frequency,
-                #"SNPs": []
-                "beforeSNPIndices": [],
-                "beforeRsNumbers": [],
-                "afterSNPIndices": [],
-                "afterRsNumbers": []
             })
     
     return json_structure

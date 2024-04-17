@@ -74,11 +74,11 @@ for marker, details in data['markers'].items():
                         rs_num = get_rs_number(vcf_path, chromosome, coordinate)
                         if rs_num is not None: 
                             rs_numbers_after.append(rs_num)
-                    
-                    flank_variant['beforeSNPIndices'] = SNPs_before_indices
-                    flank_variant['beforeRsNumbers'] = rs_numbers_before
-                    flank_variant['afterSNPIndices'] = SNPs_after_indices
-                    flank_variant['afterRsNumbers'] = rs_numbers_after
+
+                    if SNPs_before_indices: flank_variant['beforeSNPIndices'] = SNPs_before_indices
+                    if rs_numbers_before: flank_variant['beforeRsNumbers'] = rs_numbers_before
+                    if SNPs_after_indices: flank_variant['afterSNPIndices'] = SNPs_after_indices
+                    if rs_numbers_after: flank_variant['afterRsNumbers'] = rs_numbers_after
 
 with open(json_file_path, 'w') as file:
     json.dump(data, file, indent=4)
