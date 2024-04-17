@@ -113,10 +113,15 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                 for flank_var in seq_var['flankingRegionsVariants']:
                     before = flank_var['before']
                     after = flank_var['after']
-                    #before_indexes = flank_var["beforeSNPIndices"]
-                    #before_rs = flank_var["beforeRsNumbers"]
-                    #after_indexes = flank_var["afterSNPIndices"]
-                    #after_rs = flank_var["afterRsNumbers"]
+                    
+                    if "beforeSNPIndices" in flank_var: 
+                        before_indexes = flank_var["beforeSNPIndices"]
+                    if "beforeRsNumbers" in flank_var: 
+                        before_rs = flank_var["beforeRsNumbers"]
+                    if "afterSNPIndices" in flank_var: 
+                        after_indexes = flank_var["afterSNPIndices"]
+                    if "afterRsNumbers" in flank_var: 
+                        after_rs = flank_var["afterRsNumbers"]
 
                     before = list(before)
                     sequence = list(sequence)

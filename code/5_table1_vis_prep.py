@@ -82,8 +82,14 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                         after_indexes = ", ".join(str(num) for num in after_indexes)
                     if "afterRsNumbers" in flank_var: 
                         after_rs = flank_var["afterRsNumbers"]
+                    
+
                     if "beforeRsNumbers" in flank_var and "afterRsNumbers" in flank_var:
                         rs_numbers = ", ".join(before_rs + after_rs)
+                    elif "beforeRsNumbers" in flank_var and "afterRsNumbers" not in flank_var : 
+                        rs_numbers = ", ".join(before_rs)
+                    elif "afterRsNumbers" in flank_var and "beforeRsNumbers" not in flank_var:
+                        rs_numbers = ", ".join(after_rs)
 
                     count = flank_var['count']
                     frequency = flank_var['frequency']
