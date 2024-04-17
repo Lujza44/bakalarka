@@ -159,6 +159,6 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
 
 df = pd.DataFrame(rows)
 
-csv_file_path = 'data/raw_vis6.csv'
+csv_file_path = 'data/vis/raw_vis6.csv'
 
 df.to_csv(csv_file_path, index=False)
