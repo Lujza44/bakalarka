@@ -10,7 +10,7 @@ def find_SNPs_before(s1, s2, coordinate):
         if s1[i] != s2[i]:
             SNPs_before_coordinates.append(coordinate - (len(s1) - i)) 
             SNPs_before_indices.append(i)
-    return SNPs_before_coordinates, SNPs_before_indices # koordinaty, indexy
+    return SNPs_before_coordinates, SNPs_before_indices # koordinaty, indexy - rovnako velke polia, len nesu udaj v roznom kontexte
 
 def find_SNPs_after(s1, s2, coordinate, STRsize, allele):
     SNPs_after_coordinates = []
@@ -19,7 +19,7 @@ def find_SNPs_after(s1, s2, coordinate, STRsize, allele):
         if s1[i] != s2[i]:
             SNPs_after_coordinates.append(i + coordinate + STRsize * allele) 
             SNPs_after_indices.append(i)
-    return SNPs_after_coordinates, SNPs_after_indices # koordinaty, indexy
+    return SNPs_after_coordinates, SNPs_after_indices # koordinaty, indexy - rovnako velke polia, len nesu udaj v roznom kontexte
     
 def get_rs_number(vcf_path, chromosome, position):
     vcf_in = pysam.VariantFile(vcf_path)
@@ -65,19 +65,23 @@ for marker, details in data['markers'].items():
 
                     rs_numbers_before = []
                     rs_numbers_after = []
-                    for coordinate in SNPs_before_coordinates:
+                    for index, coordinate in zip(SNPs_before_indices, SNPs_before_coordinates):
                         rs_num = get_rs_number(vcf_path, chromosome, coordinate)
                         if rs_num is not None: 
-                            rs_numbers_before.append(rs_num)
+                            rs_numbers_before.append([index, rs_num])
+                        else:
+                            rs_numbers_before.append([index, ''])
 
-                    for coordinate in SNPs_after_coordinates:
+                    for index, coordinate in zip(SNPs_after_indices, SNPs_after_coordinates):
                         rs_num = get_rs_number(vcf_path, chromosome, coordinate)
                         if rs_num is not None: 
-                            rs_numbers_after.append(rs_num)
+                            rs_numbers_after.append([index, rs_num])
+                        else:
+                            rs_numbers_after.append([index, ''])
 
-                    if SNPs_before_indices: flank_variant['beforeSNPIndices'] = SNPs_before_indices
+                    #if SNPs_before_indices: flank_variant['beforeSNPIndices'] = SNPs_before_indices
                     if rs_numbers_before: flank_variant['beforeRsNumbers'] = rs_numbers_before
-                    if SNPs_after_indices: flank_variant['afterSNPIndices'] = SNPs_after_indices
+                    #if SNPs_after_indices: flank_variant['afterSNPIndices'] = SNPs_after_indices
                     if rs_numbers_after: flank_variant['afterRsNumbers'] = rs_numbers_after
 
 with open(json_file_path, 'w') as file:

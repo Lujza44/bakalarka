@@ -69,9 +69,37 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                     before = flank_var['before']
                     after = flank_var['after']
                     
+                    before_indices = []
+                    before_rs = []
+                    after_indices = []
+                    after_rs = []
+
+                    if "beforeRsNumbers" in flank_var:
+                        before_tuples = flank_var["beforeRsNumbers"]
+                        for snp in before_tuples:
+                            before_indices.append(snp[0])
+                            before_rs.append(snp[1])
+                    
+                    if "afterRsNumbers" in flank_var:
+                        after_tuples = flank_var["afterRsNumbers"]
+                        for snp in after_tuples:
+                            after_indices.append(snp[0])
+                            after_rs.append(snp[1])
+                    
+
+                    before_indices = ", ".join(str(num) for num in before_indices)
+                    after_indices = ", ".join(str(num) for num in after_indices)
+
+                    before_rs = [x for x in before_rs if x != '']
+                    after_rs = [x for x in after_rs if x != '']
+                    rs_numbers = ", ".join(before_rs + after_rs)
+
+
+                    '''
                     before_indexes = ""
                     after_indexes = ""
                     rs_numbers = ""
+                    
                     if "beforeSNPIndices" in flank_var: 
                         before_indexes = flank_var["beforeSNPIndices"]
                         before_indexes = ", ".join(str(num) for num in before_indexes)
@@ -83,21 +111,21 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                     if "afterRsNumbers" in flank_var: 
                         after_rs = flank_var["afterRsNumbers"]
                     
-
                     if "beforeRsNumbers" in flank_var and "afterRsNumbers" in flank_var:
                         rs_numbers = ", ".join(before_rs + after_rs)
-                    elif "beforeRsNumbers" in flank_var and "afterRsNumbers" not in flank_var : 
+                    elif "beforeRsNumbers" in flank_var and "afterRsNumbers" not in flank_var :
                         rs_numbers = ", ".join(before_rs)
                     elif "afterRsNumbers" in flank_var and "beforeRsNumbers" not in flank_var:
                         rs_numbers = ", ".join(after_rs)
+                    '''
+
+
 
                     count = flank_var['count']
                     frequency = flank_var['frequency']
                     sum_count += count
 
-
-
-                    rows.append([marker, allele, sequence, rs_numbers, count, frequency, before, before_indexes, after, after_indexes])
+                    rows.append([marker, allele, sequence, rs_numbers, count, frequency, before, before_indices, after, after_indices])
             else: # ak neexistuju, bunky ostanu prazdne
                 rows.append([marker, allele, sequence])
     rows.append(["", "", "", "", sum_count])

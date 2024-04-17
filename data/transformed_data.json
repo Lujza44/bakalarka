@@ -277,11 +277,11 @@
                                     "after": "ATGAAGACAATACAACCAGAGTT",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "beforeSNPIndices": [
-                                        17
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs563636310"
+                                        [
+                                            17,
+                                            "rs563636310"
+                                        ]
                                     ]
                                 },
                                 {
@@ -652,11 +652,11 @@
                                     "after": "GAGAGGGGATTTATTAGAGGAATTAGCTCAAGTGATATGGAGGCTGAAAAATCTCATGACAGTCCATCTGCAAGCTGGAGACCGAGGGACACTA",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        83
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs138635218"
+                                        [
+                                            83,
+                                            "rs138635218"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1250,11 +1250,11 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 5,
                                     "frequency": 0.0119,
-                                    "afterSNPIndices": [
-                                        0
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1293,11 +1293,11 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 61,
                                     "frequency": 0.1452,
-                                    "afterSNPIndices": [
-                                        0
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 },
                                 {
@@ -1305,17 +1305,17 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 9,
                                     "frequency": 0.0214,
-                                    "beforeSNPIndices": [
-                                        14
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs73250432"
-                                    ],
-                                    "afterSNPIndices": [
-                                        0
+                                        [
+                                            14,
+                                            "rs73250432"
+                                        ]
                                     ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1348,17 +1348,17 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "beforeSNPIndices": [
-                                        15
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs146621667"
-                                    ],
-                                    "afterSNPIndices": [
-                                        0
+                                        [
+                                            15,
+                                            "rs146621667"
+                                        ]
                                     ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 },
                                 {
@@ -1366,11 +1366,11 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 37,
                                     "frequency": 0.0881,
-                                    "afterSNPIndices": [
-                                        0
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1403,11 +1403,11 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 8,
                                     "frequency": 0.019,
-                                    "afterSNPIndices": [
-                                        0
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1446,11 +1446,11 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 2,
                                     "frequency": 0.0048,
-                                    "afterSNPIndices": [
-                                        0
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1483,11 +1483,11 @@
                                     "after": "TATCAATCATCTATCTATCTTTCTGTCTGTCTTTTTGGG",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        0
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs9546005"
+                                        [
+                                            0,
+                                            "rs9546005"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1613,11 +1613,11 @@
                                     "after": "TCATTGAAAGACAAACCAGAGATGGATGATAGATAC",
                                     "count": 15,
                                     "frequency": 0.0357,
-                                    "afterSNPIndices": [
-                                        15
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs11642858"
+                                        [
+                                            15,
+                                            "rs11642858"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1643,11 +1643,11 @@
                                     "after": "TCATTGAAAGACAAACCAGAGATGGATGATAGATAC",
                                     "count": 3,
                                     "frequency": 0.0071,
-                                    "afterSNPIndices": [
-                                        15
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs11642858"
+                                        [
+                                            15,
+                                            "rs11642858"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1673,11 +1673,11 @@
                                     "after": "TCATTGAAAGACAAACCAGAGATGGATGATAGATAC",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        15
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs11642858"
+                                        [
+                                            15,
+                                            "rs11642858"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1703,11 +1703,11 @@
                                     "after": "TCATTGAAAGACAAACCAGAGATGGATGATAGATAC",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        15
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs11642858"
+                                        [
+                                            15,
+                                            "rs11642858"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1769,11 +1769,11 @@
                                     "after": "TCATTGAAAGACAAAACAGAGATGGATGATAGATAC",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "beforeSNPIndices": [
-                                        28
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs563997442"
+                                        [
+                                            28,
+                                            "rs563997442"
+                                        ]
                                     ]
                                 }
                             ]
@@ -1799,11 +1799,11 @@
                                     "after": "TCATTGAAAGACAAACCAGAGATGGATGATAGATAC",
                                     "count": 26,
                                     "frequency": 0.0619,
-                                    "afterSNPIndices": [
-                                        15
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs11642858"
+                                        [
+                                            15,
+                                            "rs11642858"
+                                        ]
                                     ]
                                 }
                             ]
@@ -2291,8 +2291,8 @@
             "STRlength": 4,
             "startCoordinate": 29926235,
             "repeats": [
-                "CCTT",
-                "CCTA"
+                "CCTA",
+                "CCTT"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 14,
@@ -2572,8 +2572,8 @@
             "STRlength": 4,
             "startCoordinate": 230769616,
             "repeats": [
-                "TCTA",
-                "CCTA"
+                "CCTA",
+                "TCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,
@@ -3504,10 +3504,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 2,
                                     "frequency": 0.0048,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3522,10 +3531,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 18,
                                     "frequency": 0.0429,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3615,10 +3633,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 2,
                                     "frequency": 0.0048,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3633,10 +3660,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 46,
                                     "frequency": 0.1095,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3694,8 +3730,11 @@
                                     "after": "CTATCTATCTATCGTCTATCTAT",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "beforeSNPIndices": [
-                                        18
+                                    "beforeRsNumbers": [
+                                        [
+                                            18,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3721,10 +3760,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 37,
                                     "frequency": 0.0881,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3744,10 +3792,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 2,
                                     "frequency": 0.0048,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3762,10 +3819,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 17,
                                     "frequency": 0.0405,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3780,10 +3846,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3803,10 +3878,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 4,
                                     "frequency": 0.0095,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3826,10 +3910,19 @@
                                     "after": "ATCTATATCTATCGTCTATCTAT",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        0,
-                                        2,
-                                        4
+                                    "afterRsNumbers": [
+                                        [
+                                            0,
+                                            ""
+                                        ],
+                                        [
+                                            2,
+                                            ""
+                                        ],
+                                        [
+                                            4,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -3843,8 +3936,8 @@
             "STRlength": 3,
             "startCoordinate": 37140287,
             "repeats": [
-                "ACT",
-                "ATT"
+                "ATT",
+                "ACT"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,
@@ -4046,9 +4139,9 @@
             "STRlength": 4,
             "startCoordinate": 218014859,
             "repeats": [
-                "GGAA",
                 "GGCA",
-                "GGAC"
+                "GGAC",
+                "GGAA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 23,
@@ -4609,11 +4702,11 @@
                                     "after": "TATCATAACACCACAGCCACTTA",
                                     "count": 22,
                                     "frequency": 0.0524,
-                                    "beforeSNPIndices": [
-                                        4
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs74640515"
+                                        [
+                                            4,
+                                            "rs74640515"
+                                        ]
                                     ]
                                 },
                                 {
@@ -4819,8 +4912,8 @@
             "STRlength": 4,
             "startCoordinate": 45540739,
             "repeats": [
-                "TCTA",
-                "TCTG"
+                "TCTG",
+                "TCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 16,
@@ -5331,11 +5424,11 @@
                                     "after": "TCAAAAT",
                                     "count": 11,
                                     "frequency": 0.0262,
-                                    "beforeSNPIndices": [
-                                        9
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs72009062"
+                                        [
+                                            9,
+                                            "rs72009062"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5368,11 +5461,11 @@
                                     "after": "TCAAAAT",
                                     "count": 11,
                                     "frequency": 0.0262,
-                                    "beforeSNPIndices": [
-                                        9
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs72009062"
+                                        [
+                                            9,
+                                            "rs72009062"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5405,11 +5498,11 @@
                                     "after": "TCAAAAT",
                                     "count": 40,
                                     "frequency": 0.0952,
-                                    "beforeSNPIndices": [
-                                        9
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs72009062"
+                                        [
+                                            9,
+                                            "rs72009062"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5442,11 +5535,11 @@
                                     "after": "TCAAAAT",
                                     "count": 32,
                                     "frequency": 0.0762,
-                                    "beforeSNPIndices": [
-                                        9
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs72009062"
+                                        [
+                                            9,
+                                            "rs72009062"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5479,11 +5572,11 @@
                                     "after": "TCAAAAT",
                                     "count": 2,
                                     "frequency": 0.0048,
-                                    "beforeSNPIndices": [
-                                        9
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs72009062"
+                                        [
+                                            9,
+                                            "rs72009062"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5538,11 +5631,11 @@
                                     "after": "TCAAAAT",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "beforeSNPIndices": [
-                                        9
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs72009062"
+                                        [
+                                            9,
+                                            "rs72009062"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5568,11 +5661,11 @@
                                     "after": "TCAAAAT",
                                     "count": 28,
                                     "frequency": 0.0667,
-                                    "beforeSNPIndices": [
-                                        9
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs72009062"
+                                        [
+                                            9,
+                                            "rs72009062"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5923,11 +6016,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 75,
                                     "frequency": 0.1786,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5953,11 +6046,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 90,
                                     "frequency": 0.2143,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 }
                             ]
@@ -5983,11 +6076,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 49,
                                     "frequency": 0.1167,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6013,11 +6106,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 10,
                                     "frequency": 0.0238,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6043,11 +6136,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 3,
                                     "frequency": 0.0071,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6067,11 +6160,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 6,
                                     "frequency": 0.0143,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6091,11 +6184,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 41,
                                     "frequency": 0.0976,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 },
                                 {
@@ -6103,17 +6196,17 @@
                                     "after": "GTTAGTTCATTCTAAACTAT",
                                     "count": 30,
                                     "frequency": 0.0714,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
-                                    ],
-                                    "afterSNPIndices": [
-                                        8
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ],
                                     "afterRsNumbers": [
-                                        "rs16887642"
+                                        [
+                                            8,
+                                            "rs16887642"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6133,11 +6226,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 3,
                                     "frequency": 0.0071,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6152,11 +6245,11 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 64,
                                     "frequency": 0.1524,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ]
                                 },
                                 {
@@ -6164,17 +6257,17 @@
                                     "after": "GTTAGTTCATTCTAAACTAT",
                                     "count": 5,
                                     "frequency": 0.0119,
-                                    "beforeSNPIndices": [
-                                        13
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995"
-                                    ],
-                                    "afterSNPIndices": [
-                                        8
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ]
                                     ],
                                     "afterRsNumbers": [
-                                        "rs16887642"
+                                        [
+                                            8,
+                                            "rs16887642"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6194,26 +6287,59 @@
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "beforeSNPIndices": [
-                                        13,
-                                        22,
-                                        23,
-                                        24,
-                                        25,
-                                        26,
-                                        27,
-                                        29,
-                                        30,
-                                        31,
-                                        32,
-                                        33,
-                                        34
-                                    ],
                                     "beforeRsNumbers": [
-                                        "rs7789995",
-                                        "rs767974915",
-                                        "rs767974915",
-                                        "rs767974915"
+                                        [
+                                            13,
+                                            "rs7789995"
+                                        ],
+                                        [
+                                            22,
+                                            ""
+                                        ],
+                                        [
+                                            23,
+                                            ""
+                                        ],
+                                        [
+                                            24,
+                                            ""
+                                        ],
+                                        [
+                                            25,
+                                            ""
+                                        ],
+                                        [
+                                            26,
+                                            ""
+                                        ],
+                                        [
+                                            27,
+                                            ""
+                                        ],
+                                        [
+                                            29,
+                                            ""
+                                        ],
+                                        [
+                                            30,
+                                            ""
+                                        ],
+                                        [
+                                            31,
+                                            ""
+                                        ],
+                                        [
+                                            32,
+                                            "rs767974915"
+                                        ],
+                                        [
+                                            33,
+                                            "rs767974915"
+                                        ],
+                                        [
+                                            34,
+                                            "rs767974915"
+                                        ]
                                     ]
                                 }
                             ]
@@ -6227,8 +6353,8 @@
             "STRlength": 4,
             "startCoordinate": 124894865,
             "repeats": [
-                "TCTA",
-                "TCTG"
+                "TCTG",
+                "TCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 13,
@@ -6815,10 +6941,10 @@
             "STRlength": 4,
             "startCoordinate": 154587736,
             "repeats": [
-                "GGAA",
                 "GAAA",
                 "AAAA",
                 "AGAA",
+                "GGAA",
                 "AAAG",
                 "GGAG"
             ],
@@ -7091,10 +7217,19 @@
                                     "after": "CTAGCTTGTAAATAATG",
                                     "count": 3,
                                     "frequency": 0.0071,
-                                    "afterSNPIndices": [
-                                        14,
-                                        15,
-                                        16
+                                    "afterRsNumbers": [
+                                        [
+                                            14,
+                                            ""
+                                        ],
+                                        [
+                                            15,
+                                            ""
+                                        ],
+                                        [
+                                            16,
+                                            ""
+                                        ]
                                     ]
                                 },
                                 {
@@ -7244,8 +7379,11 @@
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATATCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        46
+                                    "afterRsNumbers": [
+                                        [
+                                            46,
+                                            ""
+                                        ]
                                     ]
                                 },
                                 {
@@ -7253,8 +7391,11 @@
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCACAA",
                                     "count": 2,
                                     "frequency": 0.0048,
-                                    "afterSNPIndices": [
-                                        49
+                                    "afterRsNumbers": [
+                                        [
+                                            49,
+                                            ""
+                                        ]
                                     ]
                                 },
                                 {
@@ -7280,8 +7421,11 @@
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATATCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        46
+                                    "afterRsNumbers": [
+                                        [
+                                            46,
+                                            ""
+                                        ]
                                     ]
                                 },
                                 {
@@ -7289,8 +7433,11 @@
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 2,
                                     "frequency": 0.0048,
-                                    "afterSNPIndices": [
-                                        47
+                                    "afterRsNumbers": [
+                                        [
+                                            47,
+                                            ""
+                                        ]
                                     ]
                                 },
                                 {
@@ -7316,8 +7463,11 @@
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 4,
                                     "frequency": 0.0095,
-                                    "afterSNPIndices": [
-                                        47
+                                    "afterRsNumbers": [
+                                        [
+                                            47,
+                                            ""
+                                        ]
                                     ]
                                 },
                                 {
@@ -7331,11 +7481,11 @@
                                     "after": "AAAGACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        3
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs186259515"
+                                        [
+                                            3,
+                                            "rs186259515"
+                                        ]
                                     ]
                                 }
                             ]
@@ -7361,11 +7511,11 @@
                                     "after": "AAAGACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTTCTCAA",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        3
-                                    ],
                                     "afterRsNumbers": [
-                                        "rs186259515"
+                                        [
+                                            3,
+                                            "rs186259515"
+                                        ]
                                     ]
                                 }
                             ]
@@ -7468,8 +7618,11 @@
                                     "after": "AAAAACGAAGGGGAAAAAAAGAGAATCATAAACATAAATGTAAAATTACTCAA",
                                     "count": 1,
                                     "frequency": 0.0024,
-                                    "afterSNPIndices": [
-                                        47
+                                    "afterRsNumbers": [
+                                        [
+                                            47,
+                                            ""
+                                        ]
                                     ]
                                 },
                                 {
@@ -8141,8 +8294,8 @@
             "STRlength": 4,
             "startCoordinate": 5983977,
             "repeats": [
-                "CAGA",
-                "TAGA"
+                "TAGA",
+                "CAGA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,
@@ -8193,8 +8346,11 @@
                                     "after": "TCAAT",
                                     "count": 22,
                                     "frequency": 0.0524,
-                                    "beforeSNPIndices": [
-                                        20
+                                    "beforeRsNumbers": [
+                                        [
+                                            20,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]
@@ -8235,8 +8391,11 @@
                                     "after": "TCAAT",
                                     "count": 3,
                                     "frequency": 0.0071,
-                                    "beforeSNPIndices": [
-                                        24
+                                    "beforeRsNumbers": [
+                                        [
+                                            24,
+                                            ""
+                                        ]
                                     ]
                                 }
                             ]

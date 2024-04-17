@@ -31,40 +31,24 @@ def align(dna_sequence, substring_size, repeats):
 
 def get_rs_numbers(length_variants):
     # Initialize sets for storing unique indices and numbers
-    unique_before_snp_indices = set()
-    unique_before_rs_numbers = set()
-    unique_after_snp_indices = set()
-    unique_after_rs_numbers = set()
+    unique_before_rs_numbers = []
+    unique_after_rs_numbers = []
 
     # Assuming 'length_variants' is your JSON data loaded as a Python dictionary
-    for repeat in length_variants:
-        sequence_variants = repeat.get("sequenceVariants", [])
-        for sequence in sequence_variants:
-            flanking_variants = sequence.get("flankingRegionsVariants", [])
-            for flanking in flanking_variants:
-                # Check and collect before SNP indices and numbers
-                if "beforeSNPIndices" in flanking:
-                    unique_before_snp_indices.update(flanking["beforeSNPIndices"])
-                if "beforeRsNumbers" in flanking:
-                    unique_before_rs_numbers.update(flanking["beforeRsNumbers"])
+    for item in length_variants:
+        for sequence_variant in item.get("sequenceVariants", []):
+            for flanking_variant in sequence_variant.get("flankingRegionsVariants", []):
+                if "beforeRsNumbers" in flanking_variant:
+                    for rs_tuple in flanking_variant["beforeRsNumbers"]:
+                        if rs_tuple not in unique_before_rs_numbers:
+                            unique_before_rs_numbers.append(rs_tuple)
+                if "afterRsNumbers" in flanking_variant:
+                    for rs_tuple in flanking_variant["afterRsNumbers"]:
+                        if rs_tuple not in unique_after_rs_numbers:
+                            unique_after_rs_numbers.append(rs_tuple)
                 
-                # Check and collect after SNP indices and numbers
-                if "afterSNPIndices" in flanking:
-                    unique_after_snp_indices.update(flanking["afterSNPIndices"])
-                if "afterRsNumbers" in flanking:
-                    unique_after_rs_numbers.update(flanking["afterRsNumbers"])
-
-    # Convert sets to lists for output, if necessary
-    list_unique_before_snp_indices = list(unique_before_snp_indices)
-    list_unique_before_rs_numbers = list(unique_before_rs_numbers)
-    list_unique_after_snp_indices = list(unique_after_snp_indices)
-    list_unique_after_rs_numbers = list(unique_after_rs_numbers)
-
-    # You can print or return these lists depending on your needs
-    print("Unique before SNP Indices:", list_unique_before_snp_indices)
-    print("Unique before Rs Numbers:", list_unique_before_rs_numbers)
-    print("Unique after SNP Indices:", list_unique_after_snp_indices)
-    print("Unique after Rs Numbers:", list_unique_after_rs_numbers)
+    print("Unique Before RS Numbers:", unique_before_rs_numbers)
+    print("Unique After RS Numbers:", unique_after_rs_numbers)
 
 
 
@@ -155,15 +139,6 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
                 for flank_var in seq_var['flankingRegionsVariants']:
                     before = flank_var['before']
                     after = flank_var['after']
-                    
-                    if "beforeSNPIndices" in flank_var: 
-                        before_indexes = flank_var["beforeSNPIndices"]
-                    if "beforeRsNumbers" in flank_var: 
-                        before_rs = flank_var["beforeRsNumbers"]
-                    if "afterSNPIndices" in flank_var: 
-                        after_indexes = flank_var["afterSNPIndices"]
-                    if "afterRsNumbers" in flank_var: 
-                        after_rs = flank_var["afterRsNumbers"]
 
                     before = list(before)
                     sequence = list(sequence)
