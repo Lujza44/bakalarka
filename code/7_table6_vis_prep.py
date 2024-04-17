@@ -28,6 +28,47 @@ def align(dna_sequence, substring_size, repeats):
 
     return result
 
+
+def get_rs_numbers(length_variants):
+    # Initialize sets for storing unique indices and numbers
+    unique_before_snp_indices = set()
+    unique_before_rs_numbers = set()
+    unique_after_snp_indices = set()
+    unique_after_rs_numbers = set()
+
+    # Assuming 'length_variants' is your JSON data loaded as a Python dictionary
+    for repeat in length_variants:
+        sequence_variants = repeat.get("sequenceVariants", [])
+        for sequence in sequence_variants:
+            flanking_variants = sequence.get("flankingRegionsVariants", [])
+            for flanking in flanking_variants:
+                # Check and collect before SNP indices and numbers
+                if "beforeSNPIndices" in flanking:
+                    unique_before_snp_indices.update(flanking["beforeSNPIndices"])
+                if "beforeRsNumbers" in flanking:
+                    unique_before_rs_numbers.update(flanking["beforeRsNumbers"])
+                
+                # Check and collect after SNP indices and numbers
+                if "afterSNPIndices" in flanking:
+                    unique_after_snp_indices.update(flanking["afterSNPIndices"])
+                if "afterRsNumbers" in flanking:
+                    unique_after_rs_numbers.update(flanking["afterRsNumbers"])
+
+    # Convert sets to lists for output, if necessary
+    list_unique_before_snp_indices = list(unique_before_snp_indices)
+    list_unique_before_rs_numbers = list(unique_before_rs_numbers)
+    list_unique_after_snp_indices = list(unique_after_snp_indices)
+    list_unique_after_rs_numbers = list(unique_after_rs_numbers)
+
+    # You can print or return these lists depending on your needs
+    print("Unique before SNP Indices:", list_unique_before_snp_indices)
+    print("Unique before Rs Numbers:", list_unique_before_rs_numbers)
+    print("Unique after SNP Indices:", list_unique_after_snp_indices)
+    print("Unique after Rs Numbers:", list_unique_after_rs_numbers)
+
+
+
+
 json_file_path = 'data/transformed_data.json'
 
 with open(json_file_path, 'r') as file:
@@ -65,8 +106,6 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
     fillers = (math.ceil(max_number_of_repeats) - ref_num_of_repeats) * str_length
     if max_number_of_repeats > ref_num_of_repeats: # ak je ref. sekv. prikratka, rozsirime ju = vlozime prazdne miesta
         ref_sequence = ref_sequence + [''] * fillers
-
-    print(ref_num_of_repeats)
     
     # cislovanie repeats v ref. sekvencii
     numbering = ['' for _ in range(before_length)]
@@ -96,6 +135,9 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
     rows.append(['', '', 'Reference sequence'] + ref_before + ref_sequence + ref_after)
     rows.append(coordinates)
     rows.append(distance)
+
+    print(marker)
+    get_rs_numbers(marker_info['lengthVariants'])
 
     # iterovanie cez vsetky varianty alel ZORADENE podla 'allele'
     for allele_var in sorted(marker_info['lengthVariants'], key=lambda x: x['numberOfRepeats']): 

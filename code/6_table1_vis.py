@@ -1,9 +1,9 @@
 import pandas as pd
 import xlsxwriter
 
-data = pd.read_csv('data/raw_vis.csv')
+data = pd.read_csv('data/vis/raw_vis.csv')
 
-workbook = xlsxwriter.Workbook('data/Table_S1.xlsx', {'nan_inf_to_errors': True})
+workbook = xlsxwriter.Workbook('data/vis/Table_S1.xlsx', {'nan_inf_to_errors': True})
 worksheet = workbook.add_worksheet()
 
 red_format = workbook.add_format({'color': 'red', 'underline': 1})

@@ -107,5 +107,5 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
 df = pd.DataFrame(rows, columns=['Locus', 'Allele', 'Bracketed Repeat Region', 'Flanking Region Variants from GRCh38', 'Counts', 'Frequencies', '5\'-Flanking Region', '5\' SNP indexes', '3\'-Flanking Region', '3\' SNP indexes'])
 
 # DataFrame zapisany do CSV
-csv_file_path = 'data/raw_vis.csv'
+csv_file_path = 'data/vis/raw_vis.csv'
 df.to_csv(csv_file_path, index=False)
