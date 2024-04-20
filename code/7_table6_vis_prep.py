@@ -28,7 +28,6 @@ def align(dna_sequence, substring_size, repeats):
 
     return result
 
-
 def get_rs_numbers(length_variants):
     # Initialize sets for storing unique indices and numbers
     unique_before_rs_numbers = []
@@ -46,12 +45,8 @@ def get_rs_numbers(length_variants):
                     for rs_tuple in flanking_variant["afterRsNumbers"]:
                         if rs_tuple not in unique_after_rs_numbers:
                             unique_after_rs_numbers.append(rs_tuple)
-                
-    print("Unique Before RS Numbers:", unique_before_rs_numbers)
-    print("Unique After RS Numbers:", unique_after_rs_numbers)
 
-
-
+    return unique_before_rs_numbers, unique_after_rs_numbers           
 
 json_file_path = 'data/transformed_data.json'
 
@@ -90,13 +85,20 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
     fillers = (math.ceil(max_number_of_repeats) - ref_num_of_repeats) * str_length
     if max_number_of_repeats > ref_num_of_repeats: # ak je ref. sekv. prikratka, rozsirime ju = vlozime prazdne miesta
         ref_sequence = ref_sequence + [''] * fillers
-    
-    # cislovanie repeats v ref. sekvencii
-    numbering = ['' for _ in range(before_length)]
+       
+    # rs cisla + cislovanie repeats v ref. sekvencii
+    before_rs, after_rs = get_rs_numbers(marker_info['lengthVariants'])
+    rs_and_numbering = []
+    for i in range(before_length):
+        matched_bef = next((sublist[1] for sublist in before_rs if sublist[0] == i), '')
+        rs_and_numbering.append(matched_bef)
     for num in range(1, ref_num_of_repeats + 1):
-        numbering.append(num)
+        rs_and_numbering.append(num)
         for i in range(str_length - 1):
-            numbering.append('')
+            rs_and_numbering.append('')
+    for i in range(after_length):
+        matched_aft = next((sublist[1] for sublist in after_rs if sublist[0] == i), '')
+        rs_and_numbering.append(matched_aft)
 
     # GRCh38 suradnice jednotlivych nukleotidov v ref. sekvencii
     coordinates = ['', '', 'GRCh38 coordinates']
@@ -115,13 +117,10 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
         distance.append(i)
 
     # append uvodnych riadkov
-    rows.append([marker, 'Allele', 'Chr' + str(chromosome)] + numbering)
+    rows.append([marker, 'Allele', 'Chr' + str(chromosome)] + rs_and_numbering)
     rows.append(['', '', 'Reference sequence'] + ref_before + ref_sequence + ref_after)
     rows.append(coordinates)
     rows.append(distance)
-
-    print(marker)
-    get_rs_numbers(marker_info['lengthVariants'])
 
     # iterovanie cez vsetky varianty alel ZORADENE podla 'allele'
     for allele_var in sorted(marker_info['lengthVariants'], key=lambda x: x['numberOfRepeats']): 

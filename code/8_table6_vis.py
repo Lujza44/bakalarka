@@ -1,27 +1,74 @@
+import csv
 import xlsxwriter
 
-# DNA sequence
-sequence = "AAAAGGCTACGTT"
-
-# Create a workbook and add a worksheet
-workbook = xlsxwriter.Workbook('data/Table_S6.xlsx')
+# Create a new Excel workbook and add a worksheet.
+workbook = xlsxwriter.Workbook('data/vis/Table_S6.xlsx')
 worksheet = workbook.add_worksheet()
 
-# Define formats for each nucleotide
-format_A = workbook.add_format({'bg_color': '#a8fc83'})
-format_G = workbook.add_format({'bg_color': '#f6fc83'})
-format_C = workbook.add_format({'bg_color': '#93aac7'})
-format_T = workbook.add_format({'bg_color': '#fc83f6'})
+# Define cell formats for different nucleotides and vertical text.
+format_A = workbook.add_format({'bg_color': '#92d050', 'align': 'center'})
+format_G = workbook.add_format({'bg_color': '#ffff00', 'align': 'center'})
+format_C = workbook.add_format({'bg_color': '#adb9ca', 'align': 'center'})
+format_T = workbook.add_format({'bg_color': '#ffc7ce', 'align': 'center'})
+vertical_format = workbook.add_format({'rotation': 90, 'align': 'center'})
+center_format = workbook.add_format({'align': 'center'})  # Generic center format for other cells
 
-# Map nucleotides to formats
-formats = {'A': format_A, 'G': format_G, 'C': format_C, 'T': format_T}
+# Open the CSV file for reading.
+with open('data/vis/raw_vis6.csv', 'r') as csvfile:
+    reader = csv.reader(csvfile)
+    column_widths = {}  # Dictionary to store the maximum width for each column.
 
-column_width = 3
-worksheet.set_column(0, len(sequence) - 1, column_width)
+    # Iterate through each row in the CSV file.
+    for row_idx, row in enumerate(reader):
+        # Check for 'Allele' at index 1 or 'GRCh38 coordinates' at index 2
+        is_special_row = (len(row) > 1 and row[1] == 'Allele') or (len(row) > 2 and row[2] == 'GRCh38 coordinates')
+        is_allele_row = (len(row) > 1 and row[1] == 'Allele')
+        vertical_grch38 = (len(row) > 2 and row[2] == 'GRCh38 coordinates')
 
-# Write sequence to worksheet, letter by letter
-for index, letter in enumerate(sequence):
-    worksheet.write(0, index, letter, formats[letter]) # vzdy zapise do 0. riadku, index = column
+        # Set row height for special rows
+        if is_special_row:
+            worksheet.set_row(row_idx, 100)  # Set height to 150 pixels
 
-# Close the workbook to create the Excel file
+        # Iterate through each cell in the row.
+        for col_idx, value in enumerate(row):
+            # Apply vertical or center format based on conditions.
+            if col_idx >= 3:
+                if vertical_grch38 and col_idx > 2:
+                    cell_format = vertical_format  # Use vertical format if it meets the condition
+                elif value == 'A':
+                    cell_format = format_A
+                elif value == 'G':
+                    cell_format = format_G
+                elif value == 'C':
+                    cell_format = format_C
+                elif value == 'T':
+                    cell_format = format_T
+                else:
+                    cell_format = center_format  # Use generic center format for non-nucleotide values
+            else:
+                if value == 'A':
+                    cell_format = format_A
+                elif value == 'G':
+                    cell_format = format_G
+                elif value == 'C':
+                    cell_format = format_C
+                elif value == 'T':
+                    cell_format = format_T
+                else:
+                    cell_format = None  # Default format for other cells
+
+            # Write the cell to the worksheet, applying the correct format.
+            worksheet.write(row_idx, col_idx, value, cell_format)
+
+            # Set fixed width for columns from index 3 onwards or calculate width for other columns.
+            if col_idx >= 3:
+                column_widths[col_idx] = 3  # Set fixed width for columns from index 3 onwards.
+            else:
+                column_widths[col_idx] = max(column_widths.get(col_idx, 0), len(value))
+
+# Set the column widths based on the maximum observed width for each column or a fixed width of 40.
+for col_idx, width in column_widths.items():
+    worksheet.set_column(col_idx, col_idx, width)
+
+# Close the workbook.
 workbook.close()
