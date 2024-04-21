@@ -96,6 +96,7 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
         rs_and_numbering.append(num)
         for i in range(str_length - 1):
             rs_and_numbering.append('')
+    rs_and_numbering += [''] * fillers
     for i in range(after_length):
         matched_aft = next((sublist[1] for sublist in after_rs if sublist[0] == i), '')
         rs_and_numbering.append(matched_aft)
