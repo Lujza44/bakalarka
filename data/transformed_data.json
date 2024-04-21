@@ -420,8 +420,8 @@
             "STRlength": 4,
             "startCoordinate": 12297020,
             "repeats": [
-                "AGAT",
-                "AGAC"
+                "AGAC",
+                "AGAT"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 19,
@@ -3936,8 +3936,8 @@
             "STRlength": 3,
             "startCoordinate": 37140287,
             "repeats": [
-                "ATT",
-                "ACT"
+                "ACT",
+                "ATT"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,
@@ -4139,9 +4139,9 @@
             "STRlength": 4,
             "startCoordinate": 218014859,
             "repeats": [
-                "GGCA",
                 "GGAC",
-                "GGAA"
+                "GGAA",
+                "GGCA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 23,
@@ -5975,7 +5975,7 @@
             "referenceAllele": {
                 "numberOfRepeats": 13,
                 "sequence": "TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATC",
-                "before": "TATTTAGTGAGATTAAAAAAAACTATCAATCTGTC",
+                "before": "TATTTAGTGAGATTAAAAAAAA-CTATCAATCTGTC",
                 "after": "GTTAGTTCGTTCTAAACTAT"
             },
             "lengthVariants": [
@@ -5988,7 +5988,7 @@
                             "frequency": 0.0253,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "",
+                                    "before": "-",
                                     "after": "",
                                     "count": 4,
                                     "frequency": 0.0095
@@ -6006,20 +6006,20 @@
                             "frequency": 0.2317,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATTAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATTAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 14,
                                     "frequency": 0.0333
                                 },
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 75,
                                     "frequency": 0.1786,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 }
@@ -6036,20 +6036,20 @@
                             "frequency": 0.2331,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATTAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATTAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 10,
                                     "frequency": 0.0238
                                 },
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 90,
                                     "frequency": 0.2143,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 }
@@ -6066,20 +6066,20 @@
                             "frequency": 0.1615,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATTAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATTAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 9,
                                     "frequency": 0.0214
                                 },
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 49,
                                     "frequency": 0.1167,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 }
@@ -6096,20 +6096,20 @@
                             "frequency": 0.0211,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATTAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATTAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 3,
                                     "frequency": 0.0071
                                 },
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 10,
                                     "frequency": 0.0238,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 }
@@ -6126,20 +6126,20 @@
                             "frequency": 0.0042,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATTAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATTAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 3,
                                     "frequency": 0.0071
                                 },
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 3,
                                     "frequency": 0.0071,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 }
@@ -6156,14 +6156,14 @@
                             "frequency": 0.0169,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 6,
                                     "frequency": 0.0143,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 }
@@ -6180,26 +6180,26 @@
                             "frequency": 0.1559,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 41,
                                     "frequency": 0.0976,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 },
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCATTCTAAACTAT",
                                     "count": 30,
                                     "frequency": 0.0714,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ],
                                     "afterRsNumbers": [
@@ -6222,14 +6222,14 @@
                             "frequency": 0.0056,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 3,
                                     "frequency": 0.0071,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 }
@@ -6241,26 +6241,26 @@
                             "frequency": 0.1433,
                             "flankingRegionsVariants": [
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCGTTCTAAACTAT",
                                     "count": 64,
                                     "frequency": 0.1524,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ]
                                 },
                                 {
-                                    "before": "TATTTAGTGAGATAAAAAAAAACTATCAATCTGTC",
+                                    "before": "TATTTAGTGAGATAAAAAAAAA-CTATCAATCTGTC",
                                     "after": "GTTAGTTCATTCTAAACTAT",
                                     "count": 5,
                                     "frequency": 0.0119,
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
+                                            ""
                                         ]
                                     ],
                                     "afterRsNumbers": [
@@ -6290,55 +6290,7 @@
                                     "beforeRsNumbers": [
                                         [
                                             13,
-                                            "rs7789995"
-                                        ],
-                                        [
-                                            22,
                                             ""
-                                        ],
-                                        [
-                                            23,
-                                            ""
-                                        ],
-                                        [
-                                            24,
-                                            ""
-                                        ],
-                                        [
-                                            25,
-                                            ""
-                                        ],
-                                        [
-                                            26,
-                                            ""
-                                        ],
-                                        [
-                                            27,
-                                            ""
-                                        ],
-                                        [
-                                            29,
-                                            ""
-                                        ],
-                                        [
-                                            30,
-                                            ""
-                                        ],
-                                        [
-                                            31,
-                                            ""
-                                        ],
-                                        [
-                                            32,
-                                            "rs767974915"
-                                        ],
-                                        [
-                                            33,
-                                            "rs767974915"
-                                        ],
-                                        [
-                                            34,
-                                            "rs767974915"
                                         ]
                                     ]
                                 }
@@ -6941,10 +6893,10 @@
             "STRlength": 4,
             "startCoordinate": 154587736,
             "repeats": [
-                "GAAA",
-                "AAAA",
-                "AGAA",
                 "GGAA",
+                "AGAA",
+                "AAAA",
+                "GAAA",
                 "AAAG",
                 "GGAG"
             ],
@@ -6952,7 +6904,7 @@
                 "numberOfRepeats": 22,
                 "sequence": "GGAAGGAAGGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAAAAAGAAAGAAAGAAA",
                 "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                "after": "CTAGCTTGTAAATATGC"
+                "after": "CTAGCTTGTAAATA-TG"
             },
             "lengthVariants": [
                 {
@@ -6965,7 +6917,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "",
-                                    "after": "",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 8,
                                     "frequency": 0.019
                                 }
@@ -6983,7 +6935,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -7001,7 +6953,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 3,
                                     "frequency": 0.0071
                                 }
@@ -7030,7 +6982,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -7048,7 +7000,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 31,
                                     "frequency": 0.0738
                                 }
@@ -7077,7 +7029,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 63,
                                     "frequency": 0.15
                                 }
@@ -7095,7 +7047,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 89,
                                     "frequency": 0.2119
                                 }
@@ -7113,7 +7065,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -7131,7 +7083,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 75,
                                     "frequency": 0.1786
                                 }
@@ -7149,7 +7101,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 6,
                                     "frequency": 0.0143
                                 }
@@ -7167,7 +7119,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 49,
                                     "frequency": 0.1167
                                 }
@@ -7196,7 +7148,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 2,
                                     "frequency": 0.0048
                                 }
@@ -7216,25 +7168,11 @@
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
                                     "after": "CTAGCTTGTAAATAATG",
                                     "count": 3,
-                                    "frequency": 0.0071,
-                                    "afterRsNumbers": [
-                                        [
-                                            14,
-                                            ""
-                                        ],
-                                        [
-                                            15,
-                                            ""
-                                        ],
-                                        [
-                                            16,
-                                            ""
-                                        ]
-                                    ]
+                                    "frequency": 0.0071
                                 },
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 49,
                                     "frequency": 0.1167
                                 }
@@ -7269,7 +7207,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -7282,7 +7220,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 24,
                                     "frequency": 0.0571
                                 }
@@ -7306,7 +7244,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 12,
                                     "frequency": 0.0286
                                 }
@@ -7324,7 +7262,7 @@
                             "flankingRegionsVariants": [
                                 {
                                     "before": "CCAGCAAAAAAGAAAGGAAGAAA",
-                                    "after": "CTAGCTTGTAAATATGC",
+                                    "after": "CTAGCTTGTAAATA-TG",
                                     "count": 2,
                                     "frequency": 0.0048
                                 }
@@ -8294,8 +8232,8 @@
             "STRlength": 4,
             "startCoordinate": 5983977,
             "repeats": [
-                "TAGA",
-                "CAGA"
+                "CAGA",
+                "TAGA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,

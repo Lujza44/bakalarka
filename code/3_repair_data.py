@@ -111,8 +111,8 @@ def repair_ref_allele():
 
     index = whole_seq.find(sequence_to_find)
 
-    before_part = whole_seq[:index]  # Everything before the sequence
-    after_part = whole_seq[index + len(sequence_to_find):]  # Everything after the sequence
+    before_part = whole_seq[:index]  
+    after_part = whole_seq[index + len(sequence_to_find):]
 
     ref_allele['sequence'] = sequence_to_find
     ref_allele['before'] = before_part
