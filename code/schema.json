@@ -1,0 +1,124 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "markers": {
+        "type": "object",
+        "properties": {
+          "marker": {
+            "type": "object",
+            "properties": {
+              "chromosome": {
+                "type": "number"
+              },
+              "STRlength": {
+                "type": "number"
+              },
+              "startCoordinate": {
+                "type": "number"
+              },
+              "repeats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "referenceAllele": {
+                "type": "object",
+                "properties": {
+                  "numberOfRepeats": {
+                    "type": "number"
+                  },
+                  "sequence": {
+                    "type": "string"
+                  },
+                  "before": {
+                    "type": "string"
+                  },
+                  "after": {
+                    "type": "string"
+                  }
+                }
+              },
+              "lengthVariants": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "numberOfRepeats": {
+                      "type": "number"
+                    },
+                    "sequenceVariants": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "sequence": {
+                            "type": "string"
+                          },
+                          "count": {
+                            "type": "number"
+                          },
+                          "frequency": {
+                            "type": "number"
+                          },
+                          "flankingRegionsVariants": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "before": {
+                                  "type": "string"
+                                },
+                                "after": {
+                                  "type": "string"
+                                },
+                                "count": {
+                                  "type": "number"
+                                },
+                                "frequency": {
+                                  "type": "number"
+                                },
+                                "afterRsNumbers": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "array"
+                                  }
+                                },
+                                "beforeRsNumbers": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "array"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "before",
+                                "after",
+                                "count",
+                                "frequency"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "sequence",
+                          "count",
+                          "frequency",
+                          "flankingRegionsVariants"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "numberOfRepeats",
+                    "sequenceVariants"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
