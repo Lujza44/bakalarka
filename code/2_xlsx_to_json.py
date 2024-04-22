@@ -10,9 +10,7 @@ ref_seq_dict = {}
 
 
 def extract_number(chromosome_str):
-    # Use regex to find all digits in the string
     numbers = re.findall(r'\d+', chromosome_str)
-    # Join the digits and convert to an integer
     if numbers:
         return int(''.join(numbers))
     else:
@@ -41,7 +39,7 @@ for index, row in df.iterrows():
                 if pd.notnull(pd.to_numeric(str_indexes.iloc[i], errors='coerce')) and str(str_indexes.iloc[i]).strip() == '1':
                     is_storing_ref_seq = True # ak sme narazili na zaciatok repetitivnej oblasti, ukladame nt do ref_seq
                     increment_str_size = True # a pocitame vzdialenost do dalsieho oznaceneho STR
-                    start_coordinate = coordinates.iloc[i] # TODO zatial nevyuzita suradnica zaciatku repetitivnej oblasti v ref. genome
+                    start_coordinate = coordinates.iloc[i] # suradnica zaciatku repetitivnej oblasti v ref. genome
                     chromosome = extract_number(df.iloc[index - 1, 2])
 
                 if pd.notnull(pd.to_numeric(str_indexes.iloc[i], errors='coerce')) and str(str_indexes.iloc[i]).strip() == '2':

@@ -120,7 +120,7 @@ def find_repeats(sequence, repeat_length):
 def adjust_ref_allele():
     for marker, details in data['markers'].items():
         reference_allele = details.get('referenceAllele', {})
-        str_size = details.get('STRlength', 4)  # Default to 4 if not specified
+        str_size = details.get('STRlength', 4)  # defaultne 4
         ref_seq = reference_allele.get('sequence', '')
 
         repeats = find_repeats(ref_seq, str_size)
@@ -152,7 +152,6 @@ def shorten_before_flank():
                     elif marker_name == 'PentaD':
                         flankingVariant["before"] = flankingVariant["before"][5:] # skipnem prvych 5 pismen
 
-
 json_file_path = 'data/transformed_data.json'
 
 # DATA Z JSNU
@@ -162,13 +161,13 @@ with open(json_file_path, 'r') as file:
 # zjednotenie strandov vsetkych alel. variant, ktore su z opacneho
 unify_strand()
 
-# oprava 3' flanking oblasti, ktore boli nespravne zaradene k rep. oblasti
+# oprava 3' flanking oblasti, ktore boli v primarnych datach nespravne zaradene k rep. oblasti
 repair_after_flanks()
 
-# oprava 5' flanking oblasti, ktore boli nespravne zaradene k rep. oblasti
+# oprava 5' flanking oblasti, ktore boli v primarnych datach nespravne zaradene k rep. oblasti
 repair_before_flanks() 
 
-# oprava vadnej ref. alely lokusu Penta E
+# oprava ref. alely lokusu Penta E
 repair_ref_allele()
 
 # osekanie flanking oblasti vsetkych ref. alel, ponechanie iba casti, ktore boli citane aj v CZ databaze

@@ -129,7 +129,7 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
         for seq_var in allele_var['sequenceVariants']:
             sequence = seq_var['sequence']
 
-            # TODO align sequence - skusit podla ref. sekv.
+            # align sekvencii, ktore nemaju celociselny pocet opakovani - treba zlepsit
             if allele % 1 != 0:
                 sequence = align(sequence, str_length, repeats)
 
@@ -153,7 +153,7 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
             else: # ak neexistuju, tak namiesto nich prazdne miesta
                 row = ['' for _ in range(before_length)] + list(sequence)
                 rows.append(['', allele, ''] + row)
-    rows.append([]) # prazdny riadkok na oddelenie od nasledujuceho markera
+    rows.append([]) # prazdny riadok na oddelenie od nasledujuceho markera
 
 df = pd.DataFrame(rows)
 

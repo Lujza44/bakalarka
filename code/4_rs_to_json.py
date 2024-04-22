@@ -30,6 +30,7 @@ def get_rs_number(vcf_path, chromosome, position):
     vcf_in.close()
     return rs_number
 
+
 vcf_path = 'data/00-common_all.vcf.gz'
 
 json_file_path = 'data/transformed_data.json'
@@ -37,9 +38,9 @@ json_file_path = 'data/transformed_data.json'
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 
-
+# iterovanie vsetkymi markermi v json subore
 for marker, details in data['markers'].items():
-    if marker == "D19S433": continue
+    if marker == "D19S433": continue # D19 preskocime
 
     reference_allele = details.get('referenceAllele', {})
     
@@ -59,11 +60,14 @@ for marker, details in data['markers'].items():
                     before = flank_variant['before']
                     after = flank_variant['after']
 
+                    # urcenie koordinat (podla GRCh38) a indexov vsetkych najdenych SNP
                     SNPs_before_coordinates, SNPs_before_indices = find_SNPs_before(ref_before, before, start_coordinate)
                     SNPs_after_coordinates, SNPs_after_indices = find_SNPs_after(ref_after, after, start_coordinate, str_length, ref_allele_number)
 
                     rs_numbers_before = []
                     rs_numbers_after = []
+
+                    # hladanie rs cisel pre kazdy najdeny SNP (ak sa rs cislo nenajde, index ulozime aj tak, kvoli vizualizacii)
                     for index, coordinate in zip(SNPs_before_indices, SNPs_before_coordinates):
                         rs_num = get_rs_number(vcf_path, chromosome, coordinate)
                         if rs_num is not None: 
@@ -71,6 +75,7 @@ for marker, details in data['markers'].items():
                         else:
                             rs_numbers_before.append([index, ''])
 
+                    # to iste, len pre after flanking oblasti
                     for index, coordinate in zip(SNPs_after_indices, SNPs_after_coordinates):
                         rs_num = get_rs_number(vcf_path, chromosome, coordinate)
                         if rs_num is not None: 

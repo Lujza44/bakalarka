@@ -6,14 +6,16 @@ import csv
 workbook = xlsxwriter.Workbook('data/vis/Tables.xlsx', {'nan_inf_to_errors': True})
 
 
+# TABULKA S1
 worksheet1 = workbook.add_worksheet("Table S1")
 
 data = pd.read_csv('data/vis/raw_vis.csv')
 
+# formatovanie prveho sheetu
 red_format = workbook.add_format({'color': 'red', 'underline': 1, 'font_name': 'Courier New'})
 default_format = workbook.add_format({'color': 'black', 'font_name': 'Courier New'})
 
-
+# funkcia, ktora zafarbi vsetky najdene SNP na cerveno
 def color_red(sequence, indices):
     parts = []
     last_index = 0
@@ -32,6 +34,7 @@ def color_red(sequence, indices):
 
 max_widths = {}
 
+# funkcia, ktora pomaha nastavit dostatocnu sirku stlpcov
 def write_and_track_width(row, col, value, cell_format=default_format):
     if cell_format:
         worksheet1.write(row, col, value, cell_format)
@@ -39,8 +42,10 @@ def write_and_track_width(row, col, value, cell_format=default_format):
         worksheet1.write(row, col, value)
     max_widths[col] = max(max_widths.get(col, 0), len(str(value)))
 
+
 skipped_columns = [7, 9]
 
+# zapisanie heads okrem dvoch stlpcov, ktore boli len pomocne a vynechame ich
 write_col_index = 0
 for col_num, value in enumerate(data.columns):
     if col_num in skipped_columns:
@@ -48,6 +53,7 @@ for col_num, value in enumerate(data.columns):
     write_and_track_width(0, write_col_index, value)
     write_col_index += 1
 
+# prepisanie naformatovanych dat, pomocne stlpce s indexami SNPov sa neprepisuju
 for row_index, row in data.iterrows():
     write_col_index = 0
     for col_index, value in enumerate(row):
@@ -67,16 +73,17 @@ for row_index, row in data.iterrows():
             write_and_track_width(row_index + 1, write_col_index, value)
         write_col_index += 1
 
+# nastavenie potrebnej sirky stlpcov
 for col_index, width in max_widths.items():
     worksheet1.set_column(col_index, col_index, width + 1)
 worksheet1.set_column('G:G', 105)  
 worksheet1.set_column('H:H', 105)
 
 
-
-
+# TABULKA S6
 worksheet2 = workbook.add_worksheet('Table S6')
 
+# formatovanie
 format_A = workbook.add_format({'bg_color': '#92d050', 'align': 'center', 'valign': 'vcenter', 'font_name': 'Courier New'})
 format_G = workbook.add_format({'bg_color': '#ffff00', 'align': 'center', 'valign': 'vcenter', 'font_name': 'Courier New'})
 format_C = workbook.add_format({'bg_color': '#adb9ca', 'align': 'center', 'valign': 'vcenter', 'font_name': 'Courier New'})
@@ -85,6 +92,7 @@ vertical_format = workbook.add_format({'rotation': 90, 'align': 'center', 'valig
 center_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'font_name': 'Courier New'}) 
 default_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'color': 'black', 'font_name': 'Courier New'})
 
+# prepisanie sformatovanych dat z pripravneho suboru do tabulky
 with open('data/vis/raw_vis6.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     column_widths = {}  
@@ -121,10 +129,11 @@ with open('data/vis/raw_vis6.csv', 'r') as csvfile:
             worksheet2.write(row_idx, col_idx, value, cell_format)
 
             if col_idx >= 3:
-                column_widths[col_idx] = 2.5
+                column_widths[col_idx] = 2.5 # nastavenie sirky stlpcov na velmi uzku, pre prehladnost sekvencii
             else:
                 column_widths[col_idx] = max(column_widths.get(col_idx, 0), len(value))
 
+# nastavenie sirky stlpcov
 for col_idx, width in column_widths.items():
     worksheet2.set_column(col_idx, col_idx, width)
 
