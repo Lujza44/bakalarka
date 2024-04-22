@@ -2298,7 +2298,7 @@
                 "numberOfRepeats": 14,
                 "sequence": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTT",
                 "before": "TTCTTCCTCTCT",
-                "after": "CTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCTTTTTGCAGCCTCAACCTCCTGGGCTCAAGTGATCTT"
+                "after": "CTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCTTTTTGCAGCCTCAACCTC"
             },
             "lengthVariants": [
                 {
@@ -2323,13 +2323,13 @@
                     "numberOfRepeats": 11.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 5,
                             "frequency": 0.007,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 4,
                                     "frequency": 0.0095
                                 }
@@ -2341,13 +2341,13 @@
                     "numberOfRepeats": 12.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 60,
                             "frequency": 0.0843,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 37,
                                     "frequency": 0.0881
                                 }
@@ -2359,13 +2359,13 @@
                     "numberOfRepeats": 12.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCC",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
                             "count": 1,
                             "frequency": 0.0014,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "TTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "CCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -2377,13 +2377,13 @@
                     "numberOfRepeats": 13.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 187,
                             "frequency": 0.2626,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 105,
                                     "frequency": 0.25
                                 }
@@ -2395,20 +2395,20 @@
                     "numberOfRepeats": 13.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCC",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
                             "count": 17,
                             "frequency": 0.0239,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "TTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "CCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 11,
                                     "frequency": 0.0262
                                 }
                             ]
                         },
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCCTTCCTTCCTTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 1,
                             "frequency": 0.0014,
                             "flankingRegionsVariants": []
@@ -2419,19 +2419,19 @@
                     "numberOfRepeats": 14.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 223,
                             "frequency": 0.3132,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATGGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATGGCT",
                                     "count": 2,
                                     "frequency": 0.0048
                                 },
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 135,
                                     "frequency": 0.3214
                                 }
@@ -2443,13 +2443,13 @@
                     "numberOfRepeats": 14.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCC",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
                             "count": 19,
                             "frequency": 0.0267,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "TTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "CCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 13,
                                     "frequency": 0.031
                                 }
@@ -2461,13 +2461,13 @@
                     "numberOfRepeats": 15.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 124,
                             "frequency": 0.1742,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 70,
                                     "frequency": 0.1667
                                 }
@@ -2479,13 +2479,13 @@
                     "numberOfRepeats": 15.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCC",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
                             "count": 17,
                             "frequency": 0.0239,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "TTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "CCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 13,
                                     "frequency": 0.031
                                 }
@@ -2497,13 +2497,13 @@
                     "numberOfRepeats": 16.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 31,
                             "frequency": 0.0435,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 18,
                                     "frequency": 0.0429
                                 }
@@ -2515,13 +2515,13 @@
                     "numberOfRepeats": 16.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
                             "count": 13,
                             "frequency": 0.0183,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "TTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "CCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 4,
                                     "frequency": 0.0095
                                 }
@@ -2533,13 +2533,13 @@
                     "numberOfRepeats": 17.0,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
                             "count": 1,
                             "frequency": 0.0014,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "CCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "TTCCTTCCTTCCTACCTTCTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 1,
                                     "frequency": 0.0024
                                 }
@@ -2551,13 +2551,13 @@
                     "numberOfRepeats": 17.2,
                     "sequenceVariants": [
                         {
-                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCC",
+                            "sequence": "CTCTCTTTCTTCCTCTCTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTT",
                             "count": 7,
                             "frequency": 0.0098,
                             "flankingRegionsVariants": [
                                 {
                                     "before": "AATAAAAATCTT",
-                                    "after": "TTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
+                                    "after": "CCTTCCTTCCTTCCTACCTTTTCCTTCAACAGAATCTTATTCTGTTGCCCAGGCTGGAGTGCAGTGGTACAATTATAGCT",
                                     "count": 4,
                                     "frequency": 0.0095
                                 }
@@ -2572,8 +2572,8 @@
             "STRlength": 4,
             "startCoordinate": 230769616,
             "repeats": [
-                "CCTA",
-                "TCTA"
+                "TCTA",
+                "CCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,
@@ -4140,8 +4140,8 @@
             "startCoordinate": 218014859,
             "repeats": [
                 "GGAC",
-                "GGCA",
-                "GGAA"
+                "GGAA",
+                "GGCA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 23,
@@ -6941,12 +6941,12 @@
             "STRlength": 4,
             "startCoordinate": 154587736,
             "repeats": [
-                "AAAA",
                 "AGAA",
+                "GGAA",
                 "GAAA",
-                "AAAG",
+                "AAAA",
                 "GGAG",
-                "GGAA"
+                "AAAG"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 22,
@@ -8294,8 +8294,8 @@
             "STRlength": 4,
             "startCoordinate": 5983977,
             "repeats": [
-                "CAGA",
-                "TAGA"
+                "TAGA",
+                "CAGA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,

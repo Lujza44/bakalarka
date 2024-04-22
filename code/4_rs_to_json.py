@@ -2,7 +2,6 @@ import pandas as pd
 import json
 import pysam
 
-
 def find_SNPs_before(s1, s2, coordinate):
     SNPs_before_coordinates = []
     SNPs_before_indices = []
@@ -40,7 +39,7 @@ with open(json_file_path, 'r') as file:
 
 
 for marker, details in data['markers'].items():
-    if marker == "D19S433": continue # TODO
+    if marker == "D19S433": continue
 
     reference_allele = details.get('referenceAllele', {})
     
@@ -79,9 +78,7 @@ for marker, details in data['markers'].items():
                         else:
                             rs_numbers_after.append([index, ''])
 
-                    #if SNPs_before_indices: flank_variant['beforeSNPIndices'] = SNPs_before_indices
                     if rs_numbers_before: flank_variant['beforeRsNumbers'] = rs_numbers_before
-                    #if SNPs_after_indices: flank_variant['afterSNPIndices'] = SNPs_after_indices
                     if rs_numbers_after: flank_variant['afterRsNumbers'] = rs_numbers_after
 
 with open(json_file_path, 'w') as file:

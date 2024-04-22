@@ -29,11 +29,9 @@ def align(dna_sequence, substring_size, repeats):
     return result
 
 def get_rs_numbers(length_variants):
-    # Initialize sets for storing unique indices and numbers
     unique_before_rs_numbers = []
     unique_after_rs_numbers = []
 
-    # Assuming 'length_variants' is your JSON data loaded as a Python dictionary
     for item in length_variants:
         for sequence_variant in item.get("sequenceVariants", []):
             for flanking_variant in sequence_variant.get("flankingRegionsVariants", []):

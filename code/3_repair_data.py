@@ -88,16 +88,6 @@ def repair_before_flanks():
                         for flankingVariant in sequenceVariant["flankingRegionsVariants"]:
                             flankingVariant["before"] += to_move_sequence
 
-def repair_both_flanks():
-    marker = data["markers"].get(wrong_both)
-    for allele_variant in marker['lengthVariants']:
-        if allele_variant['numberOfRepeats'] > 0.0:
-            for seq_variant in allele_variant['sequenceVariants']:
-                last_18_letters = seq_variant['sequence'][-18:]
-                seq_variant['sequence'] = seq_variant['sequence'][:-18]    
-                for flank_var in seq_variant['flankingRegionsVariants']:
-                    flank_var['after'] = last_18_letters + flank_var['after']
-
 def repair_ref_allele():
     marker = data["markers"].get(wrong_ref)
     ref_allele = marker.get('referenceAllele', {})
@@ -177,9 +167,6 @@ repair_after_flanks()
 
 # oprava 5' flanking oblasti, ktore boli nespravne zaradene k rep. oblasti
 repair_before_flanks() 
-
-# oprava vadneho lokusu D19
-repair_both_flanks() # TODO
 
 # oprava vadnej ref. alely lokusu Penta E
 repair_ref_allele()
