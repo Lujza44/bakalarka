@@ -2572,8 +2572,8 @@
             "STRlength": 4,
             "startCoordinate": 230769616,
             "repeats": [
-                "TCTA",
-                "CCTA"
+                "CCTA",
+                "TCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,
@@ -4139,9 +4139,9 @@
             "STRlength": 4,
             "startCoordinate": 218014859,
             "repeats": [
+                "GGCA",
                 "GGAC",
-                "GGAA",
-                "GGCA"
+                "GGAA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 23,
@@ -4912,8 +4912,8 @@
             "STRlength": 4,
             "startCoordinate": 45540739,
             "repeats": [
-                "TCTA",
-                "TCTG"
+                "TCTG",
+                "TCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 16,
@@ -6353,8 +6353,8 @@
             "STRlength": 4,
             "startCoordinate": 124894865,
             "repeats": [
-                "TCTA",
-                "TCTG"
+                "TCTG",
+                "TCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 13,
@@ -6941,12 +6941,12 @@
             "STRlength": 4,
             "startCoordinate": 154587736,
             "repeats": [
+                "AAAG",
                 "AGAA",
-                "GGAA",
-                "GAAA",
                 "AAAA",
+                "GGAA",
                 "GGAG",
-                "AAAG"
+                "GAAA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 22,
@@ -8294,8 +8294,8 @@
             "STRlength": 4,
             "startCoordinate": 5983977,
             "repeats": [
-                "TAGA",
-                "CAGA"
+                "CAGA",
+                "TAGA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,

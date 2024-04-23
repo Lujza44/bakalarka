@@ -4,28 +4,36 @@ import math
 
 def align(dna_sequence, substring_size, repeats):
     result = []
+    part = []
     i = 0
-    counter = 0
     while i < len(dna_sequence):
         if i + substring_size > len(dna_sequence):
-            result.append(list(dna_sequence[i:]))
+            alined_rest =  align_partial_rep(list(current_substring), list(dna_sequence[i:]))
+            result += alined_rest
             break
         current_substring = dna_sequence[i:i+substring_size]
-        if current_substring in repeats and counter == 0: 
-            result.extend(list(dna_sequence[i:i+substring_size]))
+        if current_substring in repeats:
+            result += current_substring
             i += substring_size
         else:
-            if counter > 0 and current_substring in repeats:
-                fill_size = substring_size - counter
-                result.extend([''] * fill_size)
-                counter = 0
-                continue
-            result.append(dna_sequence[i])
-            counter = (counter + 1) % substring_size
+            part += dna_sequence[i]
+            next_substring = dna_sequence[i+1:i+1+substring_size]
+            if next_substring in repeats:
+                aligned = align_partial_rep(list(next_substring), part)
+                result += aligned
             i += 1
-    if counter != 0 and counter < substring_size:
-        result.extend([''] * (substring_size - counter))
+    return result
 
+    
+def align_partial_rep(next_substring, part):
+    result = [""] * len(next_substring)  # Initialize result list with empty strings
+    align_iter = iter(part)  # Create an iterator over align_list
+    next_elem = next(align_iter, None)  # Get the first element from the iterator
+
+    for i, item in enumerate(next_substring):
+        if item == next_elem:
+            result[i] = item  # Place the item at the correct position
+            next_elem = next(align_iter, None)  # Move to the next element in align_list
     return result
 
 def get_rs_numbers(length_variants):
