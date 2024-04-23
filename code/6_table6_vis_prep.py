@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import math
 
+# funkcia, ktora sluzi na zarovnanie sekvencii, ktore maju ako pocet opakovani necele cislo (su tam delecie)
 def align(dna_sequence, substring_size, repeats):
     result = []
     part = []
@@ -24,18 +25,20 @@ def align(dna_sequence, substring_size, repeats):
             i += 1
     return result
 
-    
+# funkcia, ktora sluzi na zarovnanie necelej repeticie s celou (vlozenie medzier kde su delecie)
 def align_partial_rep(next_substring, part):
-    result = [""] * len(next_substring)  # Initialize result list with empty strings
-    align_iter = iter(part)  # Create an iterator over align_list
-    next_elem = next(align_iter, None)  # Get the first element from the iterator
+    result = [""] * len(next_substring)
+    align_iter = iter(part)
+    next_elem = next(align_iter, None)
 
     for i, item in enumerate(next_substring):
         if item == next_elem:
-            result[i] = item  # Place the item at the correct position
-            next_elem = next(align_iter, None)  # Move to the next element in align_list
+            result[i] = item
+            next_elem = next(align_iter, None)
     return result
 
+# funkcia, ktora zhrna rs cisla before flanking oblasti markera do jedneho pola
+# a rs cisla after flanking oblasti do druheho pola
 def get_rs_numbers(length_variants):
     unique_before_rs_numbers = []
     unique_after_rs_numbers = []
