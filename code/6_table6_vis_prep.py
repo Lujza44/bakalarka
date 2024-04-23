@@ -140,7 +140,7 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
         for seq_var in allele_var['sequenceVariants']:
             sequence = seq_var['sequence']
 
-            # align sekvencii, ktore nemaju celociselny pocet opakovani - treba zlepsit
+            # align sekvencii, ktore nemaju celociselny pocet opakovani
             if allele % 1 != 0:
                 sequence = align(sequence, str_length, repeats)
 
