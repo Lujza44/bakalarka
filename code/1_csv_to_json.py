@@ -14,7 +14,8 @@ def transform_csv_to_json(data):
         flank_sequence = row['flank_sequence'] if row['flank_sequence'] != "Null" else ""
         flank_count = row['flank_count_seq']
         flank_frequency = row['flank_frequency']
-
+        
+        
         # URCENIE STRUKTURY MARKERU V JSNE
         if marker not in json_structure['markers']: # inicializujem marker ak este v strukture nie je
             json_structure['markers'][marker] = {
@@ -25,6 +26,21 @@ def transform_csv_to_json(data):
                 "referenceAllele": {}, 
                 "lengthVariants": []}
         
+        '''
+        markers = json_structure['markers']
+        marker_entry = next((m for m in markers if m['name'] == marker), None)
+        if marker is None:
+            marker_entry = {
+                "name": marker,
+                "chromosome": 0,
+                "STRlength": 0,
+                "startCoordinate": 0,
+                "repeats": [],
+                "referenceAllele": {}, 
+                "lengthVariants": []}
+            markers.append(marker_entry)
+        '''
+
         # najdenie alebo inicializacia alely
         alleles = json_structure['markers'][marker]["lengthVariants"]
         allele_entry = next((a for a in alleles if a['numberOfRepeats'] == allele), None)
