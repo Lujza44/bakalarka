@@ -57,7 +57,7 @@ def get_rs_numbers(length_variants):
 
     return unique_before_rs_numbers, unique_after_rs_numbers           
 
-json_file_path = 'data/transformed_data.json'
+json_file_path = 'data/output/transformed_data.json'
 
 with open(json_file_path, 'r') as file:
     data = json.load(file)
@@ -168,6 +168,6 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
 
 df = pd.DataFrame(rows)
 
-csv_file_path = 'data/vis/raw_vis6.csv'
+csv_file_path = 'data/output/raw_table2.csv'
 
 df.to_csv(csv_file_path, index=False)

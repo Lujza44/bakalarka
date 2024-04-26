@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import re
 
-xlsx_file_path = 'data/414_2021_2685_MOESM8_ESM.xlsx'
+xlsx_file_path = 'data/input/414_2021_2685_MOESM8_ESM.xlsx'
 df = pd.read_excel(xlsx_file_path, sheet_name = 'Table S6', engine='openpyxl') # precitanie konnkretneho sheetu = Table S6, odtial budem cerpat referecncne sekvencie
 df.iloc[:, 0] = df.iloc[:, 0].ffill() # forward fill na vyplnenie stlpca s nazvami markerov tam kde su merged bunky
 
@@ -61,7 +61,7 @@ for index, row in df.iterrows():
         ref_seq_dict[row.iloc[0].replace(" ", "")] = (chromosome, str_size, start_coordinate, number_of_repetitions, ref_seq, ref_before, ref_after)
 
 # ulozenie dat z ref. databazy do jsnu
-with open('data/transformed_data.json', 'r') as json_file:
+with open('data/output/transformed_data.json', 'r') as json_file:
     data = json.load(json_file)
 
 for key, value in ref_seq_dict.items():
@@ -76,5 +76,5 @@ for key, value in ref_seq_dict.items():
         "after": after
     }
 
-with open('data/transformed_data.json', 'w') as json_file:
+with open('data/output/transformed_data.json', 'w') as json_file:
     json.dump(data, json_file, indent=4)

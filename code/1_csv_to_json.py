@@ -60,11 +60,11 @@ def transform_csv_to_json(data):
     
     return json_structure
 
-csv_file_path = 'data/sql_fin_data.csv'
+csv_file_path = 'data/input/sql_fin_data.csv'
 data = pd.read_csv(csv_file_path)
 
 json_data = transform_csv_to_json(data)
 
-json_file_path = 'data/transformed_data.json'
+json_file_path = 'data/output/transformed_data.json'
 with open(json_file_path, 'w') as f:
     json.dump(json_data, f, indent=4)

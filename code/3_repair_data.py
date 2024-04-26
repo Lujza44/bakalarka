@@ -152,7 +152,7 @@ def shorten_before_flank():
                     elif marker_name == 'PentaD':
                         flankingVariant["before"] = flankingVariant["before"][5:] # skipnem prvych 5 pismen
 
-json_file_path = 'data/transformed_data.json'
+json_file_path = 'data/output/transformed_data.json'
 
 # DATA Z JSNU
 with open(json_file_path, 'r') as file:

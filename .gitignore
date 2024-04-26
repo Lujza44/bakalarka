@@ -159,6 +159,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-data/00-common_all.vcf
-data/00-common_all.vcf.gz
-data/00-common_all.vcf.gz.csi
+data/input/00-common_all.vcf
+data/input/00-common_all.vcf.gz
+data/input/00-common_all.vcf.gz.csi

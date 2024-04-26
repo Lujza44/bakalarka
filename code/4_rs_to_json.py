@@ -31,9 +31,9 @@ def get_rs_number(vcf_path, chromosome, position):
     return rs_number
 
 
-vcf_path = 'data/00-common_all.vcf.gz'
+vcf_path = 'data/input/00-common_all.vcf.gz'
 
-json_file_path = 'data/transformed_data.json'
+json_file_path = 'data/output/transformed_data.json'
 
 with open(json_file_path, 'r') as file:
     data = json.load(file)

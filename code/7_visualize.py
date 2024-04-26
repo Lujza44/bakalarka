@@ -3,13 +3,13 @@ import xlsxwriter
 import csv
 
 
-workbook = xlsxwriter.Workbook('data/vis/Tables.xlsx', {'nan_inf_to_errors': True})
+workbook = xlsxwriter.Workbook('data/output/Tables.xlsx', {'nan_inf_to_errors': True})
 
 
 # TABULKA S1
 worksheet1 = workbook.add_worksheet("Table S1")
 
-data = pd.read_csv('data/vis/raw_vis.csv')
+data = pd.read_csv('data/output/raw_table1.csv')
 
 # formatovanie prveho sheetu
 red_format = workbook.add_format({'color': 'red', 'underline': 1, 'font_name': 'Courier New'})
@@ -93,7 +93,7 @@ center_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'fo
 default_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'color': 'black', 'font_name': 'Courier New'})
 
 # prepisanie sformatovanych dat z pripravneho suboru do tabulky
-with open('data/vis/raw_vis6.csv', 'r') as csvfile:
+with open('data/output/raw_table2.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     column_widths = {}  
     for row_idx, row in enumerate(reader):

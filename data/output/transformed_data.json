@@ -420,8 +420,8 @@
             "STRlength": 4,
             "startCoordinate": 12297020,
             "repeats": [
-                "AGAT",
-                "AGAC"
+                "AGAC",
+                "AGAT"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 19,
@@ -2291,8 +2291,8 @@
             "STRlength": 4,
             "startCoordinate": 29926235,
             "repeats": [
-                "CCTA",
-                "CCTT"
+                "CCTT",
+                "CCTA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 14,
@@ -6941,10 +6941,10 @@
             "STRlength": 4,
             "startCoordinate": 154587736,
             "repeats": [
-                "AAAG",
                 "AGAA",
                 "AAAA",
                 "GGAA",
+                "AAAG",
                 "GGAG",
                 "GAAA"
             ],
@@ -8294,8 +8294,8 @@
             "STRlength": 4,
             "startCoordinate": 5983977,
             "repeats": [
-                "CAGA",
-                "TAGA"
+                "TAGA",
+                "CAGA"
             ],
             "referenceAllele": {
                 "numberOfRepeats": 17,
