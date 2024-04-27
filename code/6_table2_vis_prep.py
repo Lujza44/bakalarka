@@ -167,7 +167,5 @@ for marker, marker_info in sorted(data['markers'].items(), key=lambda x: x[1].ge
     rows.append([]) # prazdny riadok na oddelenie od nasledujuceho markera
 
 df = pd.DataFrame(rows)
-
 csv_file_path = 'data/output/raw_table2.csv'
-
 df.to_csv(csv_file_path, index=False)

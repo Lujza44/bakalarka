@@ -75,10 +75,7 @@ for row_index, row in data.iterrows():
 
 # nastavenie potrebnej sirky stlpcov
 for col_index, width in max_widths.items():
-    worksheet1.set_column(col_index, col_index, width + 1)
-worksheet1.set_column('G:G', 105)  
-worksheet1.set_column('H:H', 105)
-
+    worksheet1.set_column(col_index, col_index, width + 3)
 
 # TABULKA S6
 worksheet2 = workbook.add_worksheet('Table S6')
@@ -97,6 +94,8 @@ with open('data/output/raw_table2.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     column_widths = {}  
     for row_idx, row in enumerate(reader):
+        if row_idx <= 1:
+            continue
         if row[1] == 'Allele' or row[2] == 'GRCh38 coordinates':
             worksheet2.set_row(row_idx, 100)
         if row[2] == 'Distance from repeat region':
@@ -130,8 +129,10 @@ with open('data/output/raw_table2.csv', 'r') as csvfile:
 
             if col_idx >= 3:
                 column_widths[col_idx] = 2.5 # nastavenie sirky stlpcov na velmi uzku, pre prehladnost sekvencii
+            elif col_idx <= 1:
+                column_widths[col_idx] = max(column_widths.get(col_idx, 0), len(str(value)) + 5)
             else:
-                column_widths[col_idx] = max(column_widths.get(col_idx, 0), len(str(value)))
+                column_widths[col_idx] = max(column_widths.get(col_idx, 0), len(str(value)) + 15)
 
 # nastavenie sirky stlpcov
 for col_idx, width in column_widths.items():
