@@ -106,13 +106,13 @@ with open('data/output/raw_table2.csv', 'r') as csvfile:
                 float_value = float(value)
                 int_value = int(float_value)
                 if float_value == int_value:
-                    value = str(int_value)
+                    value = int_value
                 else:
-                    value = str(float_value)
+                    value = float_value
             except ValueError:
                 pass
             if col_idx >= 3:
-                if row[2] == 'GRCh38 coordinates' or row[2] == 'Distance from repeat region' or (row[1] == 'Allele' and not value.isdigit()):
+                if row[2] == 'GRCh38 coordinates' or row[2] == 'Distance from repeat region' or (row[1] == 'Allele' and not str(value).isdigit()):
                     cell_format = vertical_format
                 elif value == 'A':
                     cell_format = format_A
@@ -131,7 +131,7 @@ with open('data/output/raw_table2.csv', 'r') as csvfile:
             if col_idx >= 3:
                 column_widths[col_idx] = 2.5 # nastavenie sirky stlpcov na velmi uzku, pre prehladnost sekvencii
             else:
-                column_widths[col_idx] = max(column_widths.get(col_idx, 0), len(value))
+                column_widths[col_idx] = max(column_widths.get(col_idx, 0), len(str(value)))
 
 # nastavenie sirky stlpcov
 for col_idx, width in column_widths.items():
