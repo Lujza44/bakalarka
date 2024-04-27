@@ -8,5 +8,5 @@ fi
 
 python3 code/1_csv_to_json.py
 python3 code/2_xlsx_to_json.py
-python3 code/3_repair_data.py
+python3 code/3_fix_problems.py
 python3 code/4_rs_to_json.py
