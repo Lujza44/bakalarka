@@ -162,4 +162,3 @@ cython_debug/
 data/input/00-common_all.vcf
 data/input/00-common_all.vcf.gz
 data/input/00-common_all.vcf.gz.csi
-data/input/sql_fin_data.csv
