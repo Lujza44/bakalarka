@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 JSON_FILE="data/output/transformed_data.json"
 
 if [ -f "$JSON_FILE" ]; then
