@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 RAW_TABLE1="data/output/raw_table1.csv"
 RAW_TABLE2="data/output/raw_table2.csv"
 TABLES="data/output/Tables.xlsx"
