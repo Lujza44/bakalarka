@@ -11,6 +11,30 @@ git clone https://github.com/Lujza44/str-markers-data-processing.git
 cd str-markers-data-processing
 ```
 
+### Dependencies
+
+To run the scripts, you need the following dependencies:
+
+- Python 3: Ensure Python 3 is installed. You can download it from [python.org](https://www.python.org/).
+- Python packages: Install the required Python packages by running:
+
+```shell
+pip install -r requirements.txt
+```
+
+- Command-line tools: You need to have the following tools installed:
+  - wget: For downloading files from the internet.
+  - gzip: For decompressing .gz files. 
+  - tabix: For compressing and indexing VCF files.
+  - bcftools: For processing VCF files.
+
+  You can install these tools on Ubuntu using:
+
+```shell
+sudo apt-get update
+sudo apt-get install -y wget gzip tabix bcftools
+```
+
 ## Usage
 
 ### Downloading the VCF file
