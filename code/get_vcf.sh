@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 ORIGINAL_DIR=$(pwd)
 cd data/input
 
