@@ -16,7 +16,7 @@ def extract_number(chromosome_str):
     else:
         return None
 
-# spracovanie dat z ref. databazy
+# spracovanie dat z referencnej databazy
 for index, row in df.iterrows():
     if row.iloc[2] == 'Reference sequence': # budem pracovat iba s riadkami, ktore obsahuju ref. sekvenciu
         ref_before = "" # toto bude ref. 5' flanking region
